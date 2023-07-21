@@ -3,27 +3,21 @@ import Registration from './pages/Registration';
 import ClassInfo from './pages/ClassInfo';
 import Staff from './pages/Staff';
 import Home from './pages/Home';
+import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
-  let component;
-  switch (window.location.pathname) {
-    case "/":
-      component = <Home/>;
-      break;
-    case "/registration":
-      component = <Registration/>;
-      break;
-    case "/classInfo":
-      component = <ClassInfo/>;
-      break;
-    case "/staff":
-      component = <Staff/>;
-      break;
-  }
   return (
     <>
       <Navbar/>
-      {component}
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/registration" element={<Registration/>}/>
+          <Route path="/classInfo" element={<ClassInfo/>}/>
+          <Route path="/staff" element={<Staff/>}/>
+        </Routes>
+      </div>
     </>
   )
 
