@@ -11,11 +11,20 @@ body {
     text-align: center;
 }
 
-.nav {
+.title {
     background-color: #333;
     color: white;
+    text-align: center;
+}
+
+.title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;

@@ -3,6 +3,7 @@ import Registration from './pages/Registration';
 import ClassInfo from './pages/ClassInfo';
 import Staff from './pages/Staff';
 import Home from './pages/Home';
+import About from './pages/About';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -13,6 +14,7 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
           <Route path="/registration" element={<Registration/>}/>
           <Route path="/classInfo" element={<ClassInfo/>}/>
           <Route path="/staff" element={<Staff/>}/>
