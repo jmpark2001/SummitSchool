@@ -2,24 +2,39 @@
     box-sizing: border-box;
 }
 
+html {
+    background: url('/src/images/background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
     margin: 0;
-    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    /* background-image: url('/src/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 20%; */
 }
 
 .container {
-    margin: 1rem;
+    margin: 1.3vh;
     text-align: center;
     color: white;
 }
 
 .title {
     color: white;
+    position: relative;
     text-align: center;
+    white-space: pre;
+    top: 10vh;
+    font-size: 3vh;
 }
 
 .title a {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -27,14 +42,11 @@ body {
     display: block;
     text-align: left;
     position: absolute;
-    top: 35%;
-    width: 20%;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
-.siteTitle {
-    font-size: 2rem;
+    top: 40%;
+    width: 40%;
+    gap: 2.6vh;
+    padding: 0 1.3vh;
+    color: white;
 }
 
 .nav ul {
@@ -45,17 +57,63 @@ body {
 }
 
 .nav a {
+    color: inherit;
     text-decoration: none;
     height: 100%;
     display: block;
-    padding: 0rem 0rem 1rem 5rem;
-    font-size: 3rem;
+    padding: 0vh 0vh 1.9vh 6.5vh;
+    font-size: 2.5vh;
+    letter-spacing: .6vh;
 }
 
-.nav li.active {
+/* .nav li.active {
     background-color: #333;
 }
 
 .nav li:hover {
     background-color: #333;
+} */
+
+.vertical {
+    border-left: 1.3vh solid white;
+    height: 22.1vh;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+
+.vertical2 {
+    border-left: 1.3vh solid white;
+    height: 22.1vh;
+    position: absolute;
+    right: 30%;
+    top: 10%;
+}
+
+/* .summit {
+    position: absolute;
+    font-size: 4.5vh;
+    left: 35%;
+    top: 13%;
+} */
+
+.summit {
+    position: relative;
+    font-size: 5vh;
+    text-align: center;
+    top: 6vh;
+}
+
+/* .school {
+    position: absolute;
+    font-size: 4.5vh;
+    left: 35%;
+    top: 17%;
+} */
+
+.school {
+    position: relative;
+    font-size: 5vh;
+    text-align: center;
+    top: 2vh;
 }
