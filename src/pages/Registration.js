@@ -1,3 +1,7 @@
+import RegistrationForm from "../components/RegistrationForm"
+
 export default function Registration() {
-    return <h1>Registration</h1>
+    return (
+        <RegistrationForm/>
+    )
 }
