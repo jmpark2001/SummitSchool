@@ -1,3 +1,13 @@
 export default function About() {
-    return <h1>About</h1>
+    return (
+        <div className="about">
+            <h1 className="aboutTitle">About</h1>
+            <div>
+                <h2>Vision</h2>
+                <p>The vision of Summit School is to be the Platform, Watchtower, Antenna for our future generation the remnants so that every remnant may become the Masterpiece God created them to be in Christ Jesus (Eph 2:10)</p>
+                <h2>Mission Statement</h2>
+                <p>The mission of Summit School is to help every remnant to discover their God-given identity (Missioning Ceremony) through discipleship and spirituality training, develop their God-given talent (Coming of Age Ceremony) through mentorship and classes, and send them out to their God-given field (Commissioning Ceremony) through internship and networking.</p>
+            </div>
+        </div>
+    )
 }

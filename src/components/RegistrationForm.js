@@ -6,18 +6,28 @@ import Row from 'react-bootstrap/Row'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
-    // const [fullName, setFullName] = useState('')
-    // const [number, setNumber] = useState(0)
-    // const [email, setEmail] = useState('')
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Japanese Beginner", "Japanese Intermediate", "Japanese Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience",
       "Piano Advanced", "Beginner Drums", "Some Experience Drums", "Advanced Drums", "Beginner Drums", "Some Experience Drums", "Advanced Guitar", "SAT Math", "SAT English", "Beginner Adult Korean", "Intermediate Adult Korean",
        "Advanced Adult Korean", "Beginner Adult English", "Intermediate Adult English", "Advanced Adult English"]
     const [checkedState, setCheckedState] = useState(new Array(classList.length).fill(false))
 
-
     const handleOnChange = (position, e) => {
-        if (checkedState.filter((i) => i).length >= 2 && e.target.checked) {
+        let checkedBoxes = checkedState.filter((i) => i)
+        function hasBiblical() {
+            if (checkedState[0] === true || checkedState[1] === true || checkedState[2] === true || checkedState[3] === true || checkedState[4] === true || classList.slice(0, 5).includes(e.target.name)) {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+        console.log(checkedBoxes)
+        if (checkedBoxes.length >= 2 && e.target.checked) {
+            console.log(e.target.name)
+            return
+        }
+        if (checkedBoxes.length >= 1 && !hasBiblical() && e.target.checked){
             return
         }
         const updateCheckedState = checkedState.map((item, index) => 
@@ -30,32 +40,8 @@ function RegistrationForm() {
         e.preventDefault()
         const formData = new FormData(e.target)
         const payload = Object.fromEntries(formData)
-        // let arr = checkedState.reduce((out, bool, index) => bool ? out.concat(index) : out, [])
-        // for (let i=0; i<arr.length; i++){
-        //     console.log(classList[arr[i]])
-        // }
         console.log({payload})
     }
-
-    /*
-    <ul className="blank">
-        {classList.map((className, index) => 
-            <li key={index}>
-                <div>
-                    <input
-                        type="checkbox"
-                        id={index}
-                        name={className}
-                        value={className}
-                        checked={checkedState[index]}
-                        onChange={(e) => handleOnChange(index, e)}
-                    />
-                    <label>{className}</label>
-                </div>
-            </li>
-        )}
-    </ul>
-    */
 
     return (
         <>
@@ -108,28 +94,10 @@ function RegistrationForm() {
                     </Form.Group>
                     
                     <p>Choose at least 1 biblical class and up to 1 additional class</p>
-                    {/* <fieldset>
-                        <Form.Group as={Row} className="mb-3">
-                            <Form.Label as="legend" column sm={2}>
-                                Classes
-                            </Form.Label>
-                            {classList.map((className, index) => {console.log(className);
-                                <Col sm={11} >
-                                    <Form.Check
-                                        key={index}
-                                        type="checkbox"
-                                        label={className}
-                                        checked={checkedState[index]}
-                                        onChange={(e) => handleOnChange(index, e)}
-                                    />
-                                </Col>    
-                            })}
-                            
-                        </Form.Group>
-                    </fieldset> */}
                     {
-                        <ul className="class">
-                            {classList.map((className, index) =>
+                        <>
+                        <ul className="bibleClass">
+                            {classList.slice(0,5).map((className, index) => 
                                 <li key={index}>
                                     <div>
                                         <input
@@ -145,6 +113,25 @@ function RegistrationForm() {
                                 </li>
                             )}
                         </ul>
+                        <ul className="class">
+                            {classList.slice(5).map((className, index) =>
+                                <li key={index}>
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id={index+5}
+                                            name={className}
+                                            value={className}
+                                            checked={checkedState[index+5]}
+                                            onChange={(e) => handleOnChange(index+5, e)}
+                                        />
+                                        <label>{className}</label>
+                                    </div>
+                                </li>
+                            )}
+                        </ul>
+                        </>
+                        
                     }
                     
                     <Form.Group as ={Row} className="mb-3">
