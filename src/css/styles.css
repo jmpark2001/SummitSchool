@@ -21,9 +21,12 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 1.3vh;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .title {
@@ -32,7 +35,7 @@ body {
     position: relative;
     text-align: center;
     white-space: pre;
-    top: 10vh;
+    top: 5vh;
     font-size: 3vh;
 }
 
@@ -41,30 +44,32 @@ body {
 }
 
 .nav {
-    display: block;
+    /* display: block;
     text-align: left;
-    position: absolute;
+    position: absolute; 
     top: 40%;
-    width: 40%;
-    gap: 2.6vh;
-    padding: 0 1.3vh;
+    width: 40%;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0;
     color: white;
+    margin-top: 1.5vh;
 }
 
 .nav ul {
     padding: 0;
     margin: 0;
-    list-style: none;
-    display: block;
+    list-style-type: none;
+    display: flex;
 }
 
 .nav a {
     color: inherit;
     text-decoration: none;
     height: 100%;
-    display: block;
-    padding: 0vh 0vh 1.9vh 6.5vh;
-    font-size: 2.5vh;
+    padding: 0vh 0vh 1.5vh 2vh;
+    font-size: 2.2vh;
     letter-spacing: .6vh;
 }
 
@@ -93,58 +98,54 @@ body {
     top: 10%;
 }
 
-/* .summit {
-    position: absolute;
-    font-size: 4.5vh;
-    left: 35%;
-    top: 13%;
-} */
-
 .summit {
     position: relative;
-    font-size: 5vh;
+    font-size: 3.5vh;
     text-align: center;
-    top: 6vh;
+    top: 0vh;
     font-weight: bold;
+    color: white;
 }
 
-/* .school {
+.registrationPage {
     position: absolute;
-    font-size: 4.5vh;
-    left: 35%;
-    top: 17%;
-} */
-
-.school {
-    position: relative;
-    font-size: 5vh;
-    text-align: center;
-    top: 2vh;
-    font-weight: bold;
+    left: 8%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    min-height: min-content;
+    min-width: min-content;
+    background-color: white;
+    opacity: 90%;
 }
-
-/* label {
-    width: 10vh;
-    text-align: left;
-    clear: left;
-    padding-bottom: 1vh;
-}
-
-input, label {
-    float: left;
-} */
 
 .formDiv {
-    position: absolute;
-    width: 40vh;
-    height: 60vh;
-    left: 40%;
+    width: 60vh;
+    height: min-content;
+    padding: 0 2vh;
+}
+
+Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dates {
+    font-size: 1.5vh;
+    text-align: left;
+    margin: .5vh 0vh 0vh 0vh;
 }
 
 .registrationTitle {
-    font-size: 5vh;
+    font-size: 3.5vh;
     font-weight: bold;
     background-color: none;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+.instructions{
+    font-size: 1.5vh;
 }
 
 .bibleClass {
@@ -156,13 +157,18 @@ input, label {
     text-align: left;
 }
 
-.class {
-    columns: 3;
+.classDiv {
+    width: 18vh;
+    float: left;
+}
+
+.otherClass {
+    /* columns: 2; */
     padding: 1vh;
     margin: 0;
     list-style: none;
-    display: block;
-    width: 30vw;
+    width: 17vw;
+    float: left;
     text-align: left;
 }
 
@@ -172,25 +178,69 @@ input[type="checkbox"] {
 }
 
 .about {
-    display: inline-block;
     width: 40vh;
 }
 
 .aboutTitle {
     font-size: 4vh;
     font-weight: bold;
+    color: white;
+}
+
+.biblicalTitle {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.classTitles {
+    text-align: left;
+    margin-bottom: 0;
+    float: left;
+}
+
+.classInfo {
+    width: 30vw;
+    font-size: 2vh;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10vh;
+    color: white;
+}
+
+.submitButton {
+    left: 2%;
+    width: 6vh;
+    height: 2vh;
+}
+
+.payment {
+    text-align: left;
+    padding: 0;
+    margin-left: 1.5vh;
+}
+
+.payment li {
+    margin-bottom: .5vh;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.marginTop {
+    margin-top: 1.5vh!important;
 }
 
 /* bootstrap form css*/
 .mb-3{margin-bottom:.5vh!important}
 .form-check{display:block;min-height:1.5vh;padding-left:-2vh;margin-bottom:.125vh; text-align: left}
-.row{--bs-gutter-x:1.5vh;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}
+.row{display:flex;flex-wrap:wrap;margin-top:0; margin-left: 0; margin-right: 0;margin-bottom: 1vh;}
 .col-form-label{margin-bottom:0;font-size:inherit;line-height:1.5vh}
-.col-sm-2{flex:0 0 auto;width:16.66666667%}
-.col-sm-10{flex:0 0 auto;width:83.33333333%;}
+.col-sm-2{flex:0 0 auto;width:20%}
+.col-sm-10{flex:0 0 auto;width:80%;}
 .col-sm-11{flex:0 0 auto;width:83.33333333%; margin-top: -.5vh;}
 .form-label{margin-bottom: .5vh; font-size: 1vh;}
-.form-control{display:block;width:100%;padding:.375vh .75vh;font-size:1vh;font-weight:400;line-height:1vh;color:black;background-color:white;background-clip:padding-box;border:.2vh solid #dee2e6; border-radius: .8vh}
+.form-control{display:block;width:100%;padding:.375vh .75vh;font-size:1vh;font-weight:400;line-height:1vh;color:black;background-color:white;background-clip:padding-box;border:.2vh solid #555; border-radius: .8vh}
 .form-check-input{--bs-form-check-bg:white;width:2vh;height:1.5vh; vertical-align: middle; border:.2vh solid #dee2e6}
 .offset-sm-2{margin-left:16.66666667%}
 fieldset {padding: 0;margin: 0;border: 0;}

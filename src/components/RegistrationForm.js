@@ -7,9 +7,9 @@ import Row from 'react-bootstrap/Row'
 
 function RegistrationForm() {
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
-     "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Japanese Beginner", "Japanese Intermediate", "Japanese Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience",
-      "Piano Advanced", "Beginner Drums", "Some Experience Drums", "Advanced Drums", "Beginner Drums", "Some Experience Drums", "Advanced Guitar", "SAT Math", "SAT English", "Beginner Adult Korean", "Intermediate Adult Korean",
-       "Advanced Adult Korean", "Beginner Adult English", "Intermediate Adult English", "Advanced Adult English"]
+     "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Japanese Beginner", "Japanese Intermediate", "Japanese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Baginner", 
+     "Adult English Intermediate", "Adult English Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "Beginner Drums", "Some Experience Drums", "Advanced Drums",
+      "Beginner Guitar", "Some Experience Guitar", "Advanced Guitar", "SAT Math", "SAT English"]
     const [checkedState, setCheckedState] = useState(new Array(classList.length).fill(false))
 
     const handleOnChange = (position, e) => {
@@ -24,7 +24,6 @@ function RegistrationForm() {
         }
         console.log(checkedBoxes)
         if (checkedBoxes.length >= 2 && e.target.checked) {
-            console.log(e.target.name)
             return
         }
         if (checkedBoxes.length >= 1 && !hasBiblical() && e.target.checked){
@@ -44,11 +43,16 @@ function RegistrationForm() {
     }
 
     return (
-        <>
-            <h1 className="registrationTitle">Registration Form</h1>
+        <div className="registrationPage">
+            <h1 className="registrationTitle">REGISTRATION FORM</h1>
             <div className="formDiv">
                 <Form onSubmit={submitForm}>
-                    <Form.Group as={Row} className="mb-3" controlId="formHorizontalName">
+                    <p className="dates">Registration and Payment Period: 8/13 - 9/3</p>
+                    <p className="dates">Fall Semester: Every Saturday except Remnant Day from 9/16 - 1/20</p>
+                    <p className="dates">Worship: 9am - 10am</p>
+                    <p className="dates">First Class: 10am - 11am</p>
+                    <p className="dates">Second Class: 11am - 12pm</p>
+                    <Form.Group as={Row} className="leftAlign marginTop" controlId="formHorizontalName">
                         <Form.Label column sm={2}>
                             Student Full Name
                         </Form.Label>
@@ -57,7 +61,7 @@ function RegistrationForm() {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group as={Row} className="mb-3" controlId="formHorizontalName">
+                    <Form.Group as={Row} className="leftAlign" controlId="formHorizontalName">
                         <Form.Label column sm={2}>
                             Parent Full Name
                         </Form.Label>
@@ -66,7 +70,7 @@ function RegistrationForm() {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group as={Row} className="mb-3" controlId="formHorizontalNumber">
+                    <Form.Group as={Row} className="leftAlign" controlId="formHorizontalNumber">
                         <Form.Label column sm={2}>
                             Student Phone Number
                         </Form.Label>
@@ -75,7 +79,7 @@ function RegistrationForm() {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group as={Row} className="mb-3" controlId="formHorizontalNumber">
+                    <Form.Group as={Row} className="leftAlign" controlId="formHorizontalNumber">
                         <Form.Label column sm={2}>
                             Parent Phone Number
                         </Form.Label>
@@ -84,7 +88,7 @@ function RegistrationForm() {
                         </Col>
                     </Form.Group>
 
-                    <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                    <Form.Group as={Row} className="leftAlign" controlId="formHorizontalEmail">
                         <Form.Label column sm={2}>
                             Parent Email Address
                         </Form.Label>
@@ -93,55 +97,113 @@ function RegistrationForm() {
                         </Col>
                     </Form.Group>
                     
-                    <p>Choose at least 1 biblical class and up to 1 additional class</p>
+                    <p className="instructions leftAlign">Choose at least 1 biblical class and up to 1 additional class of your choice</p>
+                    <p className="biblicalTitle">Biblical Classes</p>
                     {
                         <>
-                        <ul className="bibleClass">
-                            {classList.slice(0,5).map((className, index) => 
-                                <li key={index}>
-                                    <div>
-                                        <input
-                                            type="checkbox"
-                                            id={index}
-                                            name={className}
-                                            value={className}
-                                            checked={checkedState[index]}
-                                            onChange={(e) => handleOnChange(index, e)}
-                                        />
-                                        <label>{className}</label>
-                                    </div>
-                                </li>
-                            )}
-                        </ul>
-                        <ul className="class">
-                            {classList.slice(5).map((className, index) =>
-                                <li key={index}>
-                                    <div>
-                                        <input
-                                            type="checkbox"
-                                            id={index+5}
-                                            name={className}
-                                            value={className}
-                                            checked={checkedState[index+5]}
-                                            onChange={(e) => handleOnChange(index+5, e)}
-                                        />
-                                        <label>{className}</label>
-                                    </div>
-                                </li>
-                            )}
-                        </ul>
+                            <ul className="bibleClass">
+                                {classList.slice(0, 5).map((className, index) => 
+                                    <li key={index}>
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                id={index}
+                                                name={className}
+                                                value={className}
+                                                checked={checkedState[index]}
+                                                onChange={(e) => handleOnChange(index, e)}
+                                            />
+                                            <label>{className}</label>
+                                        </div>
+                                    </li>
+                                )}
+                            </ul>
+                            <div>
+                                <div className="classDiv">
+                                    <p className="classTitles">Language Classes</p>
+                                    <br></br>
+                                    <ul className="otherClass">
+                                        {classList.slice(5, 23).map((className, index) =>
+                                            <li key={index}>
+                                                <div>
+                                                    <input
+                                                        type="checkbox"
+                                                        id={index+5}
+                                                        name={className}
+                                                        value={className}
+                                                        checked={checkedState[index+5]}
+                                                        onChange={(e) => handleOnChange(index+5, e)}
+                                                    />
+                                                    <label>{className}</label>
+                                                </div>
+                                            </li>
+                                        )}
+                                    </ul>
+                                </div>
+                                <div className="classDiv">
+                                    <p className="classTitles">Instrument Classes</p>
+                                    <ul className="otherClass">
+                                        {classList.slice(23,35).map((className, index) =>
+                                            <li key={index}>
+                                                <div>
+                                                    <input
+                                                        type="checkbox"
+                                                        id={index+23}
+                                                        name={className}
+                                                        value={className}
+                                                        checked={checkedState[index+23]}
+                                                        onChange={(e) => handleOnChange(index+23, e)}
+                                                    />
+                                                    <label>{className}</label>
+                                                </div>
+                                            </li>
+                                        )}
+                                    </ul>
+                                </div>
+                                <div className="classDiv">
+                                    <p className="classTitles">Academic Classes</p>
+                                        <ul className="otherClass">
+                                            {classList.slice(35).map((className, index) =>
+                                                <li key={index}>
+                                                    <div>
+                                                        <input
+                                                            type="checkbox"
+                                                            id={index+35}
+                                                            name={className}
+                                                            value={className}
+                                                            checked={checkedState[index+35]}
+                                                            onChange={(e) => handleOnChange(index+35, e)}
+                                                        />
+                                                        <label>{className}</label>
+                                                    </div>
+                                                </li>
+                                            )}
+                                        </ul>
+                                </div>
+                            </div>
                         </>
-                        
                     }
-                    
-                    <Form.Group as ={Row} className="mb-3">
-                        <Col sm={{ span: 10, offset:2 }}>
-                            <Button type="submit">Submit</Button>
-                        </Col>
-                    </Form.Group>
+                    <Button className="submitButton" type="submit">Submit</Button>
+                    <div>
+                        <p>Methods of Payment ($200)</p>
+                        <ol className="payment">
+                            <li>
+                                Cash (in person)
+                            </li>
+                            <li>
+                                Check (in person)
+                            </li>
+                            <li>
+                                Zelle: (insert zelle information)
+                            </li>
+                            <li>
+                                Link to online payment method
+                            </li>
+                        </ol>
+                    </div>
                 </Form>
             </div>
-        </>
+        </div>
     )
 }
 
