@@ -5,12 +5,15 @@ export default function Navbar() {
     return (
         <nav className="nav">
             <ul>
-                <CustomLink to="/">| HOME |</CustomLink>
-                {/* <p style={{fontSize: "2.2vh"}}>|</p> */}
-                <CustomLink to="/about">ABOUT |</CustomLink>                
-                <CustomLink to="/classInfo">CLASS INFORMATION |</CustomLink>
-                <CustomLink to="/registration">REGISTRATION |</CustomLink>
-                <CustomLink to="/staff">STAFF |</CustomLink>
+                <CustomLink to="/">HOME</CustomLink>
+                <p className="navBorder">|</p>
+                <CustomLink to="/about">ABOUT</CustomLink> 
+                <p className="navBorder">|</p>               
+                <CustomLink to="/classInfo">CLASS INFORMATION</CustomLink>
+                <p className="navBorder">|</p>
+                <CustomLink to="/registration">REGISTRATION</CustomLink>
+                <p className="navBorder">|</p>
+                <CustomLink to="/staff">STAFF</CustomLink>
             </ul>
         </nav>    
         

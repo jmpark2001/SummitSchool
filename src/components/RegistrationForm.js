@@ -8,8 +8,8 @@ import Row from 'react-bootstrap/Row'
 function RegistrationForm() {
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Japanese Beginner", "Japanese Intermediate", "Japanese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Baginner", 
-     "Adult English Intermediate", "Adult English Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "Beginner Drums", "Some Experience Drums", "Advanced Drums",
-      "Beginner Guitar", "Some Experience Guitar", "Advanced Guitar", "SAT Math", "SAT English"]
+     "Adult English Intermediate", "Adult English Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "Flute Beginner", "Flute Some Experience", "Flute Advanced",
+     "Violin Beginner", "Violin Some Experience", "Violin Advanced", "SAT Math", "SAT English"]
     const [checkedState, setCheckedState] = useState(new Array(classList.length).fill(false))
 
     const handleOnChange = (position, e) => {
@@ -47,8 +47,8 @@ function RegistrationForm() {
             <h1 className="registrationTitle">REGISTRATION FORM</h1>
             <div className="formDiv">
                 <Form onSubmit={submitForm}>
-                    <p className="dates">Registration and Payment Period: 8/13 - 9/3</p>
-                    <p className="dates">Fall Semester: Every Saturday except Remnant Day from 9/16 - 1/20</p>
+                    <p className="dates">Registration and Payment Period: August 13th - September 3rd</p>
+                    <p className="dates">Fall Semester: Every Saturday except Remnant Day (Last Saturday of every month) from September 16th - January 20th</p>
                     <p className="dates">Worship: 9am - 10am</p>
                     <p className="dates">First Class: 10am - 11am</p>
                     <p className="dates">Second Class: 11am - 12pm</p>
@@ -188,16 +188,16 @@ function RegistrationForm() {
                         <p>Methods of Payment ($200)</p>
                         <ol className="payment">
                             <li>
-                                Cash (in person)
+                                Cash: Give to Encourager Sung-Kyung Yoo
                             </li>
                             <li>
-                                Check (in person)
+                                Check: Made out to Encourager Sung-kyung Yoo
                             </li>
                             <li>
                                 Zelle: (insert zelle information)
                             </li>
                             <li>
-                                Link to online payment method
+                                <a href="https://one-mind-church-summit-school.square.site/" target="_blank" rel="noreferrer noopener">Click here to pay online</a>
                             </li>
                         </ol>
                     </div>
