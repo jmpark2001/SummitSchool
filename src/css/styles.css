@@ -146,7 +146,7 @@ Form {
     font-size: 3.5vh;
     font-weight: bold;
     background-color: none;
-    margin-top: 0;
+    margin-top: 1vh;
     margin-bottom: 2vh;
 }
 
@@ -318,9 +318,11 @@ input[type="checkbox"] {
 .row{display:flex;flex-wrap:wrap;margin-top:0; margin-left: 0; margin-right: 0;margin-bottom: 1vh;}
 .col-form-label{margin-bottom:0;font-size:inherit;line-height:1.5vh}
 .col-sm-2{flex:0 0 auto;width:20%}
-.col-sm-10{flex:0 0 auto;width:80%;}
+.col-md-4{flex:0 0 auto;width:33.33333333%}
+.col-md-6{flex:0 0 auto;width:50%}
+.col-sm-10{flex:0 0 auto;width:70%;}
 .col-sm-11{flex:0 0 auto;width:83.33333333%; margin-top: -.5vh;}
-.form-label{margin-bottom: .5vh; font-size: 1vh;}
+.form-label{margin-bottom: .5vh; font-size: 1vh; font-weight: bold; margin-right: .5vh;}
 .form-control{display:block;width:100%;padding:.375vh .75vh;font-size:1vh;font-weight:400;line-height:1vh;color:black;background-color:white;background-clip:padding-box;border:.2vh solid #555; border-radius: .8vh}
 .form-check-input{--bs-form-check-bg:white;width:2vh;height:1.5vh; vertical-align: middle; border:.2vh solid #dee2e6}
 .offset-sm-2{margin-left:16.66666667%}
