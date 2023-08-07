@@ -30,7 +30,6 @@ function RegistrationForm() {
     })
 
     const handleOnChange = (position, e) => {
-        console.log(position)
         let checkedBoxes = checkedState.filter((i) => i)
         function hasBiblical() {
             if (checkedState[0] === true || checkedState[1] === true || checkedState[2] === true || checkedState[3] === true || checkedState[4] === true || classList.slice(0, 5).includes(e.target.name)) {
@@ -40,7 +39,6 @@ function RegistrationForm() {
                 return false
             }
         }
-        console.log(checkedBoxes)
         if (checkedBoxes.length >= 2 && e.target.checked) {
             return
         }
@@ -51,6 +49,13 @@ function RegistrationForm() {
             index === position ? !item : item
         )
         setCheckedState(updateCheckedState)
+        let checkedIndices = [...updateCheckedState.keys()].filter(i => updateCheckedState[i])
+        console.log(checkedIndices)
+        let updatedClasses = []
+        for (let i=0; i<checkedIndices.length; i++) {
+            updatedClasses.push(classList[checkedIndices[i]])
+        }
+        updateForm({classes: updatedClasses})
     }
     
     function updateForm(value) {
@@ -171,7 +176,7 @@ function RegistrationForm() {
                         <div>
                             <div className="col-md-6" style={{marginBottom: "1vh"}}>
                                 <label htmlFor="inputCity">City</label>
-                                <input type="text" className="form-control" id="inputCity" value={form.homeCity} onChange={(e) => updateForm({ homeCity: e.target.value})} required/>
+                                <input type="text" className="form-control" id="inputCity" placeholder="Woodbridge" value={form.homeCity} onChange={(e) => updateForm({ homeCity: e.target.value})} required/>
                             </div>
                             <div className="col-md-4" style={{marginBottom: "1vh"}}>
                                 <label htmlFor="inputState">State</label>
@@ -184,7 +189,7 @@ function RegistrationForm() {
                             </div>
                             <div className="col-sm-2">
                                 <label htmlFor="inputZip">Zip</label>
-                                <input type="text" className="form-control" id="inputZip" value={form.homeZip} onChange={(e) => updateForm({ homeZip: e.target.value})} required/>
+                                <input type="text" className="form-control" id="inputZip" placeholder="12345" value={form.homeZip} onChange={(e) => updateForm({ homeZip: e.target.value})} required/>
                             </div>
                         </div>
                     </Form.Group>
