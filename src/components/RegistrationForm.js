@@ -15,6 +15,19 @@ function RegistrationForm() {
      "Massachusettes", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
      "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
     const [checkedState, setCheckedState] = useState(new Array(classList.length).fill(false))
+    const [form, setForm] = useState ({
+        studentFullName:  "",
+        parentFullName: "",
+        studentPhoneNumber: 0,
+        parentPhoneNumber: 0,
+        parentEmail: "",
+        homeAddress: "",
+        homeAddress2: "",
+        homeCity: "",
+        homeState: "",
+        homeZip: "",
+        classes: []
+    })
 
     const handleOnChange = (position, e) => {
         console.log(position)
@@ -39,28 +52,63 @@ function RegistrationForm() {
         )
         setCheckedState(updateCheckedState)
     }
-
-    function atLeastOneCheckboxIsChecked(){
-        const checkboxes = Array.from(document.getElementsByClassName("bibleCheck"))
-        return checkboxes.reduce((acc, curr) => acc || curr.checked, false)
+    
+    function updateForm(value) {
+        return setForm((prev) => {
+            return {...prev, ...value}
+        })
     }
 
-    const submitForm = (e) => {
-        e.preventDefault()
-        console.log(e)
-        if (!atLeastOneCheckboxIsChecked()) {
-            alert("One biblical class is required to submit the form")
-        }
-        const formData = new FormData(e.target)
-        const payload = Object.fromEntries(formData)
-        console.log({payload})
+    async function onSubmit(e) {
+        e.preventDefault();
+        const newForm = {...form}
+        await fetch("http://localhost:5050/record", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newForm)
+        })
+        .catch(error => {
+            window.alert(error)
+            return
+        })
+        setForm({ studentFullName:  "",
+        parentFullName: "",
+        studentPhoneNumber: 0,
+        parentPhoneNumber: 0,
+        parentEmail: "",
+        homeAddress: "",
+        homeAddress2: "",
+        homeCity: "",
+        homeState: "",
+        homeZip: "",
+        classes: []
+        })
     }
+
+    // function atLeastOneCheckboxIsChecked(){
+    //     const checkboxes = Array.from(document.getElementsByClassName("bibleCheck"))
+    //     return checkboxes.reduce((acc, curr) => acc || curr.checked, false)
+    // }
+
+    // const submitForm = (e) => {
+    //     e.preventDefault()
+    //     console.log(e)
+    //     if (!atLeastOneCheckboxIsChecked()) {
+    //         alert("One biblical class is required to submit the form")
+    //     }
+    //     const formData = new FormData(e.target)
+    //     const payload = Object.fromEntries(formData)
+    //     console.log({payload})
+    // }
 
     return (
         <div className="registrationPage">
             <h1 className="registrationTitle">REGISTRATION FORM</h1>
             <div className="formDiv">
-                <Form onSubmit={submitForm}>
+                {/* <Form onSubmit={submitForm}> */}
+                <Form onSubmit={onSubmit}>
                     <p className="dates">Registration and Payment Period: August 13th - September 3rd</p>
                     <p className="dates">Fall Semester: Every Saturday except Remnant Day (Last Saturday of every month) from September 16th - January 20th</p>
                     <p className="dates">Worship: 9am - 10am</p>
@@ -71,7 +119,7 @@ function RegistrationForm() {
                             Student Full Name
                         </Form.Label>
                         <Col sm={10}>
-                            <Form.Control type="text" name="studentFullName" placeholder="Enter Full Name" required></Form.Control>
+                            <Form.Control type="text" name="studentFullName" placeholder="Enter Full Name" value={form.studentFullName} onChange={(e) => updateForm({ studentFullName: e.target.value})} required></Form.Control>
                         </Col>
                     </Form.Group>
 
@@ -80,7 +128,7 @@ function RegistrationForm() {
                             Parent Full Name
                         </Form.Label>
                         <Col sm={10}>
-                            <Form.Control type="text" name="parentFullName" placeholder="Enter Full Name" required></Form.Control>
+                            <Form.Control type="text" name="parentFullName" placeholder="Enter Full Name" value={form.parentFullName} onChange={(e) => updateForm({ parentFullName: e.target.value})}required></Form.Control>
                         </Col>
                     </Form.Group>
 
@@ -89,7 +137,7 @@ function RegistrationForm() {
                             Student Phone Number
                         </Form.Label>
                         <Col sm={10}>
-                            <Form.Control type="number" name="studentPhoneNumber" placeholder="Enter Phone Number"></Form.Control>
+                            <Form.Control type="number" name="studentPhoneNumber" placeholder="Enter Phone Number" value={form.studentPhoneNumber} onChange={(e) => updateForm({ studentPhoneNumber: e.target.value})}></Form.Control>
                         </Col>
                     </Form.Group>
 
@@ -98,7 +146,7 @@ function RegistrationForm() {
                             Parent Phone Number
                         </Form.Label>
                         <Col sm={10}>
-                            <Form.Control type="number" name="parentPhoneNumber" placeholder="Enter Phone Number" required></Form.Control>
+                            <Form.Control type="number" name="parentPhoneNumber" placeholder="Enter Phone Number" value={form.parentPhoneNumber} onChange={(e) => updateForm({ parentPhoneNumber: e.target.value})} required></Form.Control>
                         </Col>
                     </Form.Group>
 
@@ -107,27 +155,27 @@ function RegistrationForm() {
                             Parent Email Address
                         </Form.Label>
                         <Col>
-                            <Form.Control type="email" name="email" placeholder="Enter Email Address" required></Form.Control>
+                            <Form.Control type="email" name="email" placeholder="Enter Email Address" value={form.parentEmail} onChange={(e) => updateForm({ parentEmail: e.target.value})} required></Form.Control>
                         </Col>
                     </Form.Group>
                     <p className="form-label col-form-label col-sm-2 leftAlign" style={{marginTop: "0", fontWeight: "bold", marginBottom: "1.5vh"}}>Home Address</p>
                     <Form.Group controlId="formAddress" className="leftAlign" style={{fontSize: "1vh"}}>
                         <div className="col-sm-11" style={{marginBottom: "1vh"}}>
                             <label htmlFor="inputAddress">Address</label>
-                            <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" required/>
+                            <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" value={form.homeAddress} onChange={(e) => updateForm({ homeAddress: e.target.value})} required/>
                         </div>
                         <div className="col-sm-11" style={{marginBottom: "1vh"}}>
                             <label htmlFor="inputAddress2">Address 2</label>
-                            <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+                            <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" value={form.homeAddress2} onChange={(e) => updateForm({ homeAddress2: e.target.value})}/>
                         </div>
                         <div>
                             <div className="col-md-6" style={{marginBottom: "1vh"}}>
                                 <label htmlFor="inputCity">City</label>
-                                <input type="text" className="form-control" id="inputCity" required/>
+                                <input type="text" className="form-control" id="inputCity" value={form.homeCity} onChange={(e) => updateForm({ homeCity: e.target.value})} required/>
                             </div>
                             <div className="col-md-4" style={{marginBottom: "1vh"}}>
                                 <label htmlFor="inputState">State</label>
-                                <select id="inputState" className="form-control" defaultValue={"DEFAULT"} required>
+                                <select id="inputState" className="form-control" defaultValue={"DEFAULT"} value={form.homeState} onChange={(e) => updateForm({ homeState: e.target.value})} required>
                                     <option value="DEFAULT" disabled>Choose...</option>
                                     {stateList.map((state, index) =>
                                        <option key={index} value={index}>{state}</option> 
@@ -136,7 +184,7 @@ function RegistrationForm() {
                             </div>
                             <div className="col-sm-2">
                                 <label htmlFor="inputZip">Zip</label>
-                                <input type="text" className="form-control" id="inputZip" required/>
+                                <input type="text" className="form-control" id="inputZip" value={form.homeZip} onChange={(e) => updateForm({ homeZip: e.target.value})} required/>
                             </div>
                         </div>
                     </Form.Group>
@@ -153,7 +201,7 @@ function RegistrationForm() {
                                                 className="bibleCheck"
                                                 id={index}
                                                 name={className}
-                                                value={className}
+                                                value={form.classes}
                                                 checked={checkedState[index]}
                                                 onChange={(e) => handleOnChange(index, e)}
                                             />
@@ -176,7 +224,7 @@ function RegistrationForm() {
                                                             type="checkbox"
                                                             id={index*3 + 5}
                                                             name={className + " Beginner"}
-                                                            value={className + " Beginner"}
+                                                            value={form.classes}
                                                             checked={checkedState[index*3 + 5]}
                                                             onChange={(e) => handleOnChange(index*3 + 5, e)}
                                                         />
@@ -189,7 +237,7 @@ function RegistrationForm() {
                                                             type="checkbox"
                                                             id={index*3 + 6}
                                                             name={className + " Intermediate"}
-                                                            value={className + " Intermediate"}
+                                                            value={form.classes}
                                                             checked={checkedState[index*3 + 6]}
                                                             onChange={(e) => handleOnChange(index*3 + 6, e)}
                                                         />
@@ -202,7 +250,7 @@ function RegistrationForm() {
                                                             type="checkbox"
                                                             id={index*3 + 7}
                                                             name={className + " Advanced"}
-                                                            value={className + " Advanced"}
+                                                            value={form.classes}
                                                             checked={checkedState[index*3 + 7]}
                                                             onChange={(e) => handleOnChange(index*3 + 7, e)}
                                                         />
@@ -226,7 +274,7 @@ function RegistrationForm() {
                                                             type="checkbox"
                                                             id={index*3 + 23}
                                                             name={className + " Beginner"}
-                                                            value={className + " Beginner"}
+                                                            value={form.classes}
                                                             checked={checkedState[index*3 + 23]}
                                                             onChange={(e) => handleOnChange(index*3 + 23, e)}
                                                         />
@@ -239,7 +287,7 @@ function RegistrationForm() {
                                                             type="checkbox"
                                                             id={index*3 + 24}
                                                             name={className + " Intermediate"}
-                                                            value={className + " Intermediate"}
+                                                            value={form.classes}
                                                             checked={checkedState[index*3 + 24]}
                                                             onChange={(e) => handleOnChange(index*3 + 24, e)}
                                                         />
@@ -252,7 +300,7 @@ function RegistrationForm() {
                                                             type="checkbox"
                                                             id={index*3 + 25}
                                                             name={className + " Advanced"}
-                                                            value={className + " Advanced"}
+                                                            value={form.classes}
                                                             checked={checkedState[index*3 + 25]}
                                                             onChange={(e) => handleOnChange(index*3 + 25, e)}
                                                         />
@@ -275,7 +323,7 @@ function RegistrationForm() {
                                                             type="checkbox"
                                                             id={index+35}
                                                             name={className + " Math"}
-                                                            value={className + " Math"}
+                                                            value={form.classes}
                                                             checked={checkedState[index+35]}
                                                             onChange={(e) => handleOnChange(index+35, e)}
                                                         />
@@ -288,7 +336,7 @@ function RegistrationForm() {
                                                             type="checkbox"
                                                             id={index+36}
                                                             name={className + " English"}
-                                                            value={className + " English"}
+                                                            value={form.classes}
                                                             checked={checkedState[index+36]}
                                                             onChange={(e) => handleOnChange(index+36, e)}
                                                         />
