@@ -3,7 +3,7 @@
 }
 
 html {
-    background: url('/src/images/background.png') no-repeat center center fixed;
+    background: url('/src/images/background2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,7 +31,7 @@ body {
 
 .title {
     font-weight: bold;
-    color: white;
+    color: black;
     position: relative;
     text-align: center;
     white-space: pre;
@@ -52,7 +52,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 0 0;
-    color: white;
+    color: black;
     margin-top: 1.5vh;
 }
 
@@ -90,7 +90,7 @@ body {
 
 /* change vertical bars to fit phone screen eventually */
 .vertical {
-    border-left: 1.3vh solid white;
+    border-left: 1.3vh solid black;
     height: 22.1vh;
     position: absolute;
     left: 30%;
@@ -98,7 +98,7 @@ body {
 }
 
 .vertical2 {
-    border-left: 1.3vh solid white;
+    border-left: 1.3vh solid black;
     height: 22.1vh;
     position: absolute;
     right: 30%;
@@ -111,22 +111,26 @@ body {
     text-align: center;
     top: 0vh;
     font-weight: bold;
-    color: white;
+    color: black;
+}
+
+.registrationWholePageDiv{
+    display: flex;
+    justify-content: center;
 }
 
 .registrationPage {
-    position: absolute;
-    left: 8%;
-    top: 10%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     display: flex;
     flex-direction: column;
     min-height: min-content;
     min-width: min-content;
-    background-color: rgba(225, 225, 225, .75)
+    background-color: rgba(225, 225, 225, .75);
 }
 
 .formDiv {
-    width: 60vh;
+    width: 70vh;
     height: min-content;
     padding: 0 2vh;
 }
@@ -137,9 +141,9 @@ Form {
 }
 
 .dates {
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-align: left;
-    margin: .5vh 0vh 0vh 0vh;
+    margin: 1vh 0vh 0vh 0vh;
 }
 
 .registrationTitle {
@@ -151,7 +155,8 @@ Form {
 }
 
 .instructions{
-    font-size: 1.5vh;
+    font-size: 2vh;
+    font-weight: bold;
 }
 
 .bibleClass {
@@ -164,7 +169,7 @@ Form {
 }
 
 .classDiv {
-    width: 18vh;
+    width: 16vh;
     float: left;
 }
 
@@ -190,31 +195,36 @@ input[type="checkbox"] {
 .aboutTitle {
     font-size: 4vh;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .biblicalTitle {
     text-align: left;
     margin-bottom: 0;
+    font-size: 1.5vh;
+    font-weight: bold;
 }
 
 .classTitles {
     text-align: left;
     margin-bottom: 0;
     float: left;
+    font-weight: bold;
+    font-size: 1.5vh;
 }
 
 .classInfo {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 20%;
-    top: 20%;
+    justify-content: center;
+    background-color: rgba(225,225,225,.75);
     font-size: 2vh;
     text-align: left;
     width: min-content;
     height: min-content;
-    color: white;
+    color: black;
+    margin-top: 4vh;
+    padding: 1vh;
 }
 
 .classInfo p {
@@ -231,13 +241,23 @@ input[type="checkbox"] {
 
 .classInfoDiv {
     display: flex;
+    margin-top: 2vh;
     flex-direction: column;
-    width: 18vh;
+    width: 15vh;
     text-align: center;
+}
+
+.classInfoDiv a {
+    color: black;
+}
+
+.classInfoDiv a:hover{
+    color: #00F;
 }
 
 .classInfoTitles {
     text-align: left;
+    width: 10vw;
     margin-bottom: 0;
     float: left;
 }
@@ -245,7 +265,7 @@ input[type="checkbox"] {
 .classInfoClassesUl {
     padding: 0vh 1vh 1vh 1vh;
     margin: 0;
-    width: 17vw;
+    width: 10vw;
     float: left;
     text-align: left;
     font-size: 1.2vh;
@@ -255,16 +275,19 @@ input[type="checkbox"] {
     left: 2%;
     width: 6vh;
     height: 2vh;
+    margin-bottom: 1.5vh;
 }
 
 .payment {
     text-align: left;
     padding: 0;
+    margin-top: 0;
     margin-left: 1.5vh;
 }
 
 .payment li {
     margin-bottom: .5vh;
+    font-weight: bold;
 }
 
 .leftAlign {
@@ -302,7 +325,7 @@ input[type="checkbox"] {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    color: white;
+    color: black;
     height: 30vh;
     width: 60vh;
     text-align: center;
@@ -310,6 +333,34 @@ input[type="checkbox"] {
 
 .staffColumn p {
     margin-bottom: 0;
+}
+
+.biblicalInfoDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    margin-top: 1vh;
+}
+
+.biblicalInfoTitle {
+    position: absolute;
+    margin: 2vh 0vh;
+    left: 25%;
+    color: black;
+}
+
+.biblicalInfoClasses {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.biblicalInfoClasses li {
+    list-style: none;
+    text-align: left;
 }
 
 /* bootstrap form css*/
@@ -322,8 +373,8 @@ input[type="checkbox"] {
 .col-md-6{flex:0 0 auto;width:50%}
 .col-sm-10{flex:0 0 auto;width:70%;}
 .col-sm-11{flex:0 0 auto;width:83.33333333%; margin-top: -.5vh;}
-.form-label{margin-bottom: .5vh; font-size: 1vh; font-weight: bold; margin-right: .5vh;}
-.form-control{display:block;width:100%;padding:.375vh .75vh;font-size:1vh;font-weight:400;line-height:1vh;color:black;background-color:white;background-clip:padding-box;border:.2vh solid #555; border-radius: .8vh}
+.form-label{margin-bottom: .5vh; font-size: 1.5vh; font-weight: bold; margin-right: .5vh;}
+.form-control{display:block;width:100%;padding:.375vh .75vh;font-size:1.5vh;font-weight:400;line-height:1vh;color:black;background-color:white;background-clip:padding-box;border:.2vh solid #555; border-radius: .8vh}
 .form-check-input{--bs-form-check-bg:white;width:2vh;height:1.5vh; vertical-align: middle; border:.2vh solid #dee2e6}
 .offset-sm-2{margin-left:16.66666667%}
 fieldset {padding: 0;margin: 0;border: 0;}
