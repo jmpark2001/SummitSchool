@@ -1,7 +1,8 @@
 import { MongoClient } from "mongodb";
 
-const connectionString = process.env.ATLAS_URI
-console.log(connectionString)
+// const connectionString = process.env.ATLAS_URI
+const connectionString = process.env.ATLAS_URI || "8080"
+// console.log(connectionString)
 const client = new MongoClient(connectionString)
 
 let conn;

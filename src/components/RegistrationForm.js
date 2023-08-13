@@ -78,6 +78,7 @@ function RegistrationForm() {
             window.alert(error)
             return
         })
+        window.alert("You submitted the form")
         setForm({ studentFullName:  "",
         parentFullName: "",
         studentPhoneNumber: 0,
@@ -90,6 +91,7 @@ function RegistrationForm() {
         homeZip: "",
         classes: []
         })
+        setCheckedState(new Array(classList.length).fill(false))
     }
 
     // function atLeastOneCheckboxIsChecked(){
