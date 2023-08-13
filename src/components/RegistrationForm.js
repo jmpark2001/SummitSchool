@@ -117,7 +117,7 @@ function RegistrationForm() {
                         <Form onSubmit={onSubmit}>
                             <div className="dates">
                                 <p style={{display: "inline", fontWeight: "bold"}}>Registration and Payment Period:</p>
-                                <p style={{display: "inline"}}> August 13th - September 3rd</p>  
+                                <p style={{display: "inline"}}> August 14th - September 3rd</p>  
                             </div>
                             <div className="dates">
                                 <p style={{display: "inline", fontWeight: "bold"}}>Fall Semester:</p>
@@ -179,7 +179,7 @@ function RegistrationForm() {
                                 <Form.Label column sm={2}>
                                     Parent Email Address
                                 </Form.Label>
-                                <Col>
+                                <Col sm={10}>
                                     <Form.Control type="email" name="email" placeholder="Enter Email Address" value={form.parentEmail} onChange={(e) => updateForm({ parentEmail: e.target.value})} required></Form.Control>
                                 </Col>
                             </Form.Group>
@@ -404,27 +404,27 @@ function RegistrationForm() {
                                 <li>
                                     1 child:
                                     <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https:square.link/u/GZLreBYs/" target="_blank" rel="noreferrer noopener">https:square.link/u/GZLreBYs/</a>
+                                    <a style={{display: "inline"}} href="https://square.link/u/GZLreBYs/" target="_blank" rel="noreferrer noopener">https://square.link/u/GZLreBYs/</a>
                                 </li>
                                 <li>
                                     2 children:
                                     <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https:square.link/u/aqelsAIN/" target="_blank" rel="noreferrer noopener">https:square.link/u/aqelsAIN/</a>
+                                    <a style={{display: "inline"}} href="https://square.link/u/aqelsAIN/" target="_blank" rel="noreferrer noopener">https://square.link/u/aqelsAIN/</a>
                                 </li>
                                 <li>
                                     3 children:
                                     <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https:square.link/u/SmF6VjzQ/" target="_blank" rel="noreferrer noopener">https:square.link/u/SmF6VjzQ/</a>
+                                    <a style={{display: "inline"}} href="https://square.link/u/SmF6VjzQ/" target="_blank" rel="noreferrer noopener">https://square.link/u/SmF6VjzQ/</a>
                                 </li>
                                 <li>
                                     4 children:
                                     <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https:square.link/u/7v8wxCQA/" target="_blank" rel="noreferrer noopener">https:square.link/u/7v8wxCQA/</a>
+                                    <a style={{display: "inline"}} href="https://square.link/u/7v8wxCQA/" target="_blank" rel="noreferrer noopener">https://square.link/u/7v8wxCQA/</a>
                                 </li>
                                 <li>
                                     5 children:
                                     <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https:square.link/u/6oFNFhiq/" target="_blank" rel="noreferrer noopener">https:square.link/u/6oFNFhiq/</a>
+                                    <a style={{display: "inline"}} href="https://square.link/u/6oFNFhiq/" target="_blank" rel="noreferrer noopener">https://square.link/u/6oFNFhiq/</a>
                                 </li>
                             </ol>
                             <Button className="submitButton" type="submit">Submit</Button>

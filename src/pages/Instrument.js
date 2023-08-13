@@ -34,7 +34,7 @@ export default function Instrument() {
                             <p></p>  
                         </div>
                     </li>
-                    <p>All instrument classes will be offered in 3 levels based off of experience: Beginner, Some Experience, and Advanced.</p>
+                    <p>All instrument classes will be offered in 3 levels based on their experience: Beginner, Some Experience, and Advanced.</p>
                 </ul>
             </div>
         </div>

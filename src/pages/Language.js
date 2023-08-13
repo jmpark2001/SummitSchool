@@ -40,7 +40,7 @@ export default function Language() {
                             <p></p>  
                         </div>
                     </li>
-                    <p>All language classes will be offered in 3 levels based off of experience: Beginner, Intermediate, and Advanced.</p>
+                    <p>All language classes will be offered in 3 levels based on their experience: Beginner, Intermediate, and Advanced.</p>
                 </ul>
             </div>
         </div>

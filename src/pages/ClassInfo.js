@@ -11,7 +11,7 @@ export default function ClassInfo() {
                     <p>Welcome to One Mind Church Summit School!</p>
                 </div>
                 <br/>
-                <p>Registration for the fall semester starts on August 13th and will end on September 3rd.</p>
+                <p>Registration for the fall semester starts on August 14th and will end on September 3rd.</p>
                 <p>Summit School classes will take place every Saturday from 9am-12pm. From 9-10 we will have worship and two classes will occur at 10-11 and 11-12. Students are required to take at least 1 biblical class and can take 1 class of their choice.</p>
                 <p>The fall semester begins on September 16th and ends on January 20th.</p>
                 <p>The fee for summit school will be $200 per semester and the payment information will be on the registration page.</p>
