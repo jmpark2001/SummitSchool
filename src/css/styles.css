@@ -29,20 +29,6 @@ body {
     color: black;
 }
 
-.title {
-    font-weight: bold;
-    color: black;
-    position: relative;
-    text-align: center;
-    white-space: pre;
-    top: 5vh;
-    font-size: 3vh;
-}
-
-.title a {
-    color: inherit;
-}
-
 .nav {
     /* display: block;
     text-align: left;
@@ -88,30 +74,48 @@ body {
     font-weight: 800;
 }
 
+.homeDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
 /* change vertical bars to fit phone screen eventually */
 .vertical {
     border-left: 1.3vh solid black;
-    height: 22.1vh;
-    position: absolute;
-    left: 30%;
-    top: 10%;
+    height: 30vh;
+    margin-right: 4vh;
 }
 
 .vertical2 {
     border-left: 1.3vh solid black;
-    height: 22.1vh;
-    position: absolute;
-    right: 30%;
-    top: 10%;
+    height: 30vh;
+    margin-left: 4vh;
+}
+
+.title {
+    font-weight: bold;
+    color: black;
+    position: relative;
+    text-align: center;
+    white-space: pre;
+    font-size: 5vh;
+    margin: 7vh 0 0 0;
+}
+
+.homeTitle {
+    display: flex;
+    flex-direction: column;
 }
 
 .summit {
     position: relative;
-    font-size: 3.5vh;
+    font-size: 6vh;
     text-align: center;
-    top: 0vh;
     font-weight: bold;
     color: black;
+    margin: 3vh 0 0 0;
 }
 
 .registrationWholePageDiv{
@@ -155,6 +159,7 @@ Form {
 }
 
 .instructions{
+    margin: 6vh 0 1vh 0;
     font-size: 2vh;
     font-weight: bold;
 }
@@ -228,7 +233,8 @@ input[type="checkbox"] {
 }
 
 .classInfo p {
-    width: 70vh;
+    width: fit-content;
+    font-weight: bold;
 }
 
 .classInfoClasses {
@@ -243,12 +249,12 @@ input[type="checkbox"] {
     display: flex;
     margin-top: 2vh;
     flex-direction: column;
-    width: 15vh;
-    text-align: center;
+    width: min-content;
 }
 
 .classInfoDiv a {
     color: black;
+    font-weight: bold;
 }
 
 .classInfoDiv a:hover{
@@ -329,26 +335,27 @@ input[type="checkbox"] {
     height: 30vh;
     width: 60vh;
     text-align: center;
+    font-weight: bold;
 }
 
 .staffColumn p {
     margin-bottom: 0;
 }
 
+.differentClasses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .biblicalInfoDiv {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    left: 10%;
-    top: 10%;
     margin-top: 1vh;
 }
 
 .biblicalInfoTitle {
-    position: absolute;
     margin: 2vh 0vh;
-    left: 25%;
     color: black;
 }
 

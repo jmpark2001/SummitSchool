@@ -1,6 +1,6 @@
 export default function Instrument() {
     return (
-        <>
+        <div className="differentClasses">
             <h1 className="biblicalInfoTitle">Instrument Classes</h1>
             <div className="biblicalInfoDiv">
                 <ul className="biblicalInfoClasses">
@@ -37,6 +37,6 @@ export default function Instrument() {
                     <p>All instrument classes will be offered in 3 levels based off of experience: Beginner, Some Experience, and Advanced.</p>
                 </ul>
             </div>
-        </>
+        </div>
     )
 }

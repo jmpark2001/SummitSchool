@@ -1,21 +1,15 @@
-export default function Academic() {
+export default function Kindergarten() {
     return (
         <div className="differentClasses">
-            <h1 className="biblicalInfoTitle">Academic Classes</h1>
+            <h1 className="biblicalInfoTitle">Pre-K / Kindergarten Classes</h1>
             <div className="biblicalInfoDiv">
                 <ul className="biblicalInfoClasses">
-                    <li>
+                    {/* <li>
                         <div style={{display: "flex"}}>
                             <p style={{fontWeight: "bold"}}>SAT English:&nbsp;</p>
                             <p></p>  
                         </div>
-                    </li>
-                    <li>
-                        <div style={{display: "flex"}}>
-                            <p style={{fontWeight: "bold"}}>SAT Math:&nbsp;</p>
-                            <p></p>  
-                        </div>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

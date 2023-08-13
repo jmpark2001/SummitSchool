@@ -1,6 +1,6 @@
 export default function Biblical() {
     return (
-        <>
+        <div className="differentClasses">
             <h1 className="biblicalInfoTitle">Biblical Classes</h1>
             <div className="biblicalInfoDiv">
                 <ul className="biblicalInfoClasses">
@@ -36,6 +36,6 @@ export default function Biblical() {
                     </li>
                 </ul>
             </div>
-        </>
+        </div>
     )
 }

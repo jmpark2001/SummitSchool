@@ -15,7 +15,7 @@ export default function ClassInfo() {
                 <p>Summit School classes will take place every Saturday from 9am-12pm. From 9-10 we will have worship and two classes will occur at 10-11 and 11-12. Students are required to take at least 1 biblical class and can take 1 class of their choice.</p>
                 <p>The fall semester begins on September 16th and ends on January 20th.</p>
                 <p>The fee for summit school will be $200 per semester and the payment information will be on the registration page.</p>
-                <p>Click on the links below to see information about each class.</p>
+                <p>Click on the class titles below to see information about each class.</p>
                 {/* <div className="classInfoClasses">
                     <div className="classInfoDiv">
                         <Link to={"/biblical"} className="classInfoTitles">Biblical Classes</Link>
@@ -33,7 +33,7 @@ export default function ClassInfo() {
                 
                 <div className="classInfoClasses">
                     <div className="classInfoDiv">
-                        <Link to={"/biblical"} className="classInfoTitles">Biblical Classes</Link>
+                        <Link to={"/biblical"} className="classInfoTitles">Biblical</Link>
                         <ul className="classInfoClassesUl">
                             {classList.slice(0, 5).map((className, index) =>
                                 <li key={index}>
@@ -43,7 +43,7 @@ export default function ClassInfo() {
                         </ul>  
                     </div>
                     <div className="classInfoDiv">
-                        <Link to={"/language"} className="classInfoTitles">Language Classes</Link>
+                        <Link to={"/language"} className="classInfoTitles">Language</Link>
                         <ul className="classInfoClassesUl">
                             {classList.slice(5, 11).map((className, index) =>
                                 <li key={index}>
@@ -53,7 +53,7 @@ export default function ClassInfo() {
                         </ul>
                     </div>
                     <div className="classInfoDiv">
-                        <Link to={"/instrument"} className="classInfoTitles">Instrument Classes</Link>
+                        <Link to={"/instrument"} className="classInfoTitles">Instrument</Link>
                         <ul className="classInfoClassesUl">
                             {classList.slice(11, 16).map((className, index) =>
                                 <li key={index}>
@@ -63,13 +63,19 @@ export default function ClassInfo() {
                         </ul>
                     </div>
                     <div className="classInfoDiv">
-                        <Link to={"/academic"} className="classInfoTitles">Academic Classes</Link>
+                        <Link to={"/academic"} className="classInfoTitles">Academic</Link>
                         <ul className="classInfoClassesUl">
                             {classList.slice(16).map((className, index) =>
                                 <li key={index}>
                                     <p>{className}</p>
                                 </li>
                             )}
+                        </ul>
+                    </div>
+                    <div className="classInfoDiv">
+                        <Link to={"/kindergarten"} className="classInfoTitles">Pre-K / Kindergarten</Link>
+                        <ul className="classInfoClassesUl">
+                            
                         </ul>
                     </div>
                 </div>

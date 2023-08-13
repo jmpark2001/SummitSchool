@@ -10,7 +10,7 @@ function RegistrationForm() {
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Japanese Beginner", "Japanese Intermediate", "Japanese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Baginner", 
      "Adult English Intermediate", "Adult English Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "Flute Beginner", "Flute Some Experience", "Flute Advanced",
-     "Violin Beginner", "Violin Some Experience", "Violin Advanced", "SAT Math", "SAT English"]
+     "Violin Beginner", "Violin Some Experience", "Violin Advanced", "SAT Math", "SAT English", "Kindergarten"]
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
      "Massachusettes", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
      "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
@@ -214,7 +214,7 @@ function RegistrationForm() {
                                 </div>
                             </Form.Group>
                             <p className="instructions">Choose at least 1 biblical class and up to 1 additional class of your choice</p>
-                            <p className="biblicalTitle">Biblical Classes</p>
+                            <p className="biblicalTitle">Biblical</p>
                             {
                                 <>
                                     <ul className="bibleClass">
@@ -237,7 +237,7 @@ function RegistrationForm() {
                                     </ul>
                                     <div>
                                         <div className="classDiv">
-                                            <p className="classTitles">Language Classes</p>
+                                            <p className="classTitles">Language</p>
                                             <br></br>
                                             <ul className="otherClass">
                                                 {classList2.slice(5,11).map((className, index) =>
@@ -287,7 +287,7 @@ function RegistrationForm() {
                                             </ul>
                                         </div>
                                         <div className="classDiv">
-                                            <p className="classTitles">Instrument Classes</p>
+                                            <p className="classTitles">Instrument</p>
                                             <br></br>
                                             <ul className="otherClass">
                                                 {classList2.slice(11,15).map((className, index) =>
@@ -337,7 +337,7 @@ function RegistrationForm() {
                                             </ul>
                                         </div>
                                         <div className="classDiv">
-                                            <p className="classTitles">Academic Classes</p>
+                                            <p className="classTitles">Academic</p>
                                             <ul className="otherClass">
                                                 {classList2.slice(15, 16).map((className, index) =>
                                                     <>
@@ -373,7 +373,7 @@ function RegistrationForm() {
                                             </ul>
                                         </div>
                                         <div className="classDiv">
-                                            <p className="classTitles">Kindergarten Classes</p>
+                                            <p className="classTitles">Pre-K / Kindergarten</p>
                                             <ul className="otherClass">
                                                 {classList2.slice(16).map((className, index) => 
                                                     <>
@@ -398,14 +398,33 @@ function RegistrationForm() {
                                 </>
                             }
                             <p style={{fontSize: "2vh", fontWeight: "bold"}}>Methods of Payment ($200)</p>
-                            <ol className="payment">
-                                {/* <li>
-                                    Zelle: (insert zelle information)
-                                </li> */}
+                            <ol className="payment" style={{listStyle: "none"}}>
+                                <p style={{fontWeight: "bold", lineHeight: "2vh"}}>Click on the links below to pay with credit or debit. For multiple children the pricing goes as follows: The first child you enroll will cost $200, the second child is $150,
+                                 and any additional children will be $100.</p>
                                 <li>
-                                    Click this link to pay with credit or debit
+                                    1 child:
                                     <p style={{display: "inline"}}> </p>
                                     <a style={{display: "inline"}} href="https:square.link/u/GZLreBYs/" target="_blank" rel="noreferrer noopener">https:square.link/u/GZLreBYs/</a>
+                                </li>
+                                <li>
+                                    2 children:
+                                    <p style={{display: "inline"}}> </p>
+                                    <a style={{display: "inline"}} href="https:square.link/u/aqelsAIN/" target="_blank" rel="noreferrer noopener">https:square.link/u/aqelsAIN/</a>
+                                </li>
+                                <li>
+                                    3 children:
+                                    <p style={{display: "inline"}}> </p>
+                                    <a style={{display: "inline"}} href="https:square.link/u/SmF6VjzQ/" target="_blank" rel="noreferrer noopener">https:square.link/u/SmF6VjzQ/</a>
+                                </li>
+                                <li>
+                                    4 children:
+                                    <p style={{display: "inline"}}> </p>
+                                    <a style={{display: "inline"}} href="https:square.link/u/7v8wxCQA/" target="_blank" rel="noreferrer noopener">https:square.link/u/7v8wxCQA/</a>
+                                </li>
+                                <li>
+                                    5 children:
+                                    <p style={{display: "inline"}}> </p>
+                                    <a style={{display: "inline"}} href="https:square.link/u/6oFNFhiq/" target="_blank" rel="noreferrer noopener">https:square.link/u/6oFNFhiq/</a>
                                 </li>
                             </ol>
                             <Button className="submitButton" type="submit">Submit</Button>

@@ -1,6 +1,6 @@
 export default function Language() {
     return (
-        <>
+        <div className="differentClasses">
             <h1 className="biblicalInfoTitle">Language Classes</h1>
             <div className="biblicalInfoDiv">
                 <ul className="biblicalInfoClasses">
@@ -43,6 +43,6 @@ export default function Language() {
                     <p>All language classes will be offered in 3 levels based off of experience: Beginner, Intermediate, and Advanced.</p>
                 </ul>
             </div>
-        </>
+        </div>
     )
 }
