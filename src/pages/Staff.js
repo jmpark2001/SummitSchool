@@ -4,7 +4,7 @@ import hyuncheol from '../images/HyunCheolKim.jpg'
 import christine from '../images/christine.jpg'
 import louann from '../images/louann.jpg'
 import alexandra from '../images/alexandra.jpg'
-// import yeobeen from '../images/y'
+import yeobeen from '../images/yeobeen.jpg'
 import sungkyung from '../images/sungkyungyoo.jpg'
 import justin from '../images/justin.jpg'
 import joanne from '../images/joanne.jpg'
@@ -52,6 +52,7 @@ export default function Staff() {
                     <div className="staffColumn">
                         <p>Yeobeen Yun</p>
                         <p>Administrative Assistant</p>
+                        <img className='headshots' src={yeobeen} alt=''></img>
                     </div>
                 </div>
                 <div className="staffRow">
