@@ -8,7 +8,7 @@ import { addDoc, collection } from "firebase/firestore"
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
-    const classList2 = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean", "Spanish", "Chinese", "Japanese", "Adult Korean", "Adult English", "Guitar", "Piano", "Flute", "Violin", "SAT", "Kindergarten"]
+    const classList2 = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean", "Spanish", "Chinese", "Japanese", "Adult Korean", "Adult English", "Guitar", "Piano", "Flute", "Violin", "Drum", "SAT", "Kindergarten"]
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Japanese Beginner", "Japanese Intermediate", "Japanese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Baginner", 
      "Adult English Intermediate", "Adult English Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "Flute Beginner", "Flute Some Experience", "Flute Advanced",
@@ -303,7 +303,7 @@ function RegistrationForm() {
                                             <p className="classTitles">Instrument</p>
                                             <br></br>
                                             <ul className="otherClass">
-                                                {classList2.slice(11,15).map((className, index) =>
+                                                {classList2.slice(11,16).map((className, index) =>
                                                     <>
                                                         <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
                                                         <li key={index*3 + 23}>
@@ -352,7 +352,7 @@ function RegistrationForm() {
                                         <div className="classDiv">
                                             <p className="classTitles">Academic</p>
                                             <ul className="otherClass">
-                                                {classList2.slice(15, 16).map((className, index) =>
+                                                {classList2.slice(16, 17).map((className, index) =>
                                                     <>
                                                         <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
                                                         <li key={index + 35}>
@@ -388,7 +388,7 @@ function RegistrationForm() {
                                         <div className="classDiv">
                                             <p className="classTitles">Pre-K / Kindergarten</p>
                                             <ul className="otherClass">
-                                                {classList2.slice(16).map((className, index) => 
+                                                {classList2.slice(17).map((className, index) => 
                                                     <>
                                                         <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
                                                         <li key={index + 37}>
@@ -401,6 +401,7 @@ function RegistrationForm() {
                                                                     checked={checkedState[index+37]}
                                                                     onChange={(e) => handleOnChange(index+37, e)} 
                                                                 />
+                                                                <label>{"Pre-K/K"}</label>
                                                             </div>
                                                         </li>
                                                     </>

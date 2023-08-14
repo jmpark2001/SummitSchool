@@ -76,9 +76,21 @@ body {
 
 .homeDiv {
     display: flex;
+    flex-direction: column;
+    
+}
+
+.homeTitleDiv {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 4vh;
+}
+
+.warning {
+    margin-top: 40vh;
+    font-size: 2vh;
+    font-weight: bold;
 }
 
 /* change vertical bars to fit phone screen eventually */
@@ -194,7 +206,9 @@ input[type="checkbox"] {
 }
 
 .about {
-    width: 40vh;
+    width: 50vh;
+    background-color: rgba(225,225,225,.75);
+    margin-top: 4vh;
 }
 
 .aboutTitle {
@@ -336,10 +350,17 @@ input[type="checkbox"] {
     width: 60vh;
     text-align: center;
     font-weight: bold;
+    align-items: center;
 }
 
 .staffColumn p {
     margin-bottom: 0;
+}
+
+.headshots {
+    margin-top: 2vh;
+    width: 20vh;
+    height: 20vh;
 }
 
 .differentClasses {
@@ -368,6 +389,14 @@ input[type="checkbox"] {
 .biblicalInfoClasses li {
     list-style: none;
     text-align: left;
+}
+
+.otherInfoDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    text-align: left;
+    width: 70vh;
 }
 
 .kindergartenInfoDiv {

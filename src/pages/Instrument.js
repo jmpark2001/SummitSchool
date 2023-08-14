@@ -2,40 +2,9 @@ export default function Instrument() {
     return (
         <div className="differentClasses">
             <h1 className="biblicalInfoTitle">Instrument Classes</h1>
-            <div className="biblicalInfoDiv">
-                <ul className="biblicalInfoClasses">
-                    <li>
-                        <div style={{display: "flex"}}>
-                            <p style={{fontWeight: "bold"}}>Guitar:&nbsp;</p>
-                            <p></p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div style={{display: "flex"}}>
-                            <p style={{fontWeight: "bold"}}>Piano:&nbsp;</p>
-                            <p></p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div style={{display: "flex"}}>
-                            <p style={{fontWeight: "bold"}}>Flute:&nbsp;</p>
-                            <p></p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div style={{display: "flex"}}>
-                            <p style={{fontWeight: "bold"}}>Violin:&nbsp;</p>
-                            <p></p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div style={{display: "flex"}}>
-                            <p style={{fontWeight: "bold"}}>Drum:&nbsp;</p>
-                            <p></p>  
-                        </div>
-                    </li>
-                    <p>All instrument classes will be offered in 3 levels based on their experience: Beginner, Some Experience, and Advanced.</p>
-                </ul>
+            <div className="otherInfoDiv">
+                <p style={{fontWeight: "bold"}}>Instruments</p>
+                <p>Anyone interested in learning an instrument is welcome to enroll. Students will be placed into classes according to their skill level</p>
             </div>
         </div>
     )
