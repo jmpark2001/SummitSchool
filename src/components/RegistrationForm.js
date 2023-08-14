@@ -3,6 +3,8 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import { db } from "../utils/firebase"
+import { addDoc, collection } from "firebase/firestore"
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
@@ -67,17 +69,26 @@ function RegistrationForm() {
     async function onSubmit(e) {
         e.preventDefault();
         const newForm = {...form}
-        await fetch("http://localhost:5050/record", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(newForm)
-        })
-        .catch(error => {
-            window.alert(error)
-            return
-        })
+        // await fetch("summitschool.onemindchurchorg:5050/record", {
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify(newForm)
+        // })
+        // .catch(error => {
+        //     window.alert(error)
+        //     return
+        // })
+        try {
+            const docRef = await addDoc(collection(db, "registrations"), {
+                ...newForm
+            })
+            console.log("Document written with ID: ", docRef.id)
+        } catch (e) {
+            console.error("Error addding document: ", e)
+        }
+
         window.alert("You submitted the form")
         setForm({ studentFullName:  "",
         parentFullName: "",
