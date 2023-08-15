@@ -80,7 +80,7 @@ export default function ClassInfo() {
                     </div>
                 </div>
 
-                <p style={{marginTop: "3vh"}}>Contact Encourager Christine Baek if you have any additional questions about the classes.</p>
+                <p style={{marginTop: "3vh"}}>Send an email to Summitschool@237omc.org if you have any additional questions about the classes.</p>
             </div>
         </div>
     )
