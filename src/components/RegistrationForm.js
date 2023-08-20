@@ -97,9 +97,8 @@ function RegistrationForm() {
             } catch (e) {
                 console.error("Error addding document: ", e)
             }  
+            window.alert("You submitted the form")
         }
-        
-        window.alert("You submitted the form")
         setForm({ studentFullName:  "",
         parentFullName: "",
         studentPhoneNumber: 0,
