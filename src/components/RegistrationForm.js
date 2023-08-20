@@ -80,15 +80,20 @@ function RegistrationForm() {
         //     window.alert(error)
         //     return
         // })
-        try {
-            const docRef = await addDoc(collection(db, "registrations"), {
-                ...newForm
-            })
-            console.log("Document written with ID: ", docRef.id)
-        } catch (e) {
-            console.error("Error addding document: ", e)
+        if (!atLeastOneCheckboxIsChecked()) {
+            alert("One biblical class is required to submit the form")
         }
-
+        else {
+            try {
+                const docRef = await addDoc(collection(db, "registrations"), {
+                    ...newForm
+                })
+                console.log("Document written with ID: ", docRef.id)
+            } catch (e) {
+                console.error("Error addding document: ", e)
+            }  
+        }
+        
         window.alert("You submitted the form")
         setForm({ studentFullName:  "",
         parentFullName: "",
