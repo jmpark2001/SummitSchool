@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import BurgerMenu from './components/BurgerMenu';
 import Registration from './pages/Registration';
 import ClassInfo from './pages/ClassInfo';
 import Staff from './pages/Staff';
@@ -15,7 +15,8 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
+      <BurgerMenu/>
       <div className="container">
         <Routes>
           <Route path="/" element={<Home/>}/>

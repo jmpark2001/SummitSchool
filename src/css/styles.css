@@ -1,18 +1,21 @@
+@import url('https://fontlibrary.org//face/glacial-indifference');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-html {
+/* html {
     background: url('/src/images/background2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+} */
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'GlacialIndifferenceRegular', sans-serif;
     background: transparent;
     /* background-image: url('/src/images/background.png');
     background-size: cover;
@@ -29,12 +32,12 @@ body {
     color: black;
 }
 
-.nav {
-    /* display: block;
+/* .nav {
+    display: block;
     text-align: left;
     position: absolute; 
     top: 40%;
-    width: 40%;*/
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
     padding: 0 0;
@@ -72,48 +75,45 @@ body {
 
 .nav li:hover {
     font-weight: 800;
+} */
+
+.homePage {
+    display: flex;
+    flex-direction: column;
 }
 
 .homeDiv {
     display: flex;
     flex-direction: column;
-    
+    background: url('/src/images/Home.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,.75);
+    background-blend-mode: multiply;
 }
 
 .homeTitleDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-top: 4vh;
 }
 
+.omcLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vh;
+    height: 10vh;
+}
+
 .warning {
-    margin-top: 40vh;
+    margin-top: 42vh;
     font-size: 2vh;
     font-weight: bold;
-}
-
-/* change vertical bars to fit phone screen eventually */
-.vertical {
-    border-left: 1.3vh solid black;
-    height: 30vh;
-    margin-right: 4vh;
-}
-
-.vertical2 {
-    border-left: 1.3vh solid black;
-    height: 30vh;
-    margin-left: 4vh;
-}
-
-.title {
-    font-weight: bold;
-    color: black;
-    position: relative;
-    text-align: center;
-    white-space: pre;
-    font-size: 4.5vh;
-    margin: 7vh 0 0 0;
+    color: white;
 }
 
 .homeTitle {
@@ -122,15 +122,154 @@ body {
 }
 
 .summit {
+    font-family: 'Playfair Display', serif;
     position: relative;
     font-size: 6.5vh;
     text-align: center;
     font-weight: bold;
-    color: black;
-    margin: 3vh 0 0 0;
+    color: white;
+    margin: 15vh 0 0 0;
 }
 
+.homeSubtitle {
+    font-size: 3vh;
+    margin: 10vh 0 0 0;
+    color: white;
+}
+
+.fallSemester {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #202020;
+    color: white;
+    width: 70%;
+    margin: 10vh auto 0 auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 4vh;
+}
+
+.registerNow {
+    background-color: white;
+    color: black;
+    margin: 0 auto 5vh auto;
+    padding: 2vh 3vh;
+    font-weight: 900;
+    width: fit-content;
+    font-family: 'Playfair Display', serif;
+    font-size: 2vh;
+}
+
+.classesForFall {
+    text-align: left;
+    margin: 2vh 0 5vh 5vh;
+    font-size: 5vh;
+}
+
+.homeLinks {
+    display: grid;
+    width: 70%;
+    margin: 1vh auto;
+    grid-template-rows: 32vh 32vh;
+    grid-template-columns: 24vh 24vh 24vh;
+    grid-row-gap: 5vh;
+    grid-column-gap: 10vh;
+    /* grid-gap: 5vh; */
+}
+
+.homeLink {
+    text-decoration: none;
+}
+
+.homeLinkTitles {
+    text-align: right;
+    line-height: 32vh;
+    color: white;
+    font-size: 2.5vh;
+    margin: 0;
+}
+
+.biblicalLink {
+    background: url('/src/images/Biblical.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,.50);
+    background-blend-mode: multiply;
+}
+
+.biblicalLink:hover {
+    background-color: rgba(0,0,0,.7);
+}
+
+.languageLink {
+    background: url('/src/images/Language.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,.50);
+    background-blend-mode: multiply;
+}
+
+.languageLink:hover {
+    background-color: rgba(0,0,0,.7);
+}
+
+.instrumentLink {
+    background: url('/src/images/Instruments.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,.50);
+    background-blend-mode: multiply;
+}
+
+.instrumentLink:hover {
+    background-color: rgba(0,0,0,.7);
+}
+
+.academicLink {
+    background: url('/src/images/Academic.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,.50);
+    background-blend-mode: multiply;
+}
+
+.academicLink:hover {
+    background-color: rgba(0,0,0,.7);
+}
+
+.kindergartenLink {
+    background: url('/src/images/Kindergarten.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,.50);
+    background-blend-mode: multiply;
+    height: 32vh;
+}
+
+.kindergartenLink:hover {
+    background-color: rgba(0,0,0,.7);
+}
+
+/* .peLink {
+
+} */
+
 .registrationWholePageDiv{
+    background: url('/src/images/background2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -243,6 +382,7 @@ input[type="checkbox"] {
     height: min-content;
     color: black;
     margin-top: 4vh;
+    margin-bottom: 4vh;
     padding: 1vh;
 }
 
@@ -261,9 +401,16 @@ input[type="checkbox"] {
 
 .classInfoDiv {
     display: flex;
-    margin-top: 2vh;
     flex-direction: column;
     width: min-content;
+    width: 10vw;
+    align-items: center;
+    color: black;
+}
+
+.classInfoDivTitle {
+    margin-top: .5vh;
+    margin-bottom: 0;
 }
 
 .classInfoDiv a {
@@ -271,19 +418,17 @@ input[type="checkbox"] {
     font-weight: bold;
 }
 
-.classInfoDiv a:hover{
-    color: #00F;
+.classInfoTitlesLink {
+   margin-top: 2vh;
+   border: solid .1vh black; 
 }
 
-.classInfoTitles {
-    text-align: left;
-    width: 10vw;
-    margin-bottom: 0;
-    float: left;
+.classInfoTitlesLink:hover{
+    background-color: yellow;
 }
 
 .classInfoClassesUl {
-    padding: 0vh 1vh 1vh 1vh;
+    padding: 0vh 1vh 1vh 2vh;
     margin: 0;
     width: 10vw;
     float: left;
@@ -325,13 +470,12 @@ input[type="checkbox"] {
     height: min-content;
     text-align: center;
     background-color: rgba(225, 225, 225, .75);
+    margin: 2vh 0;
 }
 
 .staffList {
     display: flex;
     flex-direction: column;
-    
-
 }
 
 .staffRow {
@@ -369,26 +513,32 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
-    background-color: rgba(225, 225, 225, .75);
+    width: 100%;
     margin-top: 4vh;
 }
+
+.biblicalBanner {
+    background: url('/src/images/BiblicalClasses.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 30vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30vh;
+} 
 
 .biblicalInfoDiv {
     display: flex;
     flex-direction: column;
     margin-top: 1vh;
-    width: 45vw;
-}
-
-.biblicalInfoTitle {
-    margin: 2vh 0 0 0;
-    color: black;
+    width: 100%;
 }
 
 .biblicalInfoClasses {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: black;
 }
 
@@ -396,19 +546,90 @@ input[type="checkbox"] {
     list-style: none;
     text-align: left;
     font-size: 2vh;
+    width: 16%;
+    margin-right: 5%;
+    background-color: #EFF0F0;
 }
+
+.biblicalInfoClasses li:last-child {
+    margin-right: 0;
+}
+
+.biblicalInfoClassesList {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.biblicalInfoClassesTitle {
+    color: #7B3F00;
+    font-weight: bold;
+}
+
+.biblicalInfoClassesDescription {
+    width: 70%;
+}
+
+.instrumentBanner {
+    background: url('/src/images/InstrumentsClassess.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 30vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30vh;
+} 
 
 .otherInfoDiv {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    width: 70vh;
+    text-align: center;
+    width: 40%;
+    background-color: #EFF0F0;
 }
 
 .otherInfoDiv p {
-    font-weight: bold;
     font-size: 2vh;
     margin: 2vh;
+}
+
+.academicBanner {
+    background: url('/src/images/AcademicClasses.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 30vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30vh;
+}
+
+.languageBanner {
+    background: url('/src/images/LanguageClasses.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 30vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30vh;
+}
+
+.kindergartenBanner {
+    background: url('/src/images/Kindergarten.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    height: 30vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30vh;
 }
 
 .kindergartenInfoDiv {
@@ -417,6 +638,83 @@ input[type="checkbox"] {
     margin-top: 1vh;
     width: 60%;
     text-align: left;
+}
+
+/* burger menu css */
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 3vh;
+    height: 2.5vh;
+    left: 97%;
+    top: 3%;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    list-style-type: none;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+/* Individual item */
+.bm-item {
+    display: inline-block;
+    color: #d1d1d1;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.bm-item:hover {
+    color: #ffffff;
 }
 
 /* bootstrap form css*/

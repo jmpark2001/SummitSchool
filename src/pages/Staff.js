@@ -11,7 +11,7 @@ import joanne from '../images/joanne.jpg'
 
 export default function Staff() {
     return (
-        <div style={{display: "flex", justifyContent: "center"}}>
+        <div className='registrationWholePageDiv'>
             <div className="staffPage">
                 <h1 className="aboutTitle">Staff</h1>
                 <div className="staffRow">
