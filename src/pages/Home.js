@@ -51,8 +51,11 @@ export default function Home() {
                         <p className="homeLinkTitles" style={{lineHeight: "normal", position: "relative", top: "40%"}}>PRE-K/ KINDERGARTEN</p>
                     </div>
                 </Link>  
-
-                
+                <Link to={"/pe"} className="homeLink">
+                    <div className="peLink">
+                        <p className="homeLinkTitles" style={{lineHeight: "normal", position: "relative", top: "40%"}}>PHYSICAL EDUCATION</p>
+                    </div>
+                </Link>  
             </div>
         </div>
     )

@@ -260,9 +260,10 @@ body {
     background-color: rgba(0,0,0,.7);
 }
 
-/* .peLink {
-
-} */
+.peLink {
+    background-color: black;
+    height: 32vh;
+}
 
 .registrationWholePageDiv{
     background: url('/src/images/background2.jpg') no-repeat center center fixed;
@@ -285,7 +286,7 @@ body {
 }
 
 .formDiv {
-    width: 70vh;
+    width: 85vh;
     height: min-content;
     padding: 0 2vh;
 }
@@ -406,6 +407,8 @@ input[type="checkbox"] {
     width: 10vw;
     align-items: center;
     color: black;
+    margin-top: 2vh;
+    border: solid .1vh black; 
 }
 
 .classInfoDivTitle {
@@ -416,11 +419,6 @@ input[type="checkbox"] {
 .classInfoDiv a {
     color: black;
     font-weight: bold;
-}
-
-.classInfoTitlesLink {
-   margin-top: 2vh;
-   border: solid .1vh black; 
 }
 
 .classInfoTitlesLink:hover{
@@ -638,6 +636,14 @@ input[type="checkbox"] {
     margin-top: 1vh;
     width: 60%;
     text-align: left;
+}
+
+.peBanner {
+    background-color: black;
+    height: 30vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30vh;
 }
 
 /* burger menu css */

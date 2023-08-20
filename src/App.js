@@ -9,6 +9,7 @@ import Language from './pages/Language';
 import Instrument from './pages/Instrument';
 import Academic from './pages/Academic';
 import Kindergarten from './pages/Kindergarten';
+import PE from './pages/PE';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/instrument' element={<Instrument/>}/>
           <Route path='/academic' element={<Academic/>}/>
           <Route path='/kindergarten' element={<Kindergarten/>}/>
+          <Route path='/pe' element={<PE/>}/>
         </Routes>
       </div>
     </>

@@ -8,11 +8,11 @@ import { addDoc, collection } from "firebase/firestore"
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
-    const classList2 = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean", "Spanish", "Chinese", "Japanese", "Adult Korean", "Adult English", "Guitar", "Piano", "Flute", "Violin", "Drum", "SAT", "Kindergarten"]
+    const classList2 = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean", "Spanish", "Chinese", "Japanese", "Adult Korean", "Adult English", "Guitar", "Piano", "Flute", "Violin", "Drum", "SAT", "Kindergarten", "PE"]
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Japanese Beginner", "Japanese Intermediate", "Japanese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Baginner", 
      "Adult English Intermediate", "Adult English Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "Flute Beginner", "Flute Some Experience", "Flute Advanced",
-     "Violin Beginner", "Violin Some Experience", "Violin Advanced", "SAT Math", "SAT English", "Kindergarten"]
+     "Violin Beginner", "Violin Some Experience", "Violin Advanced", "SAT Math", "SAT English", "Kindergarten", "Basketball", "Stretching and Mobility"]
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
      "Massachusettes", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
      "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
@@ -255,7 +255,7 @@ function RegistrationForm() {
                                             </li>
                                         )}
                                     </ul>
-                                    <div>
+                                    <div style={{display: "flex", flexDirection: "row"}}>
                                         <div className="classDiv">
                                             <p className="classTitles">Language</p>
                                             <br></br>
@@ -395,7 +395,7 @@ function RegistrationForm() {
                                         <div className="classDiv">
                                             <p className="classTitles">Pre-K / Kindergarten</p>
                                             <ul className="otherClass">
-                                                {classList2.slice(17).map((className, index) => 
+                                                {classList2.slice(17, 18).map((className, index) => 
                                                     <>
                                                         <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
                                                         <li key={index + 37}>
@@ -409,6 +409,42 @@ function RegistrationForm() {
                                                                     onChange={(e) => handleOnChange(index+37, e)} 
                                                                 />
                                                                 <label>{"Pre-K/K"}</label>
+                                                            </div>
+                                                        </li>
+                                                    </>
+                                                )}
+                                            </ul>
+                                        </div>
+                                        <div className="classDiv">
+                                            <p className="classTitles">Physical Education</p>
+                                            <ul className="otherClass">
+                                                {classList2.slice(18).map((className, index) =>
+                                                    <>
+                                                        <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
+                                                        <li key={index + 38}>
+                                                            <div>
+                                                                <input
+                                                                    type="checkbox"
+                                                                    id={index+35}
+                                                                    name={className + " Math"}
+                                                                    value={form.classes}
+                                                                    checked={checkedState[index+38]}
+                                                                    onChange={(e) => handleOnChange(index+38, e)}
+                                                                />
+                                                                <label>{"Basketball"}</label>
+                                                            </div>
+                                                        </li>
+                                                        <li key={index + 39}>
+                                                            <div>
+                                                                <input
+                                                                    type="checkbox"
+                                                                    id={index+36}
+                                                                    name={className + " English"}
+                                                                    value={form.classes}
+                                                                    checked={checkedState[index+39]}
+                                                                    onChange={(e) => handleOnChange(index+39, e)}
+                                                                />
+                                                                <label>{"Stretching and Mobility"}</label>
                                                             </div>
                                                         </li>
                                                     </>

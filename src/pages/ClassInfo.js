@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function ClassInfo() {
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean", "Spanish", "Chinese", "Japanese", "Adult Korean", "Adult English", "Guitar", "Piano", "Flute",
-     "Violin", "Drum", "SAT Math", "SAT English"]
+     "Violin", "Drum", "SAT Math", "SAT English","Pre-K/K", "Basketball", "Stretching and Mobility"]
 
     return (
         <div className="registrationWholePageDiv" style={{height: "100vh"}}>
@@ -15,7 +15,6 @@ export default function ClassInfo() {
                 <p>Summit School classes will take place every Saturday from 9am-12pm. From 9-10 we will have worship and two classes will occur at 10-11 and 11-12. Students are required to take at least 1 biblical class and can take 1 class of their choice.</p>
                 <p>The fall semester begins on September 16th and ends on January 20th.</p>
                 <p>The fee for summit school will be $200 per semester and the payment information will be on the registration page.</p>
-                <p>Click on the class titles below to see information about each class.</p>
                 {/* <div className="classInfoClasses">
                     <div className="classInfoDiv">
                         <Link to={"/biblical"} className="classInfoTitles">Biblical Classes</Link>
@@ -32,62 +31,67 @@ export default function ClassInfo() {
                 </div> */}
                 
                 <div className="classInfoClasses">
+                    <div className="classInfoDiv">
+                        <p className="classInfoDivTitle">Biblical</p>
+                        <ul className="classInfoClassesUl">
+                            {classList.slice(0, 5).map((className, index) =>
+                                <li key={index}>
+                                    <p>{className}</p>
+                                </li>
+                            )}
+                        </ul>  
+                    </div>
+                    <div className="classInfoDiv">
+                        <p className="classInfoDivTitle">Language</p>
+                        <ul className="classInfoClassesUl">
+                            {classList.slice(5, 11).map((className, index) =>
+                                <li key={index}>
+                                    <p>{className}</p>
+                                </li>
+                            )}
+                        </ul>  
+                    </div>
+                    <div className="classInfoDiv">
+                        <p className="classInfoDivTitle">Instrument</p>
+                        <ul className="classInfoClassesUl">
+                            {classList.slice(11, 16).map((className, index) =>
+                                <li key={index}>
+                                    <p>{className}</p>
+                                </li>
+                            )}
+                        </ul>  
+                    </div>
+                    <div className="classInfoDiv">
+                        <p className="classInfoDivTitle">Academic</p>
+                        <ul className="classInfoClassesUl">
+                            {classList.slice(16,18).map((className, index) =>
+                                <li key={index}>
+                                    <p>{className}</p>
+                                </li>
+                            )}
+                        </ul>  
+                    </div>
+                    <div className="classInfoDiv">
+                        <p className="classInfoDivTitle">Pre-K / Kindergarten</p>
+                        <ul className="classInfoClassesUl">
+                            {classList.slice(18,19).map((className, index) =>
+                                <li key={index}>
+                                    <p>{className}</p>
+                                </li>
+                            )}
+                        </ul>  
+                    </div>
+                    <div className="classInfoDiv">
+                        <p className="classInfoDivTitle">Physical Education</p>
+                        <ul className="classInfoClassesUl">
+                            {classList.slice(19).map((className, index) =>
+                                <li key={index}>
+                                    <p>{className}</p>
+                                </li>
+                            )}
+                        </ul>  
+                    </div>
                     
-                    <Link to={"/biblical"} className="classInfoTitlesLink">
-                        <div className="classInfoDiv">
-                            <p className="classInfoDivTitle">Biblical</p>
-                            <ul className="classInfoClassesUl">
-                                {classList.slice(0, 5).map((className, index) =>
-                                    <li key={index}>
-                                        <p>{className}</p>
-                                    </li>
-                                )}
-                            </ul>  
-                        </div>
-                    </Link>
-                    <Link to={"/language"} className="classInfoTitlesLink">
-                        <div className="classInfoDiv">
-                            <p className="classInfoDivTitle">Language</p>
-                            <ul className="classInfoClassesUl">
-                                {classList.slice(5, 11).map((className, index) =>
-                                    <li key={index}>
-                                        <p>{className}</p>
-                                    </li>
-                                )}
-                            </ul>  
-                        </div>
-                    </Link>
-                    <Link to={"/instrument"} className="classInfoTitlesLink">
-                        <div className="classInfoDiv">
-                            <p className="classInfoDivTitle">Instrument</p>
-                            <ul className="classInfoClassesUl">
-                                {classList.slice(11, 16).map((className, index) =>
-                                    <li key={index}>
-                                        <p>{className}</p>
-                                    </li>
-                                )}
-                            </ul>  
-                        </div>
-                    </Link>
-                    <Link to={"/academic"} className="classInfoTitlesLink">
-                        <div className="classInfoDiv">
-                            <p className="classInfoDivTitle">Academic</p>
-                            <ul className="classInfoClassesUl">
-                                {classList.slice(16).map((className, index) =>
-                                    <li key={index}>
-                                        <p>{className}</p>
-                                    </li>
-                                )}
-                            </ul>  
-                        </div>
-                    </Link>
-                    <Link to={"/kindergarten"} className="classInfoTitlesLink">
-                        <div className="classInfoDiv">
-                            <p className="classInfoDivTitle">Pre-K / Kindergarten</p>
-                            <ul className="classInfoClassesUl">
-                            </ul>  
-                        </div>
-                    </Link>
                    
                     {/* <div className="classInfoDiv">
                         <Link to={"/language"} className="classInfoTitles">Language</Link>

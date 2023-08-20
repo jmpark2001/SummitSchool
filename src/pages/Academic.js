@@ -1,6 +1,6 @@
 export default function Academic() {
     return (
-        <div style={{display: "flex", flexDirection: "columN", justifyContent: "center"}}>
+        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <div className="academicBanner">
                 <div>
                     <p style={{fontSize: "4vh", fontWeight: "900", margin: 0, color: "black"}}>ACADEMIC CLASSES</p>
