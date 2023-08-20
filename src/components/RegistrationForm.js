@@ -85,6 +85,7 @@ function RegistrationForm() {
         //     window.alert(error)
         //     return
         // })
+        console.log(atLeastOneCheckboxIsChecked())
         if (!atLeastOneCheckboxIsChecked()) {
             alert("One biblical class is required to submit the form")
         }
@@ -98,20 +99,20 @@ function RegistrationForm() {
                 console.error("Error addding document: ", e)
             }  
             window.alert("You submitted the form")
+            setForm({ studentFullName:  "",
+            parentFullName: "",
+            studentPhoneNumber: 0,
+            parentPhoneNumber: 0,
+            parentEmail: "",
+            homeAddress: "",
+            homeAddress2: "",
+            homeCity: "",
+            homeState: "",
+            homeZip: "",
+            classes: []
+            })
+            setCheckedState(new Array(classList.length).fill(false))
         }
-        setForm({ studentFullName:  "",
-        parentFullName: "",
-        studentPhoneNumber: 0,
-        parentPhoneNumber: 0,
-        parentEmail: "",
-        homeAddress: "",
-        homeAddress2: "",
-        homeCity: "",
-        homeState: "",
-        homeZip: "",
-        classes: []
-        })
-        setCheckedState(new Array(classList.length).fill(false))
     }
 
     
