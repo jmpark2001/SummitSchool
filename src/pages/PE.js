@@ -3,7 +3,7 @@ export default function PE() {
         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <div className="peBanner">
                 <div>
-                    <p style={{fontSize: "4vh", fontWeight: "900", margin: 0, color: "black"}}>PHYSICAL EDUCATION CLASSES</p>
+                    <p style={{fontSize: "4vh", fontWeight: "900", margin: 0, color: "white"}}>PHYSICAL EDUCATION CLASSES</p>
                 </div>
             </div>
             <div className="differentClasses" style={{flexDirection: "row", justifyContent: "center", alignItems: "stretch"}}>
