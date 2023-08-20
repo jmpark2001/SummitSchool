@@ -60,6 +60,11 @@ function RegistrationForm() {
         updateForm({classes: updatedClasses})
     }
     
+    function atLeastOneCheckboxIsChecked(){
+        const checkboxes = Array.from(document.getElementsByClassName("bibleCheck"))
+        return checkboxes.reduce((acc, curr) => acc || curr.checked, false)
+    }
+    
     function updateForm(value) {
         return setForm((prev) => {
             return {...prev, ...value}
@@ -110,10 +115,7 @@ function RegistrationForm() {
         setCheckedState(new Array(classList.length).fill(false))
     }
 
-    // function atLeastOneCheckboxIsChecked(){
-    //     const checkboxes = Array.from(document.getElementsByClassName("bibleCheck"))
-    //     return checkboxes.reduce((acc, curr) => acc || curr.checked, false)
-    // }
+    
 
     // const submitForm = (e) => {
     //     e.preventDefault()
