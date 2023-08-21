@@ -200,7 +200,7 @@ function RegistrationForm() {
                                         <select id="inputState" className="form-control" defaultValue={"DEFAULT"} value={form.homeState} onChange={(e) => updateForm({ homeState: e.target.value})} required>
                                             <option value="DEFAULT" disabled>Choose...</option>
                                             {stateList.map((state, index) =>
-                                            <option key={index} value={index}>{state}</option> 
+                                            <option key={index} value={stateList[index]}>{state}</option> 
                                                 )}
                                         </select>
                                     </div>
