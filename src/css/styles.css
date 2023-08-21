@@ -317,16 +317,73 @@ input[type="checkbox"] {
     margin-right: .75vh;
 }
 
-.about {
-    width: 50vh;
-    background-color: rgba(225,225,225,.75);
-    margin-top: 4vh;
+.aboutPage {
+    display: flex;
+    flex-direction: column;
 }
 
-.aboutTitle {
+.aboutBanner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.aboutBanners {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;    
+    mix-blend-mode: multiply;
+}
+
+.aboutLogo {
+    position: absolute;
+    width: 15vh;
+    height: 10vh;
+    z-index: 1;
+    top: 0%;
+    left: 48%;
+}
+
+.visionMission {
+    width: 80%;
+    background-color: rgba(169, 169, 169);
+    height: fit-content;
+    margin: 5vh auto 0 auto;
+    border: .5vh solid black;
+}
+
+.visionMissionTitles {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+}
+
+.visionMissionTitle {
+    width: 50%;
+    height: 100%;
     font-size: 4vh;
-    font-weight: bold;
-    color: black;
+    border-bottom: .5vh solid black;
+    padding: 1vh 0;
+}
+
+.unbuttonize {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font: inherit;
+    border-radius: 0;
+    appearance: none;
+  }
+
+.about {
+    width: 50vh;
+    margin-top: 4vh;
 }
 
 .biblicalTitle {

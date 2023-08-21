@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { db } from "../utils/firebase"
-import { addDoc, collection } from "firebase/firestore"
+import { doc, setDoc } from "firebase/firestore"
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
@@ -52,7 +52,6 @@ function RegistrationForm() {
         )
         setCheckedState(updateCheckedState)
         let checkedIndices = [...updateCheckedState.keys()].filter(i => updateCheckedState[i])
-        console.log(checkedIndices)
         let updatedClasses = []
         for (let i=0; i<checkedIndices.length; i++) {
             updatedClasses.push(classList[checkedIndices[i]])
@@ -74,59 +73,36 @@ function RegistrationForm() {
     async function onSubmit(e) {
         e.preventDefault();
         const newForm = {...form}
-        // await fetch("summitschool.onemindchurchorg:5050/record", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(newForm)
-        // })
-        // .catch(error => {
-        //     window.alert(error)
-        //     return
-        // })
-        console.log(atLeastOneCheckboxIsChecked())
         if (!atLeastOneCheckboxIsChecked()) {
             alert("One biblical class is required to submit the form")
         }
         else {
             try {
-                const docRef = await addDoc(collection(db, "registrations"), {
+                await setDoc(doc(db, "registrations", newForm.studentFullName), {
                     ...newForm
                 })
-                console.log("Document written with ID: ", docRef.id)
+                console.log("Document written with ID: ", newForm.studentFullName)
             } catch (e) {
                 console.error("Error addding document: ", e)
             }  
             window.alert("You submitted the form")
-            setForm({ studentFullName:  "",
-            parentFullName: "",
-            studentPhoneNumber: 0,
-            parentPhoneNumber: 0,
-            parentEmail: "",
-            homeAddress: "",
-            homeAddress2: "",
-            homeCity: "",
-            homeState: "",
-            homeZip: "",
-            classes: []
+            setForm({ 
+                studentFullName: "",
+                parentFullName: "",
+                studentPhoneNumber: 0,
+                parentPhoneNumber: 0,
+                parentEmail: "",
+                homeAddress: "",
+                homeAddress2: "",
+                homeCity: "",
+                homeState: "",
+                homeZip: "",
+                classes: []
             })
             setCheckedState(new Array(classList.length).fill(false))
         }
     }
-
     
-
-    // const submitForm = (e) => {
-    //     e.preventDefault()
-    //     console.log(e)
-    //     if (!atLeastOneCheckboxIsChecked()) {
-    //         alert("One biblical class is required to submit the form")
-    //     }
-    //     const formData = new FormData(e.target)
-    //     const payload = Object.fromEntries(formData)
-    //     console.log({payload})
-    // }
 
     return (
         <div className="registrationWholePageDiv">
