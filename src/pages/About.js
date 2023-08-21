@@ -29,10 +29,10 @@ export default function About() {
                 <img src={omc} className="aboutBanners" alt=""></img>
                 <img src={logo} className="aboutLogo" alt=""></img>
                 <div style={{display: "flex", flexDirection: "row", justifyContent: "center", position: "absolute", top: "30%", width: "fit-content", height: "25vh"}}>
-                    <p style={{color: "white", width: "60vh", height: "25vh", margin: "0 15vh 0 0", lineHeight: "25vh", fontSize: "6vh"}} className="playfair">About Summit School</p>
+                    <p style={{color: "white", width: "70vh", height: "25vh", margin: "0 15vh 0 0", lineHeight: "25vh", fontSize: "7vh"}} className="playfair">About Summit School</p>
                     <div style={{borderLeft: ".5vh solid white", height: "25vh"}}></div>
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "25vh"}}>
-                        <p style={{color: "white", margin: "0 0 0 15vh", fontSize: "3vh", width: "60vh"}}>The seed of our church's big dream. Pioneered in prayer, hope and courage for the  remnants' God-given future.</p>  
+                        <p style={{color: "white", margin: "0 0 0 15vh", fontSize: "5vh", width: "70vh"}}>A school that makes God's dream into a reality. Together, we will build our remnants' future.</p>  
                     </div>
                 </div>
             </div>
