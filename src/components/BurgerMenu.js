@@ -4,7 +4,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function BurgerMenu () {
     return (
-        <div style={{position: "fixed", width: "11.3vh", height: "5vh", backgroundColor: "black", top: "0%", right: "0%", zIndex: "10"}}>
+        <div style={{position: "fixed", width: "5.8vw", height: "5vh", backgroundColor: "black", top: "0%", right: "0%", zIndex: "10"}}>
             <Menu right>
                 <CustomLink to="/" className="menu-item">HOME</CustomLink>
                 <CustomLink to="/about" className="menu-item">ABOUT</CustomLink> 
