@@ -15,7 +15,7 @@
 
 body {
     margin: 0;
-    font-family: 'GlacialIndifferenceRegular', sans-serif;
+    font-family: 'GlacialIndifference', sans-serif;
     background: transparent;
     /* background-image: url('/src/images/background.png');
     background-size: cover;
@@ -162,7 +162,7 @@ body {
     color: black;
     margin: 0;
     padding: 2vh 3vh;
-    font-weight: 900;
+    font-weight: 1000;
     width: fit-content;
     font-family: 'Playfair Display', serif;
     font-size: 2vh;
@@ -199,17 +199,19 @@ body {
 }
 
 .biblicalLink {
-    /* background: url('/src/images/Biblical.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     background-color: rgba(0,0,0,.50);
+}
+
+.biblicalLink p {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    font-weight: 100;
 }
 
 .biblicalLink img {
@@ -238,27 +240,22 @@ body {
 }
 
 .registrationWholePageDiv{
-    background: url('/src/images/background2.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .registrationPage {
-    margin-top: 4vh;
     margin-bottom: 4vh;
     display: flex;
     flex-direction: column;
     min-height: min-content;
     min-width: min-content;
-    background-color: rgba(225, 225, 225, .75);
 }
 
 .formDiv {
-    width: 85vh;
+    width: 95vh;
     height: min-content;
     padding: 0 2vh;
 }
@@ -266,12 +263,36 @@ body {
 Form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background-color: rgba(225, 225, 225, .75);
+    border: .2vh solid black;
+    align-items: center;
 }
 
 .dates {
     font-size: 2vh;
     text-align: left;
-    margin: 1vh 0vh 0vh 0vh;
+    margin: 2vh 0vh 0vh 0vh;
+    width: 100%;
+}
+
+.formScheduleDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.formScheduleContent {
+    text-align: left;
+    width: fit-content;
+}
+
+.formAnswersDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%
 }
 
 .registrationTitle {
@@ -293,7 +314,7 @@ Form {
     margin: 0;
     list-style: none;
     display: block;
-    width: 30vw;
+    width: fit-content;
     text-align: left;
 }
 
@@ -396,7 +417,6 @@ input[type="checkbox"] {
 .classTitles {
     text-align: left;
     margin-bottom: 0;
-    float: left;
     font-weight: bold;
     font-size: 1.5vh;
 }
@@ -450,10 +470,6 @@ input[type="checkbox"] {
     font-weight: bold;
 }
 
-.classInfoTitlesLink:hover{
-    background-color: yellow;
-}
-
 .classInfoClassesUl {
     padding: 0vh 1vh 1vh 2vh;
     margin: 0;
@@ -487,7 +503,7 @@ input[type="checkbox"] {
 }
 
 .marginTop {
-    margin-top: 1.5vh!important;
+    margin-top: 1vh!important;
 }
 
 .staffPage {
@@ -594,7 +610,7 @@ input[type="checkbox"] {
 
 .classesInfoTitle {
     color: #7B3F00;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .classesInfoDescription {
@@ -713,13 +729,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .form-check{display:block;min-height:1.5vh;padding-left:-2vh;margin-bottom:.125vh; text-align: left}
 .row{display:flex;flex-wrap:wrap;margin-top:0; margin-left: 0; margin-right: 0;margin-bottom: 1vh;}
 .col-form-label{margin-bottom:0;font-size:inherit;line-height:1.5vh}
-.col-sm-2{flex:0 0 auto;width:20%}
-.col-md-4{flex:0 0 auto;width:33.33333333%}
-.col-md-6{flex:0 0 auto;width:50%}
-.col-sm-10{flex:0 0 auto;width:70%;}
-.col-sm-11{flex:0 0 auto;width:83.33333333%; margin-top: -.5vh;}
-.form-label{margin-bottom: .5vh; font-size: 1.5vh; font-weight: bold; margin-right: .5vh;}
-.form-control{display:block;width:100%;padding:.375vh .75vh;font-size:1.5vh;font-weight:400;line-height:1vh;color:black;background-color:white;background-clip:padding-box;border:.2vh solid #555; border-radius: .8vh}
+.col-sm-2{flex:0 0 auto;width:100%;margin-top: .5vh;}
+.form-label{margin-bottom: .5vh; font-size: 1.4vh; font-weight: bold; margin-right: .5vh;}
+.form-control{display:block;width:100%;margin-top: .5vh;padding:.375vh .75vh;font-size:1.5vh;font-weight:400;line-height:1vh;color:black;background-color:white;background-clip:padding-box;border:.2vh solid #555; border-radius: .8vh}
 .form-check-input{--bs-form-check-bg:white;width:2vh;height:1.5vh; vertical-align: middle; border:.2vh solid #dee2e6}
 .offset-sm-2{margin-left:16.66666667%}
 fieldset {padding: 0;margin: 0;border: 0;}

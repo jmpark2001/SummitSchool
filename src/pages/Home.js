@@ -37,37 +37,37 @@ export default function Home() {
                 <Link to={"/biblical"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={biblical} alt=""></img>
-                        <p style={{position:"absolute", top: "0%", right: "0%"}} className="homeLinkTitles">BIBLICAL</p>
+                        <p className="homeLinkTitles">BIBLICAL</p>
                     </div>
                 </Link>
                 <Link to={"/language"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={language} alt=""></img>
-                        <p style={{position:"absolute", top: "0%", right: "0%"}} className="homeLinkTitles">LANGUAGE</p>
+                        <p className="homeLinkTitles">LANGUAGE</p>
                     </div>
                 </Link>  
                 <Link to={"/instrument"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={instrument} alt=""></img>
-                        <p style={{position:"absolute", top: "0%", right: "0%"}} className="homeLinkTitles">INSTRUMENTS</p>
+                        <p className="homeLinkTitles">INSTRUMENTS</p>
                     </div>
                 </Link>  
                 <Link to={"/academic"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={academic} alt=""></img>
-                        <p style={{position:"absolute", top: "0%", right: "0%"}} className="homeLinkTitles">ACADEMIC</p>
+                        <p className="homeLinkTitles">ACADEMIC</p>
                     </div>
                 </Link>  
                 <Link to={"/kindergarten"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={kindergarten} alt=""></img>
-                        <p style={{position:"absolute", top: "40%", right: "0%", lineHeight: "normal"}} className="homeLinkTitles">PRE-K/ KINDERGARTEN</p>
+                        <p style={{top: "40%", lineHeight: "normal"}} className="homeLinkTitles">PRE-K/ KINDERGARTEN</p>
                     </div>
                 </Link>  
                 <Link to={"/pe"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={pe} alt=""></img>
-                        <p style={{position:"absolute", top: "40%", right: "0%", lineHeight: "normal"}} className="homeLinkTitles">PHYSICAL EDUCATION</p>
+                        <p style={{top: "40%", lineHeight: "normal"}} className="homeLinkTitles">PHYSICAL EDUCATION</p>
                     </div>
                 </Link>  
             </div>

@@ -9,7 +9,7 @@ export default function Kindergarten() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">This program is for children between the ages of 3 to 5 years old. They will be developing their developmental skills as well as their reading, writing, mathematical, arts, and science skills.</p>
+                    <p className="classesInfoTitle">This program is for children between the ages 3 to 5. They will be nurturing their developmental skills as well as basic reading, writing, math, and arts.</p>
                 </div>
             </div>
         </div>
