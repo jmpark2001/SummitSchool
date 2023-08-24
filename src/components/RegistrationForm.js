@@ -26,7 +26,7 @@ function RegistrationForm() {
         homeAddress: "",
         homeAddress2: "",
         homeCity: "",
-        homeState: "",
+        homeState: "DEFAULT",
         homeZip: "",
         classes: []
     })
@@ -95,7 +95,7 @@ function RegistrationForm() {
                 homeAddress: "",
                 homeAddress2: "",
                 homeCity: "",
-                homeState: "",
+                homeState: "DEFAULT",
                 homeZip: "",
                 classes: []
             })
@@ -200,7 +200,7 @@ function RegistrationForm() {
                                         </div>
                                         <div className="col-sm-2" style={{marginBottom: "1vh"}}>
                                             <label htmlFor="inputState">STATE</label>
-                                            <select id="inputState" className="form-control" defaultValue={"DEFAULT"} value={form.homeState} onChange={(e) => updateForm({ homeState: e.target.value})} required>
+                                            <select id="inputState" className="form-control" value={form.homeState} onChange={(e) => updateForm({ homeState: e.target.value})} required>
                                                 <option value="DEFAULT" disabled>Choose...</option>
                                                 {stateList.map((state, index) =>
                                                 <option key={index} value={stateList[index]}>{state}</option> 

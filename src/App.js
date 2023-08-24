@@ -11,6 +11,7 @@ import Academic from './pages/Academic';
 import Kindergarten from './pages/Kindergarten';
 import PE from './pages/PE';
 import { Route, Routes } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path='/kindergarten' element={<Kindergarten/>}/>
           <Route path='/pe' element={<PE/>}/>
         </Routes>
+        <ScrollToTop/>
       </div>
     </>
   )
