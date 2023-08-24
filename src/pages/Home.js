@@ -15,25 +15,25 @@ export default function Home() {
                     <img src={omc} className="omcLogo" alt=""></img>
                     <div className="homeTitle">
                         <p className="summit">SUMMIT&nbsp;SCHOOL</p>
-                        <p className="homeSubtitle">Platform, Watchtower, and Antenna for our future generations.</p>
+                        <p className="homeSubtitle glacial">Platform, Watchtower, and Antenna for our future generations.</p>
                     </div>
                 </div>
                 <p className="warning">For an ideal performance, use a desktop or a laptop when viewing the website</p>
             </div>
             <div className="fallSemester">
-                <p style={{margin: "2vh 0"}}>FALL SEMESTER</p>
-                <p style={{margin: "0 auto 2vh auto", width: "70%", fontWeight: "100", fontFamily: 'GlacialIndifferenceRegular, serif'}}>Registration for the fall semester starts on Aug 14 and will end on Sep 3.</p>
+                <p style={{margin: "1rem 0"}}>2023 FALL SEMESTER</p>
+                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 14 and will end on Sep 3.</p>
                 <div style={{display: "flex", justifyContent: "center", marginBottom: "4vh"}}>
-                    <Link to={"/registration"} style={{textDecoration: "none", display: "flex", width: "fit-content"}}>
-                        <div className="registerNow">
+                    <Link to={"/registration"} style={{textDecoration: "none", display: "flex"}}>
+                        <div className="registerNow playfair">
                             REGISTER NOW
                         </div>
                     </Link>
                 </div>
             </div>
-            <hr style={{borderWidth: "0 0 .5vh 0", borderColor: "black", borderStyle: "solid", width: "20%", margin: "10vh 0 0 0"}}></hr>
+            <hr style={{borderWidth: "0 0 clamp(0.2rem, 0.1591rem + 0.1818vw, 0.45rem) 0", borderColor: "black", borderStyle: "solid", width: "20%", margin: "clamp(4rem, 2.3333rem + 7.4074vw, 9rem) 0 0 0"}}></hr>
             <p className="classesForFall">CLASSES FOR FALL 2023</p>
-            <div className="homeLinks">
+            <div className="homeLinksGrid">
                 <Link to={"/biblical"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={biblical} alt=""></img>
