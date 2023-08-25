@@ -106,21 +106,36 @@ function RegistrationForm() {
 
     return (
         <div className="registrationWholePageDiv glacial">
-            <hr style={{borderWidth: "0 0 .25vh 0", borderColor: "black", borderStyle: "solid", width: "10%", marginTop:"2vh"}}></hr>
+            <hr style={{borderWidth: "0 0 .225rem 0", borderColor: "black", borderStyle: "solid", width: "clamp(10rem, 9.1818rem + 3.6364vw, 15rem)", marginTop:"1.8rem"}}></hr>
             <h1 className="registrationTitle">REGISTRATION FORM</h1>
             <div className="registrationPage">
-                <div style={{display: "flex", flexDirection: "row"}}>
+                <div style={{display: "flex"}}>
                     <div className="formDiv">
                         <Form onSubmit={onSubmit}>
-                            <div className="dates">
-                                <p style={{display: "inline", fontWeight: "600", marginLeft: "5vh", width: "100%"}}>REGISTRATION & PAYMENT PERIOD:</p>
-                                <p style={{display: "inline"}}> August 14th - September 3rd</p>  
-                            </div>
-                            <div style={{fontSize: "2vh", textAlign: "left", margin: ".5vh 0 1vh 0"}}>
-                                <p style={{display: "inline", fontWeight: "600", marginLeft: "5vh"}}>FALL SEMESTER:</p>
-                                <p style={{display: "inline"}}> Every Saturday except Remnant Day (Last Saturday of every month) from </p>
-                                <p style={{display: "inline", marginLeft: "5vh"}}>September 16th - January 20th</p>
-                            </div>
+                            {window.screen.width > 769 ? (
+                                    <>
+                                        <div className="dates">
+                                            <p style={{margin: "0 0 0 5%", width: "100%"}}><b>REGISTRATION & PAYMENT PERIOD:</b> August 14th - September 3rd</p>
+                                        </div> 
+                                        <div style={{marginTop: "0"}} className="dates">
+                                            <p style={{margin: "0 0 0 5%"}}><b>FALL SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
+                                            from September 16th - January 20th</p>
+                                        </div>
+                                </>
+                                ) : (
+                                    <>
+                                        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>REGISTRATION & PAYMENT PERIOD</p>
+                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>August 14th - September 3rd</p>
+                                        </div> 
+                                        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>FALL SEMESTER</p>
+                                            <p style={{fontSize: "1.3rem", marginTop: "0"}}>Every Saturday except Remnant Day (Last Saturday of every month)
+                                            from September 16th - January 20th</p>
+                                        </div> 
+                                    </>
+                                )
+                            }
                             <div className="formScheduleDiv">
                                 <div className="formScheduleContent">
                                     <p className="classesInfoTitle" style={{display: "inline"}}>WORSHIP:</p>
@@ -134,7 +149,7 @@ function RegistrationForm() {
                                 </div>
                             </div>
                             <div className="formAnswersDiv">
-                                <div style={{marginTop: "2vh", textAlign: "left"}}>
+                                <div style={{marginTop: "1.8rem", textAlign: "left", fontSize: "clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem)"}}>
                                     <p style={{color: "red", display: "inline"}}>*</p>
                                     <p style={{display: "inline"}}>You must complete a separate form for each child!</p>
                                 </div>
@@ -213,31 +228,33 @@ function RegistrationForm() {
                                         </div>
                                     </div>
                                 </Form.Group>
-                                <p className="instructions">Choose at least 1 biblical class and up to 1 additional class of your choice</p>
-                                <div style={{display: "flex", flexDirection: "column", width: "100%", alignItems: "center"}}>
-                                    <p className="biblicalTitle" style={{width: "min-content"}}>Biblical</p>
-                                    <ul className="bibleClass">
-                                        {classList.slice(0, 5).map((className, index) => 
-                                            <li key={index}>
-                                                <div>
-                                                    <input
-                                                        type="checkbox"
-                                                        className="bibleCheck"
-                                                        id={index}
-                                                        name={className}
-                                                        value={form.classes}
-                                                        checked={checkedState[index]}
-                                                        onChange={(e) => handleOnChange(index, e)}
-                                                    />
-                                                    <label>{className}</label>
-                                                </div>
-                                            </li>
-                                        )}
-                                    </ul>
-                                </div>
-                                
                             </div>
-                            <div style={{display: "flex", flexDirection: "row"}}>
+                            <div style={{marginTop: "1.8rem", width: "100%", padding: "0 0 0 2.5%", textAlign: "left", fontSize: "clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem)"}}>
+                                <p style={{color: "red", display: "inline"}}>*</p>
+                                <p className="instructions" style={{display: "inline"}}>Choose at least 1 biblical class and up to 1 additional class of your choice</p>
+                            </div>
+                            <div style={{display: "flex", padding: "0 0 0 2.5%", flexDirection: "column", width: "100%"}}>
+                                <p className="biblicalTitle">Biblical</p>
+                                <ul className="bibleClass">
+                                    {classList.slice(0, 5).map((className, index) => 
+                                        <li key={index}>
+                                            <div>
+                                                <input
+                                                    type="checkbox"
+                                                    className="bibleCheck"
+                                                    id={index}
+                                                    name={className}
+                                                    value={form.classes}
+                                                    checked={checkedState[index]}
+                                                    onChange={(e) => handleOnChange(index, e)}
+                                                />
+                                                <label>{className}</label>
+                                            </div>
+                                        </li>
+                                    )}
+                                </ul>
+                            </div>
+                            <div className="classesChecklist">
                                 <div className="classDiv">
                                     <p className="classTitles">Language</p>
                                     <ul className="otherClass">
@@ -432,9 +449,9 @@ function RegistrationForm() {
                                     </ul>
                                 </div>
                             </div>
-                            <p style={{fontSize: "2vh", fontWeight: "bold"}}>Methods of Payment ($200)</p>
+                            <p style={{fontSize: "clamp(1.4rem, 1.2691rem + 0.5818vw, 2.2rem)", fontWeight: "bold"}}>Methods of Payment ($200)</p>
                             <ol className="payment" style={{listStyle: "none"}}>
-                                <p style={{fontWeight: "bold", lineHeight: "2vh"}}>Click on the links below to pay with credit or debit. For multiple children the pricing goes as follows: The first child you enroll will cost $200, the second child is $150,
+                                <p style={{fontWeight: "bold"}}>Click on the links below to pay with credit or debit. For multiple children the pricing goes as follows: The first child you enroll will cost $200, the second child is $150,
                                 and any additional children will be $100.</p>
                                 <li>
                                     1 child:

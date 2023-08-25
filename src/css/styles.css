@@ -149,7 +149,7 @@ body {
     /* width: clamp(16.875rem, 6.4983rem + 46.1187vw, 80rem); */
 }
 
-@media (width > 359px) {
+@media (max-width: 599px) {
     .homeLinksGrid {
         grid-template-columns: repeat(auto-fill, 16.875rem);
         width: 16.875rem;
@@ -160,7 +160,7 @@ body {
     }
 }
 
-@media (width > 1365px) {
+@media (min-width: 600px) {
     .homeLinksGrid {
         grid-template-columns: repeat(auto-fill, 18.75rem);
         width: 40.6431883rem;
@@ -171,7 +171,7 @@ body {
     }
 }
 
-@media (width > 1919px) {
+@media (min-width: 1200px) {
     .homeLinksGrid {
         grid-template-columns: repeat(auto-fill, 20rem);
         width: 67.54548rem;
@@ -182,7 +182,7 @@ body {
     }
 }
 
-@media (width > 2558px) {
+@media (min-width: 1800px) {
     .homeLinksGrid {
         grid-template-columns: repeat(auto-fill, 21.625rem);
         width: 73.87504rem;
@@ -245,10 +245,18 @@ body {
     font-size: clamp(1.5rem, 1.2545rem + 1.0909vw, 3rem);
 }
 
-@media (width < 1366px) {
+@media (max-width: 1365px) {
     .classScheduleBanner {
         width: 100%;
     }
+}
+
+.registrationTitle {
+    font-size: clamp(2rem, 1.8118rem + 0.8364vw, 3.15rem);
+    font-weight: bold;
+    background-color: none;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
 }
 
 .registrationWholePageDiv{
@@ -259,32 +267,34 @@ body {
 }
 
 .registrationPage {
-    margin-bottom: 4vh;
     display: flex;
     flex-direction: column;
-    min-height: min-content;
-    min-width: min-content;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .registrationPage {
+        width: 100%
+    }
 }
 
 .formDiv {
-    width: 95vh;
-    height: min-content;
-    padding: 0 2vh;
+    width: 100%;
 }
+
 
 Form {
     display: flex;
     flex-direction: column;
-    width: 100%;
     background-color: rgba(225, 225, 225, .75);
     border: .2vh solid black;
     align-items: center;
 }
 
 .dates {
-    font-size: 2vh;
+    font-size: 1.8rem;
     text-align: left;
-    margin: 2vh 0vh 0vh 0vh;
+    margin: 1.8rem 0 0;
     width: 100%;
 }
 
@@ -293,6 +303,7 @@ Form {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .formScheduleContent {
@@ -307,47 +318,71 @@ Form {
     width: 60%
 }
 
-.registrationTitle {
-    font-size: 3.5vh;
-    font-weight: bold;
-    background-color: none;
-    margin-top: 1vh;
-    margin-bottom: 2vh;
+.instructions{
+    margin: 1rem 0;
+    font-size: clamp(1rem, 0.9182rem + 0.3636vw, 1.5rem);
 }
 
-.instructions{
-    margin: 6vh 0 1vh 0;
-    font-size: 2vh;
+.biblicalTitle {
+    text-align: left;
+    margin-bottom: 0;
+    font-size: clamp(1rem, 0.9182rem + 0.3636vw, 1.5rem);
     font-weight: bold;
+}
+
+.classTitles {
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: clamp(1rem, 0.9345rem + 0.2909vw, 1.4rem);
 }
 
 .bibleClass {
-    padding: 1vh;
+    padding: .9rem;
     margin: 0;
     list-style: none;
     display: block;
     width: fit-content;
     text-align: left;
+    font-size: clamp(1rem, 0.9182rem + 0.3636vw, 1.5rem);
+}
+
+.classesChecklist {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 2.5%;
+}
+
+@media (max-width: 1366px) {
+    .classesChecklist {
+        flex-direction: column;
+    }
 }
 
 .classDiv {
-    width: 16vh;
+    width: 20%;
     float: left;
+}
+
+@media (max-width: 1366px) {
+    .classDiv {
+        width: 100%;
+    }
 }
 
 .otherClass {
     /* columns: 2; */
-    padding: 1vh;
+    padding: .9rem;
     margin: 0;
     list-style: none;
-    width: 17vw;
     float: left;
     text-align: left;
+    font-size: clamp(1rem, 0.5424rem + 0.5360vw, 1.4rem);
 }
 
-
 input[type="checkbox"] {
-    margin-right: .75vh;
+    margin-right: .675rem;
 }
 
 .aboutPage {
@@ -419,20 +454,6 @@ input[type="checkbox"] {
     margin-top: 4vh;
 }
 
-.biblicalTitle {
-    text-align: left;
-    margin-bottom: 0;
-    font-size: 1.5vh;
-    font-weight: bold;
-}
-
-.classTitles {
-    text-align: left;
-    margin-bottom: 0;
-    font-weight: bold;
-    font-size: 1.5vh;
-}
-
 .classInfo {
     display: flex;
     flex-direction: column;
@@ -492,10 +513,10 @@ input[type="checkbox"] {
 }
 
 .submitButton {
-    left: 2%;
-    width: 6vh;
-    height: 2vh;
-    margin-bottom: 1.5vh;
+    /* width: 5.4rem; */
+    font-size: clamp(1rem, 0.6727rem + 1.4545vw, 3rem);
+    padding: clamp(0.5rem, 0.4182rem + 0.3636vw, 1rem);
+    margin-bottom: 1.35rem;
 }
 
 .payment {
@@ -503,6 +524,7 @@ input[type="checkbox"] {
     padding: 0;
     margin-top: 0;
     margin-left: 1.5vh;
+    font-size: clamp(1.1rem, 0.9855rem + 0.5091vw, 1.8rem);
 }
 
 .payment li {
