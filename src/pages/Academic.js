@@ -5,7 +5,7 @@ export default function Academic() {
         <div className="playfair" style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <div className="classesBanner">
                 <img src={academic} className="classesBanners" alt=""></img>
-                <p style={{position:"absolute", margin: "0", top: "40%", color: "black", fontWeight: "900", fontSize: "6vh"}}>ACADEMIC CLASSES</p>
+                <p style={{position:"absolute", margin: "0", color: "white", fontWeight: "900", fontSize: "clamp(1.8rem, 1.2109rem + 2.6182vw, 5.4rem)"}}>ACADEMIC CLASSES</p>
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">

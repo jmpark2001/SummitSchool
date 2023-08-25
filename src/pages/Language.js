@@ -5,10 +5,10 @@ export default function Language() {
         <div className="playfair" style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <div className="classesBanner">
                 <img src={language} className="classesBanners" alt=""></img>
-                <p style={{position:"absolute", margin: "0", top: "40%", color: "black", fontWeight: "900", fontSize: "6vh"}}>LANGUAGE CLASSES</p>
+                <p style={{position:"absolute", margin: "0", color: "black", fontWeight: "900", fontSize: "clamp(1.8rem, 1.2109rem + 2.6182vw, 5.4rem)"}}>LANGUAGE CLASSES</p>
             </div>
-            <div className="differentClasses" style={{flexDirection: "row", justifyContent: "center", alignItems: "stretch"}}>
-                <div className="otherInfoDiv" style={{marginRight: "7%"}}>
+            <div className="differentClasses">
+                <div className="otherInfoDiv">
                     <p className="classesInfoTitle">K-12 (Korean, English, Chinese, Japanese, Spanish)</p>
                     <p className="glacial">
                         Language classes are provided for students from grades 1 through 12. Students will learn grammar and vocabulary, practice what they learn,
