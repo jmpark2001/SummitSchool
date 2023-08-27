@@ -390,37 +390,91 @@ input[type="checkbox"] {
     flex-direction: column;
 }
 
-.aboutBanner {
-    position: relative;
+.item-a {
+    grid-area: about;
     display: flex;
+    align-items: center;
     justify-content: center;
-    height: 80vh;
-    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-size: clamp(5.4rem, 4.5164rem + 3.9273vw, 10.8rem);
 }
 
-.aboutBanners {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;    
-    mix-blend-mode: multiply;
+.item-b {
+    grid-area: bar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: .45rem solid white;
+}
+
+.item-c {
+    grid-area: text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    color: white;
+    font-size: clamp(2rem, 1.5909rem + 1.8182vw, 4.5rem);
+}
+
+.aboutBanner {
+    display: grid;
+    grid-template-columns: 49.9% .2% 49.9%;
+    grid-template-rows: clamp(10rem, -7.1608rem + 20.1005vw, 25rem) clamp(20rem, 8.5595rem + 13.4003vw, 30rem) clamp(10rem, -7.1608rem + 20.1005vw, 25rem);
+    grid-template-areas: 
+        ". . ."
+        "about bar text"
+        ". . .";
+    background-color: rgba(0, 0, 0, .5);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/src/images/omcChurch.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .aboutLogo {
     position: absolute;
-    width: 15vh;
-    height: 10vh;
+    width: clamp(7.5rem, 0.6357rem + 8.0402vw, 13.5rem);
+    height: clamp(5rem, 0.4238rem + 5.3601vw, 9rem);
     z-index: 1;
     top: 0%;
     left: 48%;
 }
 
+@media (max-width: 1365px) {
+    .aboutBanner {
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 10% 40% 10%;
+        grid-template-areas: 
+            "about"
+            "bar"
+            "text"
+            ".";
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/src/images/omcChurchPhone.jpg");
+    }
+
+    .item-b {
+        display: table;
+        border-left: none !important;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .item-b::after {
+        border-top: .2rem solid white;
+        content: '';
+        display: block;
+    }
+
+    .aboutLogo {
+        left: 40%
+    }
+}
+
 .visionMission {
     width: 80%;
-    background-color: rgba(169, 169, 169);
-    height: fit-content;
-    margin: 5vh auto 0 auto;
-    border: .5vh solid black;
+    background-color: rgba(225, 225, 225, .75);
+    margin: clamp(2rem, 1.6727rem + 1.4545vw, 4rem) auto;
+    padding: 0 2rem;
 }
 
 .visionMissionTitles {
@@ -428,14 +482,19 @@ input[type="checkbox"] {
     flex-direction: row;
     width: 100%;
     margin: 0;
+    font-size: clamp(2rem, 1.8364rem + 0.7273vw, 3rem);
 }
 
-.visionMissionTitle {
-    width: 50%;
-    height: 100%;
-    font-size: 4vh;
-    border-bottom: .5vh solid black;
-    padding: 1vh 0;
+.visionMissionText {
+    text-align: left;
+    width: 80%;
+    font-size: clamp(1rem, 0.8364rem + 0.7273vw, 2rem);
+}
+
+@media (max-width: 768px) {
+    .visionMissionText {
+        width: 100%;
+    }
 }
 
 .unbuttonize {
