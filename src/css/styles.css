@@ -497,20 +497,27 @@ input[type="checkbox"] {
     }
 }
 
-.unbuttonize {
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    text-align: inherit;
-    font: inherit;
-    border-radius: 0;
-    appearance: none;
-  }
+.classInfoPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.about {
-    width: 50vh;
-    margin-top: 4vh;
+.classInfoBanner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.7);
+}
+
+.classInfoBanners {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    mix-blend-mode: multiply;
 }
 
 .classInfo {
@@ -518,57 +525,55 @@ input[type="checkbox"] {
     flex-direction: column;
     justify-content: center;
     background-color: rgba(225,225,225,.75);
-    font-size: 2vh;
+    font-size: clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem);
     text-align: left;
-    width: min-content;
-    height: min-content;
+    width: 90%;
     color: black;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    padding: 1vh;
+    margin: 2rem auto 0;
+    padding: 1% 8% 0 8%;
 }
 
 .classInfo p {
-    width: fit-content;
-    font-weight: bold;
+    margin: 0;
+}
+
+.classInfoClassesDiv {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 0 8%;
 }
 
 .classInfoClasses {
     display: flex;
-    flex-direction: row;
-    font-size: 1.5vh;
-    width: min-content;
-    height: min-content;
-}
-
-.classInfoDiv {
-    display: flex;
     flex-direction: column;
-    width: min-content;
-    width: 10vw;
-    align-items: center;
-    color: black;
-    margin-top: 2vh;
-    border: solid .1vh black; 
+    font-size: clamp(1.2rem, 1.0691rem + 0.5818vw, 2rem);
 }
 
 .classInfoDivTitle {
-    margin-top: .5vh;
+    margin-top: clamp(1.5rem, 1.2545rem + 1.0909vw, 3rem);
     margin-bottom: 0;
 }
 
-.classInfoDiv a {
-    color: black;
-    font-weight: bold;
+.classInfoClassesUl {
+    padding: 0 0 0 1%;
+    margin: 0;
+    text-align: left;
+    font-size: clamp(1.2rem, 1.0691rem + 0.5818vw, 2rem);
 }
 
-.classInfoClassesUl {
-    padding: 0vh 1vh 1vh 2vh;
-    margin: 0;
-    width: 10vw;
-    float: left;
-    text-align: left;
-    font-size: 1.2vh;
+.classInfoClassesUl p {
+    margin: clamp(0.2rem, 0.1509rem + 0.2182vw, 0.5rem) 0;
+}
+
+@media (max-width: 1365px) {
+    .classInfo {
+        width: 100%;
+    }
+
+    .classesInfoClassesDiv {
+        width: 100%;
+    }
 }
 
 .submitButton {
@@ -644,7 +649,6 @@ input[type="checkbox"] {
     width: 20vh;
     height: 20vh;
 }
-
 
 .classesBanner {
     position: relative;
