@@ -1,6 +1,6 @@
 import pastorLee from '../images/pastorLee.jpg'
 import pastorBrendyn from '../images/pastorBrendyn.jpg'
-import hyuncheol from '../images/HyunCheolKim.jpg'
+import hyunchul from '../images/HyunCheolKim.jpg'
 import christine from '../images/christine.jpg'
 import louann from '../images/louann.jpg'
 import alexandra from '../images/alexandra.jpg'
@@ -11,69 +11,103 @@ import joanne from '../images/joanne.jpg'
 
 export default function Staff() {
     return (
-        <div className='registrationWholePageDiv'>
-            <div className="staffPage">
-                <h1 className="aboutTitle">Staff</h1>
-                <div className="staffRow">
-                    <div className="staffColumn">
-                        <p>Rev. Dong C. Lee</p>
-                        <p>Principal</p>
-                        <img className="headshots" src={pastorLee} alt=""></img>
-                    </div>
-                    <div className="staffColumn">
-                        <p>Rev. Brendyn Huh</p>
-                        <p>Spiritual Advisor</p>
-                        <img className="headshots" src={pastorBrendyn} alt=""></img>
-                    </div>
-                </div>
-                <div className="staffRow">
-                    <div className="staffColumn">
-                        <p>Hyun-chul Kim</p>
-                        <p>Director</p>
-                        <img className="headshots" src={hyuncheol} alt=""></img>
-                    </div>
-                    <div className="staffColumn">
-                        <p>Christine Baek</p>
-                        <p>Administrative Director</p>
-                        <img className="headshots" src={christine} alt=""></img>
+        <div className="staffPage">
+            {/* <div className="homeLink">
+
+            </div> */}
+            <h1 className="staffPageTitle playfair">Staff Directory</h1>
+            <div className="staffList">
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={pastorLee} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Dong Cheol Lee, Rev., Dr.</p>
+                            <p className="staffTitle">PRINCIPAL</p>
+                        </div>
                     </div>
                 </div>
-                <div className="staffRow">
-                    <div className="staffColumn">
-                        <p>Lou Ann Yang</p>
-                        <p>Administrative Assistant</p>
-                        <img className="headshots" src={louann} alt=""></img>
-                    </div>
-                    <div className="staffColumn">
-                        <p>Alexandra Garcia</p>
-                        <p>Administrative Assistant</p>
-                        <img className="headshots" src={alexandra} alt=""></img>
-                    </div>
-                    <div className="staffColumn">
-                        <p>Yeobeen Yun</p>
-                        <p>Administrative Assistant</p>
-                        <img className='headshots' src={yeobeen} alt=''></img>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={pastorBrendyn} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Brendyn Huh, Rev.</p>
+                            <p className="staffTitle">SPIRITUAL ADVISOR</p>
+                        </div>
                     </div>
                 </div>
-                <div className="staffRow">
-                    <div className="staffColumn">
-                        <p>Sung-kyung Yoo</p>
-                        <p>Financial Director</p>
-                        <img className="headshots" src={sungkyung} alt=""></img>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={hyunchul} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Hyun Chul Kim</p>
+                            <p className="staffTitle">DIRECTOR</p>
+                        </div>
                     </div>
-                    <div className="staffColumn">
-                        <p>Justin Park</p>
-                        <p>Website Developer</p>
-                        <img className="headshots" src={justin} alt=""></img>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={christine} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Christine Baek</p>
+                            <p className="staffTitle">ADMINISTRATIVE DIRECTOR</p>
+                        </div>
                     </div>
-                    <div className="staffColumn">
-                        <p>Joanne Lee</p>
-                        <p>Website Developer</p>
-                        <img className="headshots" src={joanne} alt=""></img>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={louann} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Lou Ann Yang</p>
+                            <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={alexandra} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Alexandra Garcia</p>
+                            <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={yeobeen} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Yeobeen Yun</p>
+                            <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={sungkyung} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Sung Kyung Yoo</p>
+                            <p className="staffTitle">FINANCIAL DIRECTOR</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={justin} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Justin Park</p>
+                            <p className="staffTitle">WEBSITE DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" src={joanne} alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Joanne Lee</p>
+                            <p className="staffTitle">WEBSITE DESIGNER</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     )
 }
