@@ -11,7 +11,7 @@ export default function About() {
                 <img src={logo} className="aboutLogo" alt=""></img>
                 <p className="playfair item-a">About</p>
                 <div className="item-b"></div>
-                <p className="item-c">A school that makes God's dream into a reality. Together, we will build our remnants' future.</p>  
+                <p className="item-c">The seed of our church's big dream. Pioneered in prayer, hope and courage for the remnants' God-given future.</p>  
             </div>  
             <div className="visionMission">
                 <div className="visionMissionTitles">
