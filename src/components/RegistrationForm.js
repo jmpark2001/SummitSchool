@@ -522,7 +522,7 @@ function RegistrationForm() {
                                     <a style={{display: "inline"}} href="https://square.link/u/6oFNFhiq/" target="_blank" rel="noreferrer noopener">https://square.link/u/6oFNFhiq/</a>
                                 </li>
                             </ol>
-                            <Button className="submitButton" type="submit">Submit</Button>
+                            <Button className="submitButton playfair" type="submit"><b>Submit</b></Button>
                         </Form>
                     </div>
                 </div>

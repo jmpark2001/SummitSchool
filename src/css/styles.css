@@ -589,6 +589,7 @@ input[type="checkbox"] {
     font-size: clamp(1rem, 0.6727rem + 1.4545vw, 3rem);
     padding: clamp(0.5rem, 0.4182rem + 0.3636vw, 1rem);
     margin-bottom: 1.35rem;
+    border: .2rem solid black;
 }
 
 .payment {
