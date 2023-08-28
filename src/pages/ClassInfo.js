@@ -52,7 +52,7 @@ export default function ClassInfo() {
             </div>
             <div className="classInfoClassesDiv">
                 <div className="classInfoClasses glacial">
-                    <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome">BIBLICAL</CustomLink></b></p>
+                    <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome" style={{color: "#B56727"}}>BIBLICAL</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
                         {classList.slice(0, 5).map((className, index) =>
                             <li key={index}>
@@ -60,7 +60,7 @@ export default function ClassInfo() {
                             </li>
                         )}
                     </ul>  
-                    <p className="classInfoDivTitle"><b><CustomLink to="/language" className="backToHome">LANGUAGE</CustomLink></b></p>
+                    <p className="classInfoDivTitle"><b><CustomLink to="/language" className="backToHome" style={{color: "#B56727"}}>LANGUAGE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
                         {classList.slice(5, 11).map((className, index) =>
                             <li key={index}>
@@ -68,7 +68,7 @@ export default function ClassInfo() {
                             </li>
                         )}
                     </ul>  
-                    <p className="classInfoDivTitle"><b><CustomLink to="/instrument" className="backToHome">INSTRUMENT</CustomLink></b></p>
+                    <p className="classInfoDivTitle"><b><CustomLink to="/instrument" className="backToHome" style={{color: "#B56727"}}>INSTRUMENT</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
                         {classList.slice(11, 16).map((className, index) =>
                             <li key={index}>
@@ -76,21 +76,21 @@ export default function ClassInfo() {
                             </li>
                         )}
                     </ul>  
-                    <p className="classInfoDivTitle"><b><CustomLink to="/academic" className="backToHome">ACADEMIC</CustomLink></b></p>                    <ul className="classInfoClassesUl">
+                    <p className="classInfoDivTitle"><b><CustomLink to="/academic" className="backToHome" style={{color: "#B56727"}}>ACADEMIC</CustomLink></b></p>                    <ul className="classInfoClassesUl">
                         {classList.slice(16,18).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
                         )}
                     </ul>  
-                    <p className="classInfoDivTitle"><b><CustomLink to="/kindergarten" className="backToHome">PRE-K / Kindergarten</CustomLink></b></p>                    <ul className="classInfoClassesUl">
+                    <p className="classInfoDivTitle"><b><CustomLink to="/kindergarten" className="backToHome" style={{color: "#B56727"}}>PRE-K / Kindergarten</CustomLink></b></p>                    <ul className="classInfoClassesUl">
                         {classList.slice(18,19).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
                         )}
                     </ul>  
-                    <p className="classInfoDivTitle"><b><CustomLink to="/pe" className="backToHome">PHYSICAL EDUCATION</CustomLink></b></p>                    <ul className="classInfoClassesUl">
+                    <p className="classInfoDivTitle"><b><CustomLink to="/pe" className="backToHome" style={{color: "#B56727"}}>PHYSICAL EDUCATION</CustomLink></b></p>                    <ul className="classInfoClassesUl">
                         {classList.slice(19).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
