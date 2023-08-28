@@ -271,7 +271,13 @@ body {
 .registrationPage {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
+}
+
+@media (min-width: 1080px) {
+    .registrationPage {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px) {

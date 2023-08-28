@@ -8,11 +8,11 @@ import { doc, setDoc } from "firebase/firestore"
 
 function RegistrationForm() {
     const classList2 = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean", "Spanish", "Chinese", "Japanese", "Adult Korean", "Adult English", "Guitar", "Piano", "Flute", "Violin", "Drum",
-     "SAT", "General", "PE"]
+     "SAT", "General", "Sports"]
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Japanese Beginner", "Japanese Intermediate", "Japanese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Baginner", 
      "Adult English Intermediate", "Adult English Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "Flute Beginner", "Flute Some Experience", "Flute Advanced",
-     "Violin Beginner", "Violin Some Experience", "Violin Advanced", "Drum Beginner", "Drum Some Experience", "Drum Advanced", "SAT Math", "SAT English", "Kindergarten", "Basketball", "Stretching and Mobility"]
+     "Violin Beginner", "Violin Some Experience", "Violin Advanced", "Drum Beginner", "Drum Some Experience", "Drum Advanced", "SAT Math", "SAT English", "Kindergarten", "Basketball", "Stretching and Mobility", "Badminton"]
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
      "Massachusettes", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
      "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
@@ -33,20 +33,20 @@ function RegistrationForm() {
 
     const handleOnChange = (position, e) => {
         let checkedBoxes = checkedState.filter((i) => i)
-        function hasBiblical() {
-            if (checkedState[0] === true || checkedState[1] === true || checkedState[2] === true || checkedState[3] === true || checkedState[4] === true || classList.slice(0, 5).includes(e.target.name)) {
-                return true
-            }
-            else {
-                return false
-            }
-        }
-        if (checkedBoxes.length >= 2 && e.target.checked) {
+        // function hasBiblical() {
+        //     if (checkedState[0] === true || checkedState[1] === true || checkedState[2] === true || checkedState[3] === true || checkedState[4] === true || classList.slice(0, 5).includes(e.target.name)) {
+        //         return true
+        //     }
+        //     else {
+        //         return false
+        //     }
+        // }
+        if (checkedBoxes.length >= 3 && e.target.checked) {
             return
         }
-        if (checkedBoxes.length >= 1 && !hasBiblical() && e.target.checked){
-            return
-        }
+        // if (checkedBoxes.length >= 1 && !hasBiblical() && e.target.checked){
+        //     return
+        // }
         const updateCheckedState = checkedState.map((item, index) => 
             index === position ? !item : item
         )
@@ -59,10 +59,10 @@ function RegistrationForm() {
         updateForm({classes: updatedClasses})
     }
     
-    function atLeastOneCheckboxIsChecked(){
-        const checkboxes = Array.from(document.getElementsByClassName("bibleCheck"))
-        return checkboxes.reduce((acc, curr) => acc || curr.checked, false)
-    }
+    // function atLeastOneCheckboxIsChecked(){
+    //     const checkboxes = Array.from(document.getElementsByClassName("bibleCheck"))
+    //     return checkboxes.reduce((acc, curr) => acc || curr.checked, false)
+    // }
     
     function updateForm(value) {
         return setForm((prev) => {
@@ -73,34 +73,57 @@ function RegistrationForm() {
     async function onSubmit(e) {
         e.preventDefault();
         const newForm = {...form}
-        if (!atLeastOneCheckboxIsChecked()) {
-            alert("One biblical class is required to submit the form")
-        }
-        else {
-            try {
-                await setDoc(doc(db, "registrations", newForm.studentFullName), {
-                    ...newForm
-                })
-                console.log("Document written with ID: ", newForm.studentFullName)
-            } catch (e) {
-                console.error("Error addding document: ", e)
-            }  
-            window.alert("You submitted the form")
-            setForm({ 
-                studentFullName: "",
-                parentFullName: "",
-                studentPhoneNumber: 0,
-                parentPhoneNumber: 0,
-                parentEmail: "",
-                homeAddress: "",
-                homeAddress2: "",
-                homeCity: "",
-                homeState: "DEFAULT",
-                homeZip: "",
-                classes: []
+        // if (!atLeastOneCheckboxIsChecked()) {
+        //     alert("One biblical class is required to submit the form")
+        // }
+        // else {
+        //     try {
+        //         await setDoc(doc(db, "registrations", newForm.studentFullName), {
+        //             ...newForm
+        //         })
+        //         console.log("Document written with ID: ", newForm.studentFullName)
+        //     } catch (e) {
+        //         console.error("Error addding document: ", e)
+        //     }  
+        //     window.alert("You submitted the form")
+        //     setForm({ 
+        //         studentFullName: "",
+        //         parentFullName: "",
+        //         studentPhoneNumber: 0,
+        //         parentPhoneNumber: 0,
+        //         parentEmail: "",
+        //         homeAddress: "",
+        //         homeAddress2: "",
+        //         homeCity: "",
+        //         homeState: "DEFAULT",
+        //         homeZip: "",
+        //         classes: []
+        //     })
+        //     setCheckedState(new Array(classList.length).fill(false))
+        // }
+        try {
+            await setDoc(doc(db, "registrations", newForm.studentFullName), {
+                ...newForm
             })
-            setCheckedState(new Array(classList.length).fill(false))
-        }
+            console.log("Document written with ID: ", newForm.studentFullName)
+        } catch (e) {
+            console.error("Error addding document: ", e)
+        }  
+        window.alert("You submitted the form")
+        setForm({ 
+            studentFullName: "",
+            parentFullName: "",
+            studentPhoneNumber: 0,
+            parentPhoneNumber: 0,
+            parentEmail: "",
+            homeAddress: "",
+            homeAddress2: "",
+            homeCity: "",
+            homeState: "DEFAULT",
+            homeZip: "",
+            classes: []
+        })
+        setCheckedState(new Array(classList.length).fill(false))
     }
     
 
@@ -118,7 +141,7 @@ function RegistrationForm() {
                                             <p style={{margin: "0 0 0 5%", width: "100%"}}><b>REGISTRATION & PAYMENT PERIOD:</b> August 14th - September 3rd</p>
                                         </div> 
                                         <div style={{marginTop: "0"}} className="dates">
-                                            <p style={{margin: "0 0 0 5%"}}><b>FALL SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
+                                            <p style={{margin: "0 0 0 5%", width: "80%"}}><b>FALL SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
                                             from September 16th - January 20th</p>
                                         </div>
                                 </>
@@ -130,7 +153,7 @@ function RegistrationForm() {
                                         </div> 
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>FALL SEMESTER</p>
-                                            <p style={{fontSize: "1.3rem", marginTop: "0"}}>Every Saturday except Remnant Day (Last Saturday of every month)
+                                            <p style={{fontSize: "1.3rem", margin: "0 auto", width: "90%"}}>Every Saturday except Remnant Day (Last Saturday of every month)
                                             from September 16th - January 20th</p>
                                         </div> 
                                     </>
@@ -139,13 +162,19 @@ function RegistrationForm() {
                             <div className="formScheduleDiv">
                                 <div className="formScheduleContent">
                                     <p className="classesInfoTitle" style={{display: "inline"}}>WORSHIP:</p>
-                                    <p style={{display: "inline"}}> 9AM - 10AM</p>
+                                    <p style={{display: "inline"}}> 9AM - 9:50AM</p>
                                     <br></br>
                                     <p className="classesInfoTitle" style={{display: "inline"}}>FIRST CLASS:</p>
-                                    <p style={{display: "inline"}}> 10AM - 11AM</p>
+                                    <p style={{display: "inline"}}> 10AM - 10:50AM</p>
                                     <br></br>
                                     <p className="classesInfoTitle" style={{display: "inline"}}>SECOND CLASS:</p>
-                                    <p style={{display: "inline"}}> 11AM - 12PM</p>
+                                    <p style={{display: "inline"}}> 11AM - 11:50AM</p>
+                                    <br></br>
+                                    <p className="classesInfoTitle" style={{display: "inline"}}>LUNCH:</p>
+                                    <p style={{display: "inline"}}> 12PM - 12:30PM</p>
+                                    <br></br>
+                                    <p className="classesInfoTitle" style={{display: "inline"}}>THIRD CLASS:</p>
+                                    <p style={{display: "inline"}}> 12:40PM - 1:30PM</p>
                                 </div>
                             </div>
                             <div className="formAnswersDiv">
@@ -231,7 +260,8 @@ function RegistrationForm() {
                             </div>
                             <div style={{marginTop: "1.8rem", width: "100%", padding: "0 0 0 2.5%", textAlign: "left", fontSize: "clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem)"}}>
                                 <p style={{color: "red", display: "inline"}}>*</p>
-                                <p className="instructions" style={{display: "inline"}}>Choose at least 1 biblical class and up to 1 additional class of your choice</p>
+                                {/* <p className="instructions" style={{display: "inline"}}>Choose at least 1 biblical class and up to 1 additional class of your choice</p> */}
+                                <p className="instructions" style={{display: "inline"}}>Choose up to three classes of your choice</p>
                             </div>
                             <div style={{display: "flex", padding: "0 0 0 2.5%", flexDirection: "column", width: "100%"}}>
                                 <p className="biblicalTitle">Biblical</p>
@@ -442,6 +472,19 @@ function RegistrationForm() {
                                                             onChange={(e) => handleOnChange(index+42, e)}
                                                         />
                                                         <label>{"Stretching and Mobility"}</label>
+                                                    </div>
+                                                </li>
+                                                <li key={index + 43}>
+                                                    <div>
+                                                        <input
+                                                            type="checkbox"
+                                                            id={index+43}
+                                                            name={className + " English"}
+                                                            value={form.classes}
+                                                            checked={checkedState[index+43]}
+                                                            onChange={(e) => handleOnChange(index+43, e)}
+                                                        />
+                                                        <label>{"Badminton"}</label>
                                                     </div>
                                                 </li>
                                             </>

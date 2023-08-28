@@ -2,7 +2,7 @@ import classInfo from "../images/classInfo.jpg"
 
 export default function ClassInfo() {
     const classList = ["Bibilical Worldview", "Church History", "Old Testament", "New Testament", "Systematic Theology", "Korean", "Spanish", "Chinese", "Japanese", "Adult Korean", "Adult English", "Guitar", "Piano", "Flute",
-     "Violin", "Drum", "SAT Math", "SAT English","Pre-K/K", "Basketball", "Stretching and Mobility"]
+     "Violin", "Drum", "SAT Math", "SAT English","Pre-K/K", "Basketball", "Stretching and Mobility", "Badminton"]
 
     return (
         <div className="classInfoPage">
@@ -19,13 +19,15 @@ export default function ClassInfo() {
                 <p>The fall semeseter begins on September 16th and ends on January 20th</p>
                 <br/><br/>
                 <p><b>SCHEDULE</b></p>
-                <p>Summit School Classes will take place every Saturday from 9am-12pm</p>
+                <p>Summit School classes will take place every Saturday from 9am-12pm</p>
                 <br/>
-                <p>9AM - 10AM: Worship</p>
-                <p>10AM - 11AM: 1st Class</p>
-                <p>11AM - 12PM: 2nd Class</p>
+                <p>9AM - 9:50AM: Worship</p>
+                <p>10AM - 10:50AM: 1st Class</p>
+                <p>11AM - 11:50AM: 2nd Class</p>
+                <p>12PM - 12:30PM: Lunch</p>
+                <p>12:40PM - 1:30PM: 3rd Class</p>
                 <br/>
-                <p>Students are required to take at least 1 biblical class. Students can select 1 other class of their choice.</p>
+                <p>Students can select up to three classes of their choice.</p>
                 <br/><br/>
                 <p><b>FEE</b></p>
                 <p>The fee for summit school will be $200 per semester. Payment information can be found on the registration form.</p>
