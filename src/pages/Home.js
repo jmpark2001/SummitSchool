@@ -22,7 +22,7 @@ export default function Home() {
             </div>
             <div className="fallSemester">
                 <p style={{margin: "1rem 0"}}>2023 FALL SEMESTER</p>
-                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 14 and will end on Sep 3.</p>
+                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 14 and will end on Sep 10.</p>
                 <div style={{display: "flex", justifyContent: "center", marginBottom: "4vh"}}>
                     <Link to={"/registration"} style={{textDecoration: "none", display: "flex"}}>
                         <div className="registerNow playfair">

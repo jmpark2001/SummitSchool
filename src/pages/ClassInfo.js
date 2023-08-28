@@ -30,7 +30,7 @@ export default function ClassInfo() {
             <div className="classInfo">
                 <p style={{color: "#B56727", margin: "2rem auto"}}><b>Welcome to One Mind Church Summit School!</b></p>
                 <p><b>REGISTRATION</b></p>
-                <p>Registration for the fall semester starts on August 14th and will end on September 3rd.</p>
+                <p>Registration for the fall semester starts on August 14th and will end on September 10th.</p>
                 <br/><br/>
                 <p><b>2023 FALL SEMESTER</b></p>
                 <p>The fall semeseter begins on September 16th and ends on January 20th</p>
