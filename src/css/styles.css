@@ -720,7 +720,7 @@ input[type="checkbox"] {
     margin-right: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1365px) {
     .biblicalInfoClasses {
         flex-direction: column;
         row-gap: 1rem; 
@@ -773,7 +773,7 @@ input[type="checkbox"] {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1365px) {
     .differentClasses {
         flex-direction: column;
         align-items: stretch;
