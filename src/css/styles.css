@@ -627,6 +627,7 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: "Glacial Indifference";
 }
 
 .backToHomeDiv li{
@@ -638,6 +639,7 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: "Glacial Indifference";
 }
 
 .backToHomeDivOther li{
@@ -789,7 +791,7 @@ input[type="checkbox"] {
 
 .classesInfoDescription {
     width: 70%;
-    font-family: "GlacialIndifferenceRegular", "serif";
+    font-family: "Glacial Indifference", "serif";
 }
 
 .differentClasses {
