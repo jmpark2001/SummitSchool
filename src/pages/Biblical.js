@@ -1,4 +1,17 @@
 import biblical from "../images/BiblicalClasses.jpg"
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+
+function CustomLink({to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({path: resolvedPath.pathname, end: true})
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
+}
 
 export default function Biblical() {
     return (
@@ -6,6 +19,10 @@ export default function Biblical() {
             <div className="classesBanner">
                 <img src={biblical} className="classesBanners" alt=""></img>
                 <p style={{position:"absolute", margin: "0", color: "black", fontWeight: "900", fontSize: "clamp(1.8rem, 1.2109rem + 2.6182vw, 5.4rem)"}}>BIBLICAL CLASSES</p>
+            </div>
+            <div className="backToHomeDivOther">
+                <CustomLink to="/" className="backToHome">Home</CustomLink>
+                <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;/ Biblical Classes</p>
             </div>
             <div className="differentClasses">
                 <ul className="biblicalInfoClasses">

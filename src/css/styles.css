@@ -563,6 +563,10 @@ input[type="checkbox"] {
     margin-bottom: 0;
 }
 
+.classInfoDivTitle li {
+    list-style-type: none;
+}
+
 .classInfoClassesUl {
     padding: 0 0 0 1%;
     margin: 0;
@@ -619,10 +623,49 @@ input[type="checkbox"] {
     padding-left: 5%;
 }
 
+.backToHomeDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.backToHomeDiv li{
+    list-style-type: none;
+    margin: 5rem 0 0;
+}
+
+.backToHomeDivOther {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.backToHomeDivOther li{
+    list-style-type: none;
+    margin: 2rem 0 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .backToHomeDiv {
+        display: none;
+    }
+
+    .backToHomeDivOther {
+        display: none;
+    }
+}
+
+.backToHome {
+    font-size: clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem);
+    color: black;
+    text-decoration: none;
+}
+
 .staffPageTitle {
     text-align: left;
     color: #696969;
     font-size: clamp(3rem, 2.6727rem + 1.4545vw, 5rem);
+    margin-top: 0;
 }
 
 .staffList {

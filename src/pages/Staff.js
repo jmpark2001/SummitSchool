@@ -8,13 +8,27 @@ import yeobeen from '../images/yeobeen.jpg'
 import sungkyung from '../images/sungkyungyoo.jpg'
 import justin from '../images/justin.jpg'
 import joanne from '../images/joanne.jpg'
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+
+function CustomLink({to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({path: resolvedPath.pathname, end: true})
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
+}
 
 export default function Staff() {
     return (
         <div className="staffPage">
-            {/* <div className="homeLink">
-
-            </div> */}
+            <div className="backToHomeDiv">
+                <CustomLink to="/" className="backToHome">Home</CustomLink>
+                <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "5rem 0 0"}}>&nbsp;/ Staff</p>
+            </div>
             <h1 className="staffPageTitle playfair">Staff Directory</h1>
             <div className="staffList">
                 <div className="staffBox">
