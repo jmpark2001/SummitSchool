@@ -36,7 +36,7 @@ export default function ClassInfo() {
                 <p>The fall semeseter begins on September 16th and ends on January 20th</p>
                 <br/><br/>
                 <p><b>SCHEDULE</b></p>
-                <p>Summit School classes will take place every Saturday from 9am-12pm</p>
+                <p>Summit School classes will take place every Saturday from 9am-1:30pm</p>
                 <br/>
                 <p>9AM - 9:50AM: Worship</p>
                 <p>10AM - 10:50AM: 1st Class</p>
