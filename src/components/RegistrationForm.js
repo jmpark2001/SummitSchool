@@ -21,6 +21,7 @@ function RegistrationForm() {
         studentPhoneNumber: 0,
         parentPhoneNumber: 0,
         parentEmail: "",
+        studentGrade: 0,
         homeAddress: "",
         homeAddress2: "",
         homeCity: "",
@@ -114,6 +115,7 @@ function RegistrationForm() {
             studentPhoneNumber: 0,
             parentPhoneNumber: 0,
             parentEmail: "",
+            studentGrade: 0,
             homeAddress: "",
             homeAddress2: "",
             homeCity: "",
@@ -223,6 +225,15 @@ function RegistrationForm() {
                                     </Form.Label>
                                     <Col sm={2}>
                                         <Form.Control type="email" name="email" placeholder="Enter Email Address" value={form.parentEmail} onChange={(e) => updateForm({ parentEmail: e.target.value})} required></Form.Control>
+                                    </Col>
+                                </Form.Group>
+
+                                <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalNumber">
+                                    <Form.Label column sm={2}>
+                                        STUDENT GRADE
+                                    </Form.Label>
+                                    <Col sm={2}>
+                                        <Form.Control type="number" name="studentGrade" placeholder="Enter Student Grade" value={form.studentGrade} onChange={(e) => updateForm({ studentGrade: e.target.value})} required></Form.Control>
                                     </Col>
                                 </Form.Group>
                                 <p className="form-label col-form-label col-sm-2 leftAlign marginTop" style={{margin: "0 0 0.5vh 0", fontWeight: "bold"}}>HOME ADDRESS</p>
