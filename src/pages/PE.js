@@ -42,7 +42,7 @@ export default function PE() {
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Badminton</p>
-                    <p className="glacial"> Badminton class is a class where students can participate in learning the rules of badminton and play against one another.</p>
+                    <p className="glacial"> Badminton class is a class where students can participate in learning the rules of badminton and play with one another.</p>
                 </div>
             </div> 
         </div>
