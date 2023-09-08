@@ -29,7 +29,7 @@ export default function Academic() {
             <div className="differentClasses">
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">SAT Prep (Math, Reading)</p>
-                    <p className="glacial">SAT preparation classes will be offered to students in grades 9 through 12. Classes will focus on SAT math and SAT reading.</p>
+                    <p className="glacial">SAT preparation classes will be offered to students in grades 9 through 12. Students under 9th grade will be offered SAT preparation classes on a case-by-case basis. Classes will focus on SAT math and SAT reading.</p>
                 </div>
             </div>
         </div>
