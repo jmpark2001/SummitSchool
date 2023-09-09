@@ -36,7 +36,7 @@ export default function ClassInfo() {
                 <p>The fall semeseter begins on September 16th and ends on January 20th</p>
                 <br/><br/>
                 <p><b>SCHEDULE</b></p>
-                <p>Summit School classes will take place every Saturday from 9AM-1:30PM</p>
+                <p>Summit School classes will take place every Saturday from 9AM - 1:30PM</p>
                 <br/>
                 <p>9AM - 9:50AM: Worship</p>
                 <p>10AM - 10:50AM: 1st Class</p>
@@ -44,7 +44,7 @@ export default function ClassInfo() {
                 <p>12PM - 12:30PM: Lunch</p>
                 <p>12:40PM - 1:30PM: 3rd Class</p>
                 <br/>
-                <p>Students can select up to three classes of their choice.</p>
+                <p>Students can select up to three classes of their choice. Pre-K/Kindergarten students wil only have their Pre-K/Kindergarten class  from 10AM - 12PM</p>
                 <br/><br/>
                 <p><b>FEE</b></p>
                 <p>The fee for summit school will be $200 per semester. Payment information can be found on the registration form.</p>
@@ -52,6 +52,7 @@ export default function ClassInfo() {
             </div>
             <div className="classInfoClassesDiv">
                 <div className="classInfoClasses glacial">
+                    <p style={{margin: "0", marginTop: "clamp(1.5rem, 1.2545rem + 1.0909vw, 3rem)"}}>Click on the class categories to find more information about the classes.</p>
                     <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome" style={{color: "#B56727"}}>BIBLICAL</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
                         {classList.slice(0, 5).map((className, index) =>
