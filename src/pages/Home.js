@@ -6,6 +6,8 @@ import academic from "../images/Academic.jpg"
 import kindergarten from "../images/Kindergarten.jpg"
 import pe from "../images/PE.jpg"
 import { Link } from "react-router-dom"
+import Footer from "../components/Footer"
+
 
 export default function Home() {
     return (
@@ -21,8 +23,8 @@ export default function Home() {
                 <p className="warning">For an ideal performance, use a desktop or a laptop when viewing the website</p>
             </div>
             <div className="fallSemester">
-                <p style={{margin: "1rem 0"}}>2023 FALL SEMESTER</p>
-                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 14 and will end on Sep 10.</p>
+                <p style={{margin: "1rem 0"}}>2024 SPRING SEMESTER</p>
+                <p className="fallSemesterText glacial">Registration for the spring semester starts on Jan 22 and will end on Feb 11.</p>
                 <div style={{display: "flex", justifyContent: "center", marginBottom: "4vh"}}>
                     <Link to={"/registration"} style={{textDecoration: "none", display: "flex"}}>
                         <div className="registerNow playfair">
@@ -32,7 +34,7 @@ export default function Home() {
                 </div>
             </div>
             <hr style={{borderWidth: "0 0 clamp(0.2rem, 0.1591rem + 0.1818vw, 0.45rem) 0", borderColor: "black", borderStyle: "solid", width: "20%", margin: "clamp(4rem, 2.3333rem + 7.4074vw, 9rem) 0 0 0"}}></hr>
-            <p className="classesForFall">CLASSES FOR FALL 2023</p>
+            <p className="classesForFall">CLASSES FOR SPRING 2024</p>
             <div className="homeLinksGrid">
                 <Link to={"/biblical"} className="homeLink">
                     <div className="biblicalLink">
@@ -61,21 +63,17 @@ export default function Home() {
                 <Link to={"/kindergarten"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={kindergarten} alt=""></img>
-                        <p style={{top: "40%", lineHeight: "normal"}} className="homeLinkTitles">PRE-K/ KINDERGARTEN</p>
+                        <p style={{top: "45%", lineHeight: "normal"}} className="homeLinkTitles">PRE-K/ KINDERGARTEN</p>
                     </div>
                 </Link>  
                 <Link to={"/pe"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={pe} alt=""></img>
-                        <p style={{top: "40%", lineHeight: "normal"}} className="homeLinkTitles">PHYSICAL EDUCATION</p>
+                        <p style={{top: "45%", lineHeight: "normal"}} className="homeLinkTitles">PHYSICAL EDUCATION</p>
                     </div>
                 </Link>  
             </div>
-            <div style={{display: "relative", margin: "10vh 0"}}>
-                <div className="classScheduleBanner">
-                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from 9/16 to 1/20</p>
-                </div>
-            </div>
+            <Footer/>
         </div>
     )
 }

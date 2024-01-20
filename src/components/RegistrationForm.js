@@ -138,31 +138,37 @@ function RegistrationForm() {
                             {window.screen.width > 769 ? (
                                     <>
                                         <div className="dates">
-                                            <p style={{margin: "0 0 0 5%", width: "100%"}}><b>REGISTRATION & PAYMENT PERIOD:</b> August 14th - September 10th</p>
+                                            <p style={{margin: "0 0 0 5%", width: "100%"}}><b>REGISTRATION & PAYMENT PERIOD:</b> January 22nd - February 11th</p>
                                         </div> 
                                         <div style={{marginTop: "0"}} className="dates">
-                                            <p style={{margin: "0 0 0 5%", width: "80%"}}><b>FALL SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
-                                            from September 16th - January 20th</p>
+                                            <p style={{margin: "0 0 0 5%", width: "80%"}}><b>SPRING SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
+                                            from March 2nd - June 1st</p>
                                         </div>
                                 </>
                                 ) : (
                                     <>
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>REGISTRATION & PAYMENT PERIOD</p>
-                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>August 14th - September 3rd</p>
+                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>January 22nd - February 11th</p>
                                         </div> 
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>FALL SEMESTER</p>
+                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>SPRING SEMESTER</p>
                                             <p style={{fontSize: "1.3rem", margin: "0 auto", width: "90%"}}>Every Saturday except Remnant Day (Last Saturday of every month)
-                                            from September 16th - January 20th</p>
+                                            from March 2nd - June 1st</p>
                                         </div> 
                                     </>
                                 )
                             }
                             <div className="formScheduleDiv">
                                 <div className="formScheduleContent">
+                                    <p className="classesInfoTitle" style={{display: "inline"}}>PRAISE:</p>
+                                    <p style={{display: "inline"}}> 9AM - 9:15AM</p>
+                                    <br></br>
                                     <p className="classesInfoTitle" style={{display: "inline"}}>WORSHIP:</p>
-                                    <p style={{display: "inline"}}> 9AM - 9:50AM</p>
+                                    <p style={{display: "inline"}}> 9:15AM - 9:40AM</p>
+                                    <br></br>
+                                    <p className="classesInfoTitle" style={{display: "inline"}}>FORUM:</p>
+                                    <p style={{display: "inline"}}> 9:40AM - 9:55AM</p>
                                     <br></br>
                                     <p className="classesInfoTitle" style={{display: "inline"}}>FIRST CLASS:</p>
                                     <p style={{display: "inline"}}> 10AM - 10:50AM</p>

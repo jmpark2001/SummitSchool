@@ -30,24 +30,26 @@ export default function ClassInfo() {
             <div className="classInfo">
                 <p style={{color: "#B56727", margin: "2rem auto"}}><b>Welcome to One Mind Church Summit School!</b></p>
                 <p><b>REGISTRATION</b></p>
-                <p>Registration for the fall semester starts on August 14th and will end on September 10th.</p>
+                <p>Registration for the spring semester starts on January 22nd and will end on February 11th</p>
                 <br/><br/>
-                <p><b>2023 FALL SEMESTER</b></p>
-                <p>The fall semeseter begins on September 16th and ends on January 20th</p>
+                <p><b>2023 SPRING SEMESTER</b></p>
+                <p>The spring semeseter begins on March 2nd and ends on June 1st</p>
                 <br/><br/>
                 <p><b>SCHEDULE</b></p>
                 <p>Summit School classes will take place every Saturday from 9AM - 1:30PM</p>
                 <br/>
-                <p>9AM - 9:50AM: Worship</p>
+                <p>9AM - 9:15AM: Praise</p>
+                <p>9:15AM - 9:40AM: Message</p>
+                <p>9:40AM - 9:55AM: Forum</p>
                 <p>10AM - 10:50AM: 1st Class</p>
                 <p>11AM - 11:50AM: 2nd Class</p>
                 <p>12PM - 12:30PM: Lunch</p>
                 <p>12:40PM - 1:30PM: 3rd Class</p>
                 <br/>
-                <p>Students can select up to three classes of their choice. Pre-K/Kindergarten students wil only have their Pre-K/Kindergarten class  from 10AM - 12PM</p>
+                <p>Students can select up to three classes of their choice. Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class  from 10AM - 12PM</p>
                 <br/><br/>
                 <p><b>FEE</b></p>
-                <p>The fee for summit school will be $200 per semester. Payment information can be found on the registration form.</p>
+                <p>The fee for summit school will be $200 per semester for the first child, $150 for the second child, and $100 for any additional children. Payment information can be found on the registration form.</p>
                 <br/>
             </div>
             <div className="classInfoClassesDiv">
