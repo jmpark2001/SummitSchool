@@ -30,32 +30,20 @@ export default function Biblical() {
                 <ul className="biblicalInfoClasses">
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Biblical Worldview</p>
-                            <p className="classesInfoDescription">This class will help you to have a gospel-centered perspective to interpret and understand what is going on in the world.</p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Church History</p>
-                            <p className="classesInfoDescription">Survey or overview of church history (flow of covenant) from past to present.</p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Systematic Theology</p>
-                            <p className="classesInfoDescription">Go over various doctrines found in the Bible (God, man, sin, Christ, etc.)</p>  
+                            <p className="classesInfoTitle">Christian Biography A & B</p>
+                            <p className="classesInfoDescription">Readings in select Christian heroes of faith and their impact on history and the world</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
                             <p className="classesInfoTitle">Old Testament</p>
-                            <p className="classesInfoDescription">Read through and discuss various books in the Old Testament</p>  
+                            <p className="classesInfoDescription">Survey of the books of the Old Testament and their major themes</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
                             <p className="classesInfoTitle">New Testament</p>
-                            <p className="classesInfoDescription">Read through and discuss various books in the New Testament</p>  
+                            <p className="classesInfoDescription">Survey of the books of the New Testament and their major themes</p>  
                         </div>
                     </li>
                 </ul>

@@ -7,8 +7,8 @@ import { doc, setDoc } from "firebase/firestore"
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
-    const classList2 = ["Christian Biography A", "Christian Biography B", "Old Testament", "New Testament", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Flute", "Drum", "Guitar", "Piano", "SAT", "Tutoring", "Coding", "General", "Sports"]
-    const classList = ["Christian Biography A", "Christian Biography B", "Old Testament", "New Testament", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
+    const classList2 = ["Christian Biography A", "Christian Biography B", "Introduction to Old Testament", "Introduction to New Testament", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Flute", "Drum", "Guitar", "Piano", "SAT", "Tutoring", "Coding", "General", "Sports"]
+    const classList = ["Christian Biography A", "Christian Biography B", "Introduction to Old Testament", "Introduction to New Testament", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Beginner", "Adult English Intermediate", "Adult English Advanced", "Flute Beginner",
      "Flute Some Experience", "Flute Advanced", "Drum Beginner", "Drum Some Experience", "Drum Advanced", "Guitar Beginner", "Guitar Some Experience", "Guitar Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "SAT Math", "Tutoring Math",
       "Tutoring English", "Coding", "Kindergarten", "Basketball", "Stretching and Mobility", "Badminton"]
