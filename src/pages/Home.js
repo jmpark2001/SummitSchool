@@ -20,7 +20,7 @@ export default function Home() {
                         <p className="homeSubtitle glacial">Platform, Watchtower, and Antenna for our future generations.</p>
                     </div>
                 </div>
-                <p className="warning">For an ideal performance, use a desktop or a laptop when viewing the website</p>
+                <p className="warning"></p>
             </div>
             <div className="fallSemester">
                 <p style={{margin: "1rem 0"}}>2024 SPRING SEMESTER</p>
@@ -72,6 +72,11 @@ export default function Home() {
                         <p style={{top: "45%", lineHeight: "normal"}} className="homeLinkTitles">PHYSICAL EDUCATION</p>
                     </div>
                 </Link>  
+            </div>
+            <div style={{display: "relative", margin: "10vh 0"}}>
+                <div className="classScheduleBanner">
+                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from 3/2 to 6/1</p>
+                </div>
             </div>
             {/* <Footer/> */}
         </div>
