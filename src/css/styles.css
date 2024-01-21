@@ -369,6 +369,19 @@ Form {
     font-size: clamp(1rem, 0.5424rem + 0.5360vw, 1.4rem);
 }
 
+.academicClassDiv{
+    width: 20%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1366px) {
+    .academicClassDiv {
+        width: 100%;
+    }
+}
+
 input[type="checkbox"] {
     margin-right: .675rem;
 }
