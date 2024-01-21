@@ -277,7 +277,7 @@ function RegistrationForm() {
                             <div style={{marginTop: "1.8rem", width: "100%", padding: "0 0 0 2.5%", textAlign: "left", fontSize: "clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem)"}}>
                                 <p style={{color: "red", display: "inline"}}>*</p>
                                 {/* <p className="instructions" style={{display: "inline"}}>Choose at least 1 biblical class and up to 1 additional class of your choice</p> */}
-                                <p className="instructions" style={{display: "inline"}}>Choose up to three classes of your choice</p>
+                                <p className="instructions" style={{display: "inline"}}>Choose up to three classes of your choice. Christian Biography A is for students 6th grade and under. Christian Biography B is for students 7th grade and older.</p>
                             </div>
                             <div style={{display: "flex", padding: "0 0 0 2.5%", flexDirection: "column", width: "100%"}}>
                                 <p className="biblicalTitle">Biblical</p>
