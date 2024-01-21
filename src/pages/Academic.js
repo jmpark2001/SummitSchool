@@ -32,12 +32,12 @@ export default function Academic() {
                     <p className="glacial">SAT math preparation will be offered to students in grades 9 through 12. Students under 9th grade will be offered SAT preparation classes on a case-by-case basis.</p>
                 </div>
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Tutoring</p>
+                    <p className="classesInfoTitle">Tutoring (Math & English)</p>
                     <p className="glacial">Tutoring will be offered to students who are seeking additional help in their math or english skills outside of SAT preparation. These classes are catered towards school courses or general help with certain topics.</p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Coding</p>
-                    <p className="glacial">Coding class will be available for students who want learn what coding is and how to code. The class will focus on learning the language Java and students will work a project by the end of the semester.</p>
+                    <p className="glacial">Coding class will be available for students in 7th grade or above who want learn what coding is and how to code. The class will focus on learning the language Java and students will work a project by the end of the semester.</p>
                 </div>
             </div>
         </div>

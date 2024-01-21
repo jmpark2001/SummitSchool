@@ -15,7 +15,7 @@ function RegistrationForm() {
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
      "Massachusettes", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
      "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
-    const [checkedState, setCheckedState] = useState(new Array(classList.length).fill(false))
+    const [checkedState, setCheckedState] = useState(new Array(classList.length + 1).fill(false))
     const [form, setForm] = useState ({
         studentFullName:  "",
         parentFullName: "",
@@ -28,20 +28,13 @@ function RegistrationForm() {
         homeCity: "",
         homeState: "DEFAULT",
         homeZip: "",
-        classes: []
+        classes: [],
+        waiver: false
     })
 
     const handleOnChange = (position, e) => {
         let checkedBoxes = checkedState.filter((i) => i)
-        // function hasBiblical() {
-        //     if (checkedState[0] === true || checkedState[1] === true || checkedState[2] === true || checkedState[3] === true || checkedState[4] === true || classList.slice(0, 5).includes(e.target.name)) {
-        //         return true
-        //     }
-        //     else {
-        //         return false
-        //     }
-        // }
-        if (checkedBoxes.length >= 3 && e.target.checked) {
+        if (checkedBoxes.length >= 3 && e.target.checked && e.target.name !== "waiver") {
             return
         }
         // if (checkedBoxes.length >= 1 && !hasBiblical() && e.target.checked){
@@ -51,18 +44,27 @@ function RegistrationForm() {
             index === position ? !item : item
         )
         setCheckedState(updateCheckedState)
-        let checkedIndices = [...updateCheckedState.keys()].filter(i => updateCheckedState[i])
-        let updatedClasses = []
-        for (let i=0; i<checkedIndices.length; i++) {
-            updatedClasses.push(classList[checkedIndices[i]])
+        if (e.target.name === "waiver"){
+            updateForm({waiver: true})
         }
-        updateForm({classes: updatedClasses})
+        else {
+            let checkedIndices = [...updateCheckedState.keys()].filter(i => updateCheckedState[i])
+            let updatedClasses = []
+            for (let i=0; i<checkedIndices.length; i++) {
+                updatedClasses.push(classList[checkedIndices[i]])
+            }
+            updateForm({classes: updatedClasses})
+        }
     }
     
     // function atLeastOneCheckboxIsChecked(){
     //     const checkboxes = Array.from(document.getElementsByClassName("bibleCheck"))
     //     return checkboxes.reduce((acc, curr) => acc || curr.checked, false)
     // }
+
+    function waiverChecked() {
+        return checkedState[39]
+    }
     
     function updateForm(value) {
         return setForm((prev) => {
@@ -70,9 +72,51 @@ function RegistrationForm() {
         })
     }
 
+    function hasPhysical() {
+        if (checkedState[36] === true || checkedState[37] === true || checkedState[38] === true) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    
     async function onSubmit(e) {
         e.preventDefault();
         const newForm = {...form}
+        console.log(newForm)
+        if (hasPhysical() && !waiverChecked()) {
+            alert("Please sign the waiver checkbox")
+        }
+        else {
+            try {        
+                console.log(newForm.studentFullName)
+
+                await setDoc(doc(db, "registrations", newForm.studentFullName), {
+                    ...newForm
+                })
+                console.log("Document written with ID: ", newForm.studentFullName)
+            } catch (e) {
+                console.error("Error addding document: ", e)
+            }  
+            window.alert("You submitted the form")
+            setForm({ 
+                studentFullName: "",
+                parentFullName: "",
+                studentPhoneNumber: 0,
+                parentPhoneNumber: 0,
+                parentEmail: "",
+                studentGrade: 0,
+                homeAddress: "",
+                homeAddress2: "",
+                homeCity: "",
+                homeState: "DEFAULT",
+                homeZip: "",
+                classes: [],
+                waiver: false
+            })
+            setCheckedState(new Array(classList.length + 1).fill(false))
+        }
         // if (!atLeastOneCheckboxIsChecked()) {
         //     alert("One biblical class is required to submit the form")
         // }
@@ -101,30 +145,7 @@ function RegistrationForm() {
         //     })
         //     setCheckedState(new Array(classList.length).fill(false))
         // }
-        try {
-            await setDoc(doc(db, "registrations", newForm.studentFullName), {
-                ...newForm
-            })
-            console.log("Document written with ID: ", newForm.studentFullName)
-        } catch (e) {
-            console.error("Error addding document: ", e)
-        }  
-        window.alert("You submitted the form")
-        setForm({ 
-            studentFullName: "",
-            parentFullName: "",
-            studentPhoneNumber: 0,
-            parentPhoneNumber: 0,
-            parentEmail: "",
-            studentGrade: 0,
-            homeAddress: "",
-            homeAddress2: "",
-            homeCity: "",
-            homeState: "DEFAULT",
-            homeZip: "",
-            classes: []
-        })
-        setCheckedState(new Array(classList.length).fill(false))
+        
     }
     
 
@@ -277,7 +298,7 @@ function RegistrationForm() {
                             <div style={{marginTop: "1.8rem", width: "100%", padding: "0 0 0 2.5%", textAlign: "left", fontSize: "clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem)"}}>
                                 <p style={{color: "red", display: "inline"}}>*</p>
                                 {/* <p className="instructions" style={{display: "inline"}}>Choose at least 1 biblical class and up to 1 additional class of your choice</p> */}
-                                <p className="instructions" style={{display: "inline"}}>Choose up to three classes of your choice. Christian Biography A is for students 6th grade and under. Christian Biography B is for students 7th grade and older.</p>
+                                <p className="instructions" style={{display: "inline"}}>Choose up to three classes of your choice. Christian Biography A is for students 6th grade and under. Christian Biography B is for students 7th grade and over.</p>
                             </div>
                             <div style={{display: "flex", padding: "0 0 0 2.5%", flexDirection: "column", width: "100%"}}>
                                 <p className="biblicalTitle">Biblical</p>
@@ -548,6 +569,22 @@ function RegistrationForm() {
                                     </ul>
                                 </div>
                             </div>
+                            <div>
+                                <h2>Waiver for Physical Education Students</h2>
+                                <h3>If your child is signed up for a physical education class, please read and check the box to sign the waiver.</h3>
+                                <p>
+                                By giving consent, I authorize my child to leave the church building and attend sports practices associated with the Summit School program at Riverbend Park, 13529 Fitzhugh Ln, Woodbridge, VA 22191. I agree that One Mind Church and Summit School will not be held responsible if my child sustains injury during the Sports class and if anything happens on the way to and from the said location or on church premises.  I authorize my child to receive emergency medical treatment if he or she sustains an injury. I agree that I am responsible for paying all costs incurred. I agree to take full responsibility for any damage my child may cause to Summit School property, property visited on field trips, or other personal property.
+                                </p>
+                                <input
+                                    type="checkbox"
+                                    id="waiver"
+                                    name="waiver"
+                                    checked={checkedState[39]}
+                                    onChange={(e) => handleOnChange(39, e)}
+                                />
+                                <label>{"I consent to the waiver above"}</label>
+                            </div>
+                            <br/>
                             <p style={{fontSize: "clamp(1.4rem, 1.2691rem + 0.5818vw, 2.2rem)", fontWeight: "bold"}}>Methods of Payment ($200)</p>
                             <ol className="payment" style={{listStyle: "none"}}>
                                 <p style={{fontWeight: "bold"}}>Click on the links below to pay with credit or debit. For multiple children the pricing goes as follows: The first child you enroll will cost $200, the second child is $150,
