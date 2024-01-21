@@ -6,7 +6,7 @@ import academic from "../images/Academic.jpg"
 import kindergarten from "../images/Kindergarten.jpg"
 import pe from "../images/PE.jpg"
 import { Link } from "react-router-dom"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 
 
 export default function Home() {
