@@ -973,6 +973,15 @@ input[type="checkbox"] {
     }
 }
 
+.waiverDiv {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    border: .1em solid black;
+    padding: 1em;
+}
+
 
 /* burger menu css */
 /* Position and sizing of burger button */

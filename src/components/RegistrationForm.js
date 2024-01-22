@@ -84,14 +84,11 @@ function RegistrationForm() {
     async function onSubmit(e) {
         e.preventDefault();
         const newForm = {...form}
-        console.log(newForm)
         if (hasPhysical() && !waiverChecked()) {
             alert("Please sign the waiver checkbox")
         }
         else {
             try {        
-                console.log(newForm.studentFullName)
-
                 await setDoc(doc(db, "registrations", newForm.studentFullName), {
                     ...newForm
                 })
@@ -569,7 +566,7 @@ function RegistrationForm() {
                                     </ul>
                                 </div>
                             </div>
-                            <div>
+                            <div className="waiverDiv">
                                 <h2>Waiver for Physical Education Students</h2>
                                 <h3>If your child is signed up for a physical education class, please read and check the box to sign the waiver.</h3>
                                 <p>
