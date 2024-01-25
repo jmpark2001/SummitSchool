@@ -14,8 +14,8 @@ function CustomLink({to, children, ...props}) {
 }
 
 export default function ClassInfo() {
-    const classList = ["Christian Biography A", "Christian Biography B", "Introduction to Old Testament", "Introduction to New Testament", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Flute",
-     "Drum", "Guitar", "Piano", "SAT Math", "Tutoring Math", "Tutoring English", "Coding", "Pre-K/K", "Basketball", "Stretching and Mobility", "Badminton"]
+    const classList = ["Christian Biography A", "Christian Biography B", "Introduction to Old Testament", "Introduction to New Testament", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", 
+    "Flute", "Guitar", "Piano", "SAT Math", "Tutoring Math", "Tutoring English", "Coding", "Pre-K/K", "Basketball", "Stretching and Mobility", "Badminton"]
 
     return (
         <div className="classInfoPage">
@@ -73,7 +73,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/instrument" className="backToHome" style={{color: "#B56727"}}>INSTRUMENT</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(9, 13).map((className, index) =>
+                        {classList.slice(9, 12).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -81,7 +81,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/academic" className="backToHome" style={{color: "#B56727"}}>ACADEMIC</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(13,17).map((className, index) =>
+                        {classList.slice(12,16).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -89,7 +89,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/kindergarten" className="backToHome" style={{color: "#B56727"}}>PRE-K / Kindergarten</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(17,18).map((className, index) =>
+                        {classList.slice(16,17).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -97,7 +97,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/pe" className="backToHome" style={{color: "#B56727"}}>PHYSICAL EDUCATION</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(18).map((className, index) =>
+                        {classList.slice(17).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
