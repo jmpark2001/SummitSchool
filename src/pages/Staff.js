@@ -30,6 +30,12 @@ export default function Staff() {
                 <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "5rem 0 0"}}>&nbsp;/ Staff</p>
             </div>
             <h1 className="staffPageTitle playfair">Staff Directory</h1>
+            <div className='staffContactUs'>
+                <h3><b>Contact Summit School</b></h3>
+                <p>Phone Number: 1-866-237-2377</p>
+                <p>Email Address: summitschool@237omc.org</p>
+            </div>
+            
             <div className="staffList">
                 <div className="staffBox">
                     <div className="staffMember">

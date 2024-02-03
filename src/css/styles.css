@@ -982,6 +982,15 @@ input[type="checkbox"] {
     padding: 1em;
 }
 
+.staffContactUs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.staffContactUs p {
+    margin-top: .5rem;
+}
 
 /* burger menu css */
 /* Position and sizing of burger button */
