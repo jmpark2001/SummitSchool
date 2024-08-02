@@ -32,17 +32,14 @@ export default function PE() {
                     <p className="glacial">
                         Basketball class will allow students to learn the basics of basketball while getting exercise outside.
                     </p>
-                    <p className="glacial" style={{fontWeight: "900"}}>
-                        *Students are encouraged to bring a basketball if they own one but one will be provided.
-                    </p>
-                </div>
-                <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Stretching and Mobility</p>
-                    <p className="glacial">Stretching and Mobility provides students a relaxing environment to stretch their bodies in a healthy way.</p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Badminton</p>
                     <p className="glacial"> Badminton class is a class where students can participate in learning the rules of badminton and play with one another.</p>
+                </div>
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Weight Lifting</p>
+                    <p className="glacial">Description</p>
                 </div>
             </div> 
         </div>

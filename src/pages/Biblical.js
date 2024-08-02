@@ -30,20 +30,20 @@ export default function Biblical() {
                 <ul className="biblicalInfoClasses">
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Christian Biography A & B</p>
-                            <p className="classesInfoDescription">Readings in select Christian heroes of faith and their impact on history and the world</p>  
+                            <p className="classesInfoTitle">Christ in the Old Testament</p>
+                            <p className="classesInfoDescription">Description</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Old Testament</p>
-                            <p className="classesInfoDescription">Survey of the books of the Old Testament and their major themes</p>  
+                            <p className="classesInfoTitle">Major Prophets</p>
+                            <p className="classesInfoDescription">Description</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">New Testament</p>
-                            <p className="classesInfoDescription">Survey of the books of the New Testament and their major themes</p>  
+                            <p className="classesInfoTitle">Biblical Figure Reading</p>
+                            <p className="classesInfoDescription">Description</p>  
                         </div>
                     </li>
                 </ul>

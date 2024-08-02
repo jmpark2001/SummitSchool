@@ -10,6 +10,10 @@ import Instrument from './pages/Instrument';
 import Academic from './pages/Academic';
 import Kindergarten from './pages/Kindergarten';
 import PE from './pages/PE';
+import Chess from './pages/Chess';
+import Map from './pages/GoogleMap'
+import Contact from './pages/Contact';
+import Volunteer from './pages/Page';
 import { Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -32,6 +36,10 @@ function App() {
           <Route path='/academic' element={<Academic/>}/>
           <Route path='/kindergarten' element={<Kindergarten/>}/>
           <Route path='/pe' element={<PE/>}/>
+          <Route path='/chess' element={<Chess/>}/>
+          <Route path='/map' element={<Map/>}/>
+          <Route path='/volunteer' element={<Volunteer/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
         <ScrollToTop/>
       </div>
