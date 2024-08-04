@@ -741,15 +741,19 @@ input[type="checkbox"] {
 .biblicalInfoClasses {
     display: flex;
     flex-direction: row;
+    width: 100%;
     color: black;
     padding: 0 5vh;
+    justify-content: center;
+    align-items: stretch;
+    column-gap: 1rem;
 }
 
 .biblicalInfoClasses li {
     list-style: none;
     text-align: left;
     font-size: 2vh;
-    width: 16%;
+    width: 25%;
     margin-right: 5%;
     background-color: #EFF0F0;
 }

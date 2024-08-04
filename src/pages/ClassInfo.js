@@ -14,8 +14,8 @@ function CustomLink({to, children, ...props}) {
 }
 
 export default function ClassInfo() {
-    const classList = ["Christ in the Old Testament", "Major Prophets", "Biblical Figure Reading", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Flute", "Piano", "Reading",
-         "Writing", "Tutoring Math", "Tutoring English", "Pre-K/K", "Basketball", "Badminton", "Weight Lifting", "Chess"]
+    const classList = ["Christ in the Old Testament", "Major Prophets", "Worship and Praise", "Christian Reading", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Flute", "Piano", "Reading",
+         "Writing", "Tutoring Math", "Tutoring English", "Pre-K/K", "Basketball", "Badminton", "Weight Lifting", "Introduction to Chess"]
 
     return (
         <div className="classInfoPage">
@@ -57,7 +57,7 @@ export default function ClassInfo() {
                     <p style={{margin: "0", marginTop: "clamp(1.5rem, 1.2545rem + 1.0909vw, 3rem)"}}>Click on the class categories to find more information about the classes.</p>
                     <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome" style={{color: "#B56727"}}>BIBLICAL</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(0, 3).map((className, index) =>
+                        {classList.slice(0, 4).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -65,7 +65,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/language" className="backToHome" style={{color: "#B56727"}}>LANGUAGE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(3, 8).map((className, index) =>
+                        {classList.slice(4, 9).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -73,7 +73,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/instrument" className="backToHome" style={{color: "#B56727"}}>INSTRUMENT</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(8, 10).map((className, index) =>
+                        {classList.slice(9, 11).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -81,7 +81,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/academic" className="backToHome" style={{color: "#B56727"}}>ACADEMIC</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(10,14).map((className, index) =>
+                        {classList.slice(11,15).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -89,7 +89,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/kindergarten" className="backToHome" style={{color: "#B56727"}}>PRE-K / Kindergarten</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(14,15).map((className, index) =>
+                        {classList.slice(15,16).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -97,7 +97,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/pe" className="backToHome" style={{color: "#B56727"}}>PHYSICAL EDUCATION</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(15, 18).map((className, index) =>
+                        {classList.slice(16, 19).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -105,7 +105,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/chess" className="backToHome" style={{color: "#B56727"}}>CHESS</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(18).map((className, index) =>
+                        {classList.slice(19).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>

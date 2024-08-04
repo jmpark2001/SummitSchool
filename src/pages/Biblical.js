@@ -31,19 +31,30 @@ export default function Biblical() {
                     <li>
                         <div className="biblicalInfoClassesList">
                             <p className="classesInfoTitle">Christ in the Old Testament</p>
-                            <p className="classesInfoDescription">Description</p>  
+                            <p className="classesInfoDescription">We will be looking through the 39 books of the Old Testament to see how Christ was foreshadowed and all the ways in which the
+                                persons, events and objects were a type of Christ to come.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
                             <p className="classesInfoTitle">Major Prophets</p>
-                            <p className="classesInfoDescription">Description</p>  
+                            <p className="classesInfoDescription">The class will examine God's great purpose in the special revelations to announce beforehand the work that the Son of God 
+                                would accomplish so that his people who lived prior to his coming might believe in him and have eternal life. Old Testament revelation anticipates the finished
+                                 work of Christ (Isaiah, Jeremiah, Ezekiel, and Daniel).</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Biblical Figure Reading</p>
-                            <p className="classesInfoDescription">Description</p>  
+                            <p className="classesInfoTitle">Christian Reading</p>
+                            <p className="classesInfoDescription">In this class, we will be reading on heroes of faith in the 19-20th century who changed the spiritual flow of America. Remnants
+                                can learn to model after such individuals.</p>  
+                        </div>
+                    </li>
+                    <li>
+                        <div className="biblicalInfoClassesList">
+                            <p className="classesInfoTitle">Worship and Praise</p>
+                            <p className="classesInfoDescription">In this course, remnants will learn what the meaning of praise is, how to prepare praise, and our posture regarding praise. We
+                                will also look into different kinds of Christian praises.</p>  
                         </div>
                     </li>
                 </ul>

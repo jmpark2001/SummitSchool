@@ -39,7 +39,7 @@ export default function PE() {
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Weight Lifting</p>
-                    <p className="glacial">Description</p>
+                    <p className="glacial">In this class, students will learn basic form, technique, and breathing for basic compound lifts such as squat, deadlift, and bench. This class is recommended for those who are in high school and above.</p>
                 </div>
             </div> 
         </div>
