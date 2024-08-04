@@ -55,7 +55,7 @@ function RegistrationForm() {
     }
 
     function waiverChecked() {
-        return checkedState[36]
+        return checkedState[34]
     }
     
     function updateForm(value) {
@@ -65,7 +65,7 @@ function RegistrationForm() {
     }
 
     function hasPhysical() {
-        if (checkedState[33] === true || checkedState[34] === true || checkedState[35] === true) {
+        if (checkedState[30] === true || checkedState[31] === true || checkedState[32] === true) {
             return true
         }
         else {
@@ -532,10 +532,10 @@ function RegistrationForm() {
                                                     <div>
                                                         <input
                                                             type="checkbox"
-                                                            id={index+3}
+                                                            id={index+33}
                                                             name={className}
                                                             value={form.classes}
-                                                            checked={checkedState[index+3]}
+                                                            checked={checkedState[index+33]}
                                                             onChange={(e) => handleOnChange(index+33, e)} 
                                                         />
                                                         <label>{"Introduction to Chess"}</label>
@@ -556,8 +556,8 @@ function RegistrationForm() {
                                     type="checkbox"
                                     id="waiver"
                                     name="waiver"
-                                    checked={checkedState[36]}
-                                    onChange={(e) => handleOnChange(36, e)}
+                                    checked={checkedState[34]}
+                                    onChange={(e) => handleOnChange(34, e)}
                                 />
                                 <label>{"I consent to the waiver above"}</label>
                             </div>

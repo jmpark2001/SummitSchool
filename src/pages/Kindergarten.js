@@ -28,7 +28,10 @@ export default function Kindergarten() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">This program is for children between the ages 3 to 5. They will be nurturing their developmental skills as well as basic reading, writing, math, and arts. Pre-K/Kindergarten students will only have one class from 10AM to 12PM.</p>
+                    <p className="classesInfoTitle">Developmental Basics</p>
+                    <p className="glacial">
+                        This program is for children between the ages 3 to 5. They will be nurturing their developmental skills as well as basic reading, writing, math, and arts. Pre-K/Kindergarten students will only have one class from 10AM to 12PM.
+                    </p>
                 </div>
             </div>
         </div>

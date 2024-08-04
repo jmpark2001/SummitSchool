@@ -28,7 +28,10 @@ export default function Chess() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">This class is for students wanting to learn chess. This includes how each piece moves, beginner openings and fundamental chess strategies.</p>
+                    <p className="classesInfoTitle">Introduction to Chess</p>
+                    <p className="glacial">
+                        This class is for students wanting to learn chess. This includes how each piece moves, beginner openings and fundamental chess strategies.
+                    </p>
                 </div>
             </div>
         </div>

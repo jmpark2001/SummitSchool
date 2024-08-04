@@ -28,12 +28,8 @@ export default function Academic() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Reading</p>
-                    <p className="glacial">Description</p>
-                </div>
-                <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Writing</p>
-                    <p className="glacial">Description</p>
+                    <p className="classesInfoTitle">Reading and Writing</p>
+                    <p className="glacial">Reading and writing are taught using textbooks appropriate for the grade level, and learning is also provided to improve vocabulary and expressive skills.</p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Tutoring (Math & English)</p>
