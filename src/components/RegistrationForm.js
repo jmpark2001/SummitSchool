@@ -132,12 +132,12 @@ function RegistrationForm() {
                                     <>
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>REGISTRATION & PAYMENT PERIOD</p>
-                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>January 22nd - February 11th</p>
+                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>August 4th - August 18th</p>
                                         </div> 
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>SPRING SEMESTER</p>
+                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>FALL SEMESTER</p>
                                             <p style={{fontSize: "1.3rem", margin: "0 auto", width: "90%"}}>Every Saturday except Remnant Day (Last Saturday of every month)
-                                            from March 2nd - June 1st</p>
+                                            from September 14th - January 18th</p>
                                         </div> 
                                     </>
                                 )
