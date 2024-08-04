@@ -38,7 +38,7 @@ export default function PE() {
                     <p className="glacial"> Badminton class is a class where students can participate in learning the rules of badminton and play with one another.</p>
                 </div>
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Weight Lifting</p>
+                    <p className="classesInfoTitle">Weight Training</p>
                     <p className="glacial">In this class, students will learn basic form, technique, and breathing for basic compound lifts such as squat, deadlift, and bench. This class is recommended for those who are in high school and above.</p>
                 </div>
             </div> 

@@ -11,7 +11,7 @@ function RegistrationForm() {
     const classList = ["Christ in the Old Testament", "Major Prophets", "Christian Reading", "Worship and Praise", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Beginner", "Adult English Intermediate", "Adult English Advanced", "Flute Beginner",
      "Flute Some Experience", "Flute Advanced", "Piano Beginner", "Piano Some Experience", "Piano Advanced", "Reading", "Writing", "Tutoring Math",
-      "Tutoring English", "Kindergarten", "Basketball", "Badminton", "Weight Lifting", "Introduction to Chess"]
+      "Tutoring English", "Kindergarten", "Basketball", "Badminton", "Weight Training", "Introduction to Chess"]
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
      "Massachusettes", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
      "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
@@ -515,7 +515,7 @@ function RegistrationForm() {
                                                             checked={checkedState[index+32]}
                                                             onChange={(e) => handleOnChange(index+32, e)}
                                                         />
-                                                        <label>{"Weight Lifting"}</label>
+                                                        <label>{"Weight Training"}</label>
                                                     </div>
                                                 </li>
                                             </>

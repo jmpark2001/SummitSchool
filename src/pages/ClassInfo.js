@@ -15,7 +15,7 @@ function CustomLink({to, children, ...props}) {
 
 export default function ClassInfo() {
     const classList = ["Christ in the Old Testament", "Major Prophets", "Worship and Praise", "Christian Reading", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Flute", "Piano", "Reading",
-         "Writing", "Tutoring Math", "Tutoring English", "Pre-K/K", "Basketball", "Badminton", "Weight Lifting", "Introduction to Chess"]
+         "Writing", "Tutoring Math", "Tutoring English", "Pre-K/K", "Basketball", "Badminton", "Weight Training", "Introduction to Chess"]
 
     return (
         <div className="classInfoPage">
