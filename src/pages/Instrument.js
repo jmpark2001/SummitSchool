@@ -28,7 +28,7 @@ export default function Instrument() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Flute, Piano</p>
+                    <p className="classesInfoTitle">Drums</p>
                     <p className="glacial">Anyone interested in learning an instrument is welcome to enroll. Students will be placed into classes according to their skill level.</p>
                     <p className="glacial" style={{fontWeight: "900"}}>*Students must prepare their own instruments before classes begin*</p>
                 </div>    

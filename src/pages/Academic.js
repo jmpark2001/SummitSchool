@@ -28,12 +28,16 @@ export default function Academic() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Pre-K/Kindergarten</p>
+                    <p className="glacial">This program is for children between the ages 3 to 5. They will be nurturing their developmental skills as well as basic reading, writing, math, and arts. Pre-K/Kindergarten students will only have one class from TIME to TIME.</p>
+                </div>
+                <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Reading and Writing</p>
                     <p className="glacial">Reading and writing are taught using textbooks appropriate for the grade level, and learning is also provided to improve vocabulary and expressive skills.</p>
                 </div>
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Tutoring (Math & English)</p>
-                    <p className="glacial">Tutoring will be offered to students who are seeking additional help in their math or english skills outside of SAT preparation. These classes are catered towards school courses or general help with certain topics.</p>
+                    <p className="classesInfoTitle">Math</p>
+                    <p className="glacial">DESCRIPTION</p>
                 </div>
             </div>
         </div>

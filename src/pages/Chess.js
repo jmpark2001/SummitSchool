@@ -18,19 +18,27 @@ export default function Chess() {
         <div className="playfair" style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <div className="classesBanner">
                 <img src={chess} className="classesBanners" alt=""></img>
-                <p style={{position:"absolute", margin: "0", color: "white", fontWeight: "900", fontSize: "clamp(1.8rem, 1.2109rem + 2.6182vw, 5.4rem)"}}>CHESS CLASS</p>
+                <p style={{position:"absolute", margin: "0", color: "white", fontWeight: "900", fontSize: "clamp(1.8rem, 1.2109rem + 2.6182vw, 5.4rem)"}}>EXTRACURRICULAR</p>
             </div>
             <div className="backToHomeDivOther">
                 <CustomLink to="/" className="backToHome">Home</CustomLink>
                 <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/ </p>
                 <CustomLink to="/classInfo" className="backToHome" style={{marginLeft: "0"}}>Class Information</CustomLink>
-                <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/&nbsp;&nbsp;Chess Class</p>
+                <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/&nbsp;&nbsp;Extracurricular Class</p>
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Introduction to Chess</p>
                     <p className="glacial">
                         This class is for students wanting to learn chess. This includes how each piece moves, beginner openings and fundamental chess strategies.
+                    </p>
+                </div>
+            </div>.
+            <div className="differentClasses">
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Ping Pong</p>
+                    <p className="glacial">
+                        This class is for students wanting to learn how to play ping pong.
                     </p>
                 </div>
             </div>
