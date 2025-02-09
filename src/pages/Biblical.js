@@ -38,13 +38,13 @@ export default function Biblical() {
                     <li>
                         <div className="biblicalInfoClassesList">
                             <p className="classesInfoTitle">Acts</p>
-                            <p className="classesInfoDescription">DESCRIPTION</p>  
+                            <p className="classesInfoDescription">In this class we will identify the purpose of the book of Acts based on its introduction, the continuing work of Christ, the continuing work of the Holy Spirit, the continuing work of the believer/church, and proclaim the gospel clearly as we examine the 10 sermons of Peter, Stephen, and Paul.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
                             <p className="classesInfoTitle">The Gospel of John</p>
-                            <p className="classesInfoDescription">DESCRIPTION</p>  
+                            <p className="classesInfoDescription">There are two objectives of this course – first, to provide an overview of the entire book of John with all of its themes and motifs, and second, to do some detailed exegetical analysis of some of the key themes that stand out in John (eg, Jesus as the light, shepherd, living water, etc.).  Based upon the age group of the class, we will have presentations by students, watching informative videos on the subject at hand, and other media applications.</p>  
                         </div>
                     </li>
                     <li>

@@ -33,22 +33,21 @@ export default function ClassInfo() {
                 <p>Registration for the spring semester starts on February 9th and will end on February 16th</p>
                 <br/><br/>
                 <p><b>2025 SPRING SEMESTER</b></p>
-                <p>The spring semeseter begins on DATE and ends on DATE</p>
+                <p>The spring semeseter begins on March 1st and ends on June 21st</p>
                 <br/><br/>
                 <p><b>SCHEDULE</b></p>
-                <p>Summit School classes will take place every Saturday from 9AM - 1:50PM</p>
+                <p>Summit School classes will take place every Saturday from 9:30AM - 1:50PM</p>
                 <br/>
-                <p>9AM - 9:15AM: Praise</p>
-                <p>9:30AM - 10:20AM: Worship</p>
+                <p>9:30AM - 10:20AM: Praise and Worship</p>
                 <p>10:30AM - 11:20AM: 1st Class</p>
                 <p>11:30AM - 12:20AM: 2nd Class</p>
                 <p>12:30PM - 12:50PM: Lunch</p>
                 <p>1:00PM - 1:50PM: 3rd Class</p>
                 <br/>
-                <p>Students can select up to three classes of their choice. Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10AM - 12PM</p>
+                <p>Students can select up to three classes of their choice. Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM</p>
                 <br/><br/>
                 <p><b>FEE</b></p>
-                <p>The fee for summit school will be $250 per semester for the first child, $200 for the second child, and $150 for any additional children. Payment information can be found on the registration form.</p>
+                <p>The fee for summit school will be $250 per semester for the first child, $200 for the second child, and $150 for any additional children. Payment information can be found on the registration form. The fee for adults will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes.</p>
                 <br/>
             </div>
             <div className="classInfoClassesDiv">

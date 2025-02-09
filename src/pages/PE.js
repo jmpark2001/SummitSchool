@@ -41,7 +41,7 @@ export default function PE() {
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Wrestling</p>
-                    <p className="glacial">DESCRIPTION</p>
+                    <p className="glacial">The wrestling class is a class that introduces wrestling. It is a basic class that teaches the safety rules and basic wrestling movements.</p>
                 </div>
             </div> 
         </div>

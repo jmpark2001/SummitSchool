@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <div style={{display: "relative", margin: "10vh 0"}}>
                 <div className="classScheduleBanner">
-                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from DATE to DATE</p>
+                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from 3/1 to 6/21</p>
                 </div>
             </div>
             {/* <Footer/> */}

@@ -136,17 +136,17 @@ function RegistrationForm() {
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>SPRING SEMESTER</p>
                                             <p style={{fontSize: "1.3rem", margin: "0 auto", width: "90%"}}>Every Saturday except Remnant Day (Last Saturday of every month)
-                                            from September 14th - January 18th</p>
+                                            from March 1st - June 21st</p>
                                         </div> 
                                     </>
                                 )
                             }
                             <div className="formScheduleDiv">
                                 <div className="formScheduleContent">
-                                    <p className="classesInfoTitle" style={{display: "inline"}}>PRAISE:</p>
+                                    {/* <p className="classesInfoTitle" style={{display: "inline"}}>PRAISE:</p>
                                     <p style={{display: "inline"}}> 9AM - 9:15AM</p>
-                                    <br></br>
-                                    <p className="classesInfoTitle" style={{display: "inline"}}>WORSHIP:</p>
+                                    <br></br> */}
+                                    <p className="classesInfoTitle" style={{display: "inline"}}>PRAISE AND WORSHIP:</p>
                                     <p style={{display: "inline"}}> 9:30AM - 10:20AM</p>
                                     <br></br>
                                     <p className="classesInfoTitle" style={{display: "inline"}}>FIRST CLASS:</p>
@@ -530,7 +530,7 @@ function RegistrationForm() {
                             <p style={{fontSize: "clamp(1.4rem, 1.2691rem + 0.5818vw, 2.2rem)", fontWeight: "bold"}}>Methods of Payment ($250)</p>
                             <ol className="payment" style={{listStyle: "none"}}>
                                 <p style={{fontWeight: "bold"}}>Click on the links below to pay with credit or debit. For multiple children the pricing goes as follows: The first child you enroll will cost $250, the second child is $200,
-                                and any additional children will be $150.</p>
+                                and any additional children will be $150. For adults registering, the fee will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes.</p>
                                 <li>
                                     1 child:
                                     <p style={{display: "inline"}}> </p>

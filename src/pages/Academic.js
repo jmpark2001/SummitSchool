@@ -37,7 +37,7 @@ export default function Academic() {
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Math</p>
-                    <p className="glacial">DESCRIPTION</p>
+                    <p className="glacial">Students can either bring their homework or get help on a specific subject like Algebra 1 or 2.</p>
                 </div>
             </div>
         </div>
