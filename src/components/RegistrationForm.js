@@ -64,7 +64,7 @@ function RegistrationForm() {
     }
 
     function hasPhysical() {
-        if (checkedState[29] === true || checkedState[30] === true || checkedState[31] === true) {
+        if (checkedState[29] === true || checkedState[30] === true || checkedState[31] === true || checkedState[32] === true) {
             return true
         }
         else {
