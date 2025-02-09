@@ -14,8 +14,8 @@ function CustomLink({to, children, ...props}) {
 }
 
 export default function ClassInfo() {
-    const classList = ["Christian Reading", "Acts", "The Gospel of John", "Praise and Worship", "Hebrews", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
-         "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Introduction to Chess", "Ping Pong"]
+    const classList = ["Acts", "Hebrews", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
+         "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
 
     return (
         <div className="classInfoPage">
@@ -36,18 +36,18 @@ export default function ClassInfo() {
                 <p>The spring semeseter begins on March 1st and ends on June 21st</p>
                 <br/><br/>
                 <p><b>SCHEDULE</b></p>
-                <p>Summit School classes will take place every Saturday from 9:30AM - 1:50PM</p>
+                <p>Summit School classes will take place every Saturday from 9:30AM - 2:00PM. (No classes the last saturday of the month)</p>
                 <br/>
                 <p>9:30AM - 10:20AM: Praise and Worship</p>
-                <p>10:30AM - 11:20AM: 1st Class</p>
-                <p>11:30AM - 12:20AM: 2nd Class</p>
+                <p>10:30AM - 11:20AM: Class A</p>
+                <p>11:30AM - 12:20AM: Class B</p>
                 <p>12:30PM - 12:50PM: Lunch</p>
-                <p>1:00PM - 1:50PM: 3rd Class</p>
+                <p>1:00PM - 1:50PM: Class C</p>
                 <br/>
-                <p>Students can select up to three classes of their choice. Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM</p>
+                <p>Students from 1st grade to 12th grade must choose three classes of their choice. Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM. Adults can select up to three classes.</p>
                 <br/><br/>
                 <p><b>FEE</b></p>
-                <p>The fee for summit school will be $250 per semester for the first child, $200 for the second child, and $150 for any additional children. Payment information can be found on the registration form. The fee for adults will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes.</p>
+                <p>The fee for summit school will be $250 per semester for the first student, $200 for the second student, and $150 for any additional students. The fee for adults (college and up) will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes. Payment information can be found on the registration form.</p>
                 <br/>
             </div>
             <div className="classInfoClassesDiv">
@@ -87,7 +87,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/pe" className="backToHome" style={{color: "#B56727"}}>SPORTS</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(14, 17).map((className, index) =>
+                        {classList.slice(14, 18).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -95,7 +95,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/chess" className="backToHome" style={{color: "#B56727"}}>EXTRACURRICULAR</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(17).map((className, index) =>
+                        {classList.slice(18).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>

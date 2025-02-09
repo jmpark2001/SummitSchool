@@ -29,15 +29,15 @@ export default function Academic() {
             <div className="differentClasses">
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Pre-K/Kindergarten</p>
-                    <p className="glacial">This program is for children between the ages 3 to 5. They will be nurturing their developmental skills as well as basic reading, writing, math, and arts. Pre-K/Kindergarten students will only have one class from TIME to TIME.</p>
+                    <p className="glacial">This program is for children between the ages 3 to 5. They will be nurturing their developmental skills as well as learning the alphabet, learning how to count, and participating in arts and crafts. This class runs from 10:30AM to 12:20PM (2 class periods).</p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Reading and Writing</p>
-                    <p className="glacial">Reading and writing are taught using textbooks appropriate for the grade level, and learning is also provided to improve vocabulary and expressive skills.</p>
+                    <p className="glacial">Reading and writing are taught using textbooks appropriate for the grade level, and learning is also provided to improve reading comprehension and writing skills.</p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Math</p>
-                    <p className="glacial">Students can either bring their homework or get help on a specific subject like Algebra 1 or 2.</p>
+                    <p className="glacial">This class is intended to bolster students' grade level appropriate math skill as well as prepare them for the next grade level.</p>
                 </div>
             </div>
         </div>

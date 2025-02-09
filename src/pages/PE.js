@@ -30,18 +30,22 @@ export default function PE() {
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Basketball</p>
                     <p className="glacial">
-                        Basketball class will allow students to learn the basics of basketball while getting exercise outside.
+                        Basketball class will allow students to learn the basics of basketball as well as giving opportunities to play basketball.
                     </p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Badminton</p>
                     <p className="glacial">
-                        Badminton class is a class where students can participate in learning the rules of badminton and play with one another.
+                        Students can participate in learning the rules of badminton and play with one another.
                     </p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Wrestling</p>
-                    <p className="glacial">The wrestling class is a class that introduces wrestling. It is a basic class that teaches the safety rules and basic wrestling movements.</p>
+                    <p className="glacial">This class will introduce students to the basics of wrestling and teach them level appropriate wrestling moves.</p>
+                </div>
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Ping Pong</p>
+                    <p className="glacial">This class is for students wanting to learn how to play ping pong. Students will learn how to hold the paddle as well as forms and techniques.</p>
                 </div>
             </div> 
         </div>

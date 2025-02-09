@@ -57,7 +57,7 @@ export default function Biblical() {
                     <li>
                         <div className="biblicalInfoClassesList">
                             <p className="classesInfoTitle">Hebrews</p>
-                            <p className="classesInfoDescription">By the Spirit’s power, we are now free to walk as christian of a “new creation” to against the fallen world. We are free to live as complete examples in the world, “being confident of this, that he who began a good work in [us] will carry it on to completion until the day of Christ Jesus” (Philippians 1:6)." In the four short chapters of his epistle to the Philippians, the word 'joy' or 'rejoicing' appears 19 times —from a Roman prison with Paul. I believe if you take the time to study this epistle through, pray it in, and work it out, like Paul, you will be one who rejoices in any circumstance facing you, the prison walls around you, or the guard chained to you.</p>  
+                            <p className="classesInfoDescription">In the four short chapters of his epistle to the Philippians, the word 'joy' or 'rejoicing' appears 19 times —from a Roman prison with Paul. I believe if you take the time to study this epistle and pray through it, you will be one who rejoices in any circumstance.</p>  
                         </div>
                     </li>
                 </ul>

@@ -34,14 +34,6 @@ export default function Chess() {
                     </p>
                 </div>
             </div>.
-            <div className="differentClasses">
-                <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Ping Pong</p>
-                    <p className="glacial">
-                        This class is for students wanting to learn how to play ping pong. Students will learn how to hold the paddle as well as forms and techniques.
-                    </p>
-                </div>
-            </div>
         </div>
     )
 }
