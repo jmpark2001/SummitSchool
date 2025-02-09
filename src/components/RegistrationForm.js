@@ -285,16 +285,16 @@ function RegistrationForm() {
                                     <p className="classTitles">Upper Level class (Grades 9 and above)</p>
                                     <ul className="bibleClass">
                                         {classList.slice(5, 8).map((className, index) => 
-                                            <li key={index}>
+                                            <li key={index+5}>
                                                 <div>
                                                     <input
                                                         type="checkbox"
                                                         className="bibleCheck"
-                                                        id={index}
+                                                        id={index+5}
                                                         name={className}
                                                         value={form.classes}
-                                                        checked={checkedState[index]}
-                                                        onChange={(e) => handleOnChange(index, e)}
+                                                        checked={checkedState[index+5]}
+                                                        onChange={(e) => handleOnChange(index+5, e)}
                                                     />
                                                     <label>{className}</label>
                                                 </div>
