@@ -8,7 +8,7 @@ import { doc, setDoc } from "firebase/firestore"
 
 function RegistrationForm() {
     const classList2 = ["Acts", "Hebrews", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums", "Academic", "Sports", "Extracurricular"]
-    const classList = ["Acts", "Hebrews", "The Gospel of John", "Christian Reading", "Praise and Worship", "Acts (Reverend Dexter Smith)", "Hebrews (Reverend Ben Fu)", "The Gospel of John (Reverend Brendan Huh)", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
+    const classList = ["Acts", "Hebrews", "The Gospel of John", "Christian Reading", "Praise and Worship", "Acts (Reverend Dexter Smith)", "Hebrews (Reverend Ben Fu)", "The Gospel of John (Reverend Brendyn Huh)", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Beginner", "Adult English Intermediate", "Adult English Advanced", "Drums Beginner",
      "Drums Some Experience", "Drums Advanced", "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
@@ -107,7 +107,7 @@ function RegistrationForm() {
         }
         
     }
-    //Lower Level class (grade 3-8 any class) Upper level class (grade 9-adults acts (Reverand dexter smith) hebrew (reverand ben fu) john (reverand brendan huh))
+    //Lower Level class (grade 3-8 any class) Upper level class (grade 9-adults acts (Reverand dexter smith) hebrew (reverand ben fu) john (reverand brendyn huh))
     
 
     return (
@@ -166,7 +166,7 @@ function RegistrationForm() {
                             <div className="formAnswersDiv">
                                 <div style={{marginTop: "1.8rem", textAlign: "left", fontSize: "clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem)"}}>
                                     <p style={{color: "red", display: "inline"}}>*</p>
-                                    <p style={{display: "inline"}}>You must complete a separate form for each child!</p>
+                                    <p style={{display: "inline"}}>You must complete a separate form for each student!</p>
                                 </div>
                                 
                                 <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalName">
@@ -255,10 +255,10 @@ function RegistrationForm() {
                             </div>
                             <div style={{marginTop: "1.8rem", width: "100%", padding: "0 0 0 2.5%", textAlign: "left", fontSize: "clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem)"}}>
                                 <p style={{color: "red", display: "inline"}}>*</p>
-                                <p className="instructions" style={{display: "inline"}}>Students must choose 3 classes.</p>
+                                <p className="instructions" style={{display: "inline"}}>Students (Grades 1-12) must choose 3 classes.</p>
                                 <br></br>
                                 <p style={{color: "red", display: "inline"}}>**</p>
-                                <p className="instructions" style={{display: "inline"}}>Adults can take up to 3 classes.</p>
+                                <p className="instructions" style={{display: "inline"}}>Adults (College and up) can take up to 3 classes.</p>
                             </div>
                             <div style={{display: "flex", padding: "0 0 0 2.5%", flexDirection: "column", width: "100%"}}>
                                 <p className="biblicalTitle">Biblical</p>
@@ -554,7 +554,7 @@ function RegistrationForm() {
                                 <label>{"I consent to the waiver above"}</label>
                             </div>
                             <br/>
-                            <p style={{fontSize: "clamp(1.4rem, 1.2691rem + 0.5818vw, 2.2rem)", fontWeight: "bold"}}>Methods of Payment ($250)</p>
+                            <p style={{fontSize: "clamp(1.4rem, 1.2691rem + 0.5818vw, 2.2rem)", fontWeight: "bold"}}>Methods of Payment</p>
                             <ol className="payment" style={{listStyle: "none"}}>
                                 <p style={{fontWeight: "bold"}}>Click on the links below to pay with credit or debit. For multiple students the pricing goes as follows: The first student you enroll will cost $250, the second student is $200,
                                 and any additional students will be $150. For adults registering, the fee will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes.</p>

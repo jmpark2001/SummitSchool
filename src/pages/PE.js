@@ -30,7 +30,7 @@ export default function PE() {
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Basketball</p>
                     <p className="glacial">
-                        Basketball class will allow students to learn the basics of basketball as well as giving opportunities to play basketball.
+                        Basketball class will allow students to learn the basics of basketball as well as giving opportunities to play basketball. (Students grades 3 and up)
                     </p>
                 </div>
                 <div className="otherInfoDiv">
@@ -41,7 +41,7 @@ export default function PE() {
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Wrestling</p>
-                    <p className="glacial">This class will introduce students to the basics of wrestling and teach them level appropriate wrestling moves.</p>
+                    <p className="glacial">This class will introduce students to the basics of wrestling and teach them level appropriate wrestling moves. (Students grades 6 and up)</p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Ping Pong</p>
