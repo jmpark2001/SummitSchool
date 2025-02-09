@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import { db } from "../utils/firebase"
 import { doc, setDoc } from "firebase/firestore"
+import { EXCEL_FILE_BASE64 } from "./Constants";
+import FileSaver from "file-saver";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
@@ -51,6 +53,26 @@ function RegistrationForm() {
             }
             updateForm({classes: updatedClasses})
         }
+    }
+
+    const handleDownload = () => {
+        let dataBlob = EXCEL_FILE_BASE64;
+        let sliceSize = 1024;
+        let byteCharacters = atob(dataBlob);
+        let bytesLength = byteCharacters.length;
+        let slicesCount = Math.ceil(bytesLength / sliceSize);
+        let byteArrays = new Array(slicesCount);
+        for (let sliceIndex = 0; sliceIndex < slicesCount; ++sliceIndex) {
+            let begin = sliceIndex * sliceSize;
+            let end = Math.min(begin + sliceSize, bytesLength);
+            let bytes = new Array(end - begin);
+            for (var offset = begin, i=0; offset < end; ++i, ++offset) {
+                bytes[i] = byteCharacters[offset].charCodeAt(0);
+            }
+            byteArrays[sliceIndex] = new Uint8Array(bytes);
+        }
+        let blob = new Blob(byteArrays, { type: 'application/vnd.ms-excel'});
+        FileSaver.saveAs(new Blob([blob], {}), "SpringSemesterFinancialAid.xlsx");
     }
 
     function waiverChecked() {
@@ -558,6 +580,10 @@ function RegistrationForm() {
                             <ol className="payment" style={{listStyle: "none"}}>
                                 <p style={{fontWeight: "bold"}}>Click on the links below to pay with credit or debit. For multiple students the pricing goes as follows: The first student you enroll will cost $250, the second student is $200,
                                 and any additional students will be $150. For adults registering, the fee will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes.</p>
+                                <p style={{color: "red", display: "inline"}}>*</p>
+                                <p className="instructions" style={{fontWeight: "bold", display: "inline"}}>If you need financial assistance, download this form and submit it to the admin team.</p>
+                                <br></br>
+                                <Button className="financialAid" onClick={handleDownload}>Download Financial Aid</Button>
                                 <li>
                                     1 student:
                                     <p style={{display: "inline"}}> </p>

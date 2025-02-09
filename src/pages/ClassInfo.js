@@ -1,5 +1,8 @@
 import classInfo from "../images/classInfo.jpg"
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import Button from 'react-bootstrap/Button'
+import { EXCEL_FILE_BASE64 } from "../components/Constants";
+import FileSaver from "file-saver";
 
 function CustomLink({to, children, ...props}) {
     const resolvedPath = useResolvedPath(to)
@@ -16,6 +19,26 @@ function CustomLink({to, children, ...props}) {
 export default function ClassInfo() {
     const classList = ["Acts", "Hebrews", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
          "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
+
+    const handleDownload = () => {
+        let dataBlob = EXCEL_FILE_BASE64;
+        let sliceSize = 1024;
+        let byteCharacters = atob(dataBlob);
+        let bytesLength = byteCharacters.length;
+        let slicesCount = Math.ceil(bytesLength / sliceSize);
+        let byteArrays = new Array(slicesCount);
+        for (let sliceIndex = 0; sliceIndex < slicesCount; ++sliceIndex) {
+            let begin = sliceIndex * sliceSize;
+            let end = Math.min(begin + sliceSize, bytesLength);
+            let bytes = new Array(end - begin);
+            for (var offset = begin, i=0; offset < end; ++i, ++offset) {
+                bytes[i] = byteCharacters[offset].charCodeAt(0);
+            }
+            byteArrays[sliceIndex] = new Uint8Array(bytes);
+        }
+        let blob = new Blob(byteArrays, { type: 'application/vnd.ms-excel'});
+        FileSaver.saveAs(new Blob([blob], {}), "SpringSemesterFinancialAid.xlsx");
+    }
 
     return (
         <div className="classInfoPage">
@@ -48,6 +71,10 @@ export default function ClassInfo() {
                 <br/><br/>
                 <p><b>FEE</b></p>
                 <p>The fee for summit school will be $250 per semester for the first student, $200 for the second student, and $150 for any additional students. The fee for adults (college and up) will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes. Payment information can be found on the registration form.</p>
+                {/* <p style={{color: "red", display: "inline"}}>*</p> */}
+                <p className="instructions" style={{fontWeight: "bold", display: "inline"}}>If you need financial assistance, download this form and submit it to the admin team.</p>
+                <br></br>
+                <Button className="financialAid" onClick={handleDownload}>Download Financial Aid</Button>
                 <br/>
             </div>
             <div className="classInfoClassesDiv">
