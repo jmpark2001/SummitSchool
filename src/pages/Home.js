@@ -40,7 +40,7 @@ export default function Home() {
                 <Link to={"/biblical"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={biblical} alt=""></img>
-                        <p className="homeLinkTitles">BIBLICAL</p>
+                        <p className="homeLinkTitles">BIBLE</p>
                     </div>
                 </Link>
                 <Link to={"/language"} className="homeLink">

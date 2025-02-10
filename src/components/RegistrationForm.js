@@ -9,8 +9,8 @@ import FileSaver from "file-saver";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
-    const classList2 = ["Acts", "Hebrews", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums", "Academic", "Sports", "Extracurricular"]
-    const classList = ["Acts", "Hebrews", "The Gospel of John", "Christian Reading", "Praise and Worship", "Acts (Reverend Dexter Smith)", "Hebrews (Reverend Ben Fu)", "The Gospel of John (Reverend Brendyn Huh)", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
+    const classList2 = ["Acts", "Philippians", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums", "Academic", "Sports", "Extracurricular"]
+    const classList = ["Acts", "Philippians", "The Gospel of John", "Christian Reading", "Praise and Worship", "Acts (Reverend Dexter Smith)", "Hebrews (Reverend Ben Fu)", "The Gospel of John (Reverend Brendyn Huh)", "The Gospel Letters (Reverend Byung C. Hwang)", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Beginner", "Adult English Intermediate", "Adult English Advanced", "Drums Beginner",
      "Drums Some Experience", "Drums Advanced", "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
@@ -76,7 +76,7 @@ function RegistrationForm() {
     }
 
     function waiverChecked() {
-        return checkedState[34]
+        return checkedState[35]
     }
     
     function updateForm(value) {
@@ -86,7 +86,7 @@ function RegistrationForm() {
     }
 
     function hasPhysical() {
-        if (checkedState[29] === true || checkedState[30] === true || checkedState[31] === true || checkedState[32] === true) {
+        if (checkedState[30] === true || checkedState[31] === true || checkedState[32] === true || checkedState[33] === true) {
             return true
         }
         else {
@@ -306,7 +306,7 @@ function RegistrationForm() {
                                     </ul>
                                     <p className="classTitles">Upper Level class (Grades 9 and above)</p>
                                     <ul className="bibleClass">
-                                        {classList.slice(5, 8).map((className, index) => 
+                                        {classList.slice(5, 9).map((className, index) => 
                                             <li key={index+5}>
                                                 <div>
                                                     <input
@@ -323,6 +323,9 @@ function RegistrationForm() {
                                             </li>
                                         )}
                                     </ul>
+                                    <p style={{color: "red", display: "inline"}}>*</p>
+                                    <p className="instructions" style={{fontWeight: "bold", color: "red", display: "inline"}}>The Gospel Letters is only taught in Korean.</p>
+                                    <br></br>
                                 </ul>
                                 
                             </div>
@@ -333,30 +336,17 @@ function RegistrationForm() {
                                         {classList2.slice(5,10).map((className, index) =>
                                             <>
                                                 <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
-                                                <li key={index*3 + 8}>
-                                                    <div>
-                                                        <input
-                                                            type="checkbox"
-                                                            id={index*3 + 8}
-                                                            name={className + " Beginner"}
-                                                            value={form.classes}
-                                                            checked={checkedState[index*3 + 8]}
-                                                            onChange={(e) => handleOnChange(index*3 + 8, e)}
-                                                        />
-                                                        <label>{"Beginner"}</label>
-                                                    </div>
-                                                </li>
                                                 <li key={index*3 + 9}>
                                                     <div>
                                                         <input
                                                             type="checkbox"
-                                                            id={index*3 + 96}
-                                                            name={className + " Intermediate"}
+                                                            id={index*3 + 9}
+                                                            name={className + " Beginner"}
                                                             value={form.classes}
                                                             checked={checkedState[index*3 + 9]}
                                                             onChange={(e) => handleOnChange(index*3 + 9, e)}
                                                         />
-                                                        <label>{"Intermediate"}</label>
+                                                        <label>{"Beginner"}</label>
                                                     </div>
                                                 </li>
                                                 <li key={index*3 + 10}>
@@ -364,10 +354,23 @@ function RegistrationForm() {
                                                         <input
                                                             type="checkbox"
                                                             id={index*3 + 10}
-                                                            name={className + " Advanced"}
+                                                            name={className + " Intermediate"}
                                                             value={form.classes}
                                                             checked={checkedState[index*3 + 10]}
                                                             onChange={(e) => handleOnChange(index*3 + 10, e)}
+                                                        />
+                                                        <label>{"Intermediate"}</label>
+                                                    </div>
+                                                </li>
+                                                <li key={index*3 + 11}>
+                                                    <div>
+                                                        <input
+                                                            type="checkbox"
+                                                            id={index*3 + 11}
+                                                            name={className + " Advanced"}
+                                                            value={form.classes}
+                                                            checked={checkedState[index*3 + 11]}
+                                                            onChange={(e) => handleOnChange(index*3 + 11, e)}
                                                         />
                                                         <label>{"Advanced"}</label>
                                                     </div>
@@ -382,30 +385,17 @@ function RegistrationForm() {
                                         {classList2.slice(10,11).map((className, index) =>
                                             <>
                                                 <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
-                                                <li key={index*3 + 23}>
-                                                    <div>
-                                                        <input
-                                                            type="checkbox"
-                                                            id={index*3 + 23}
-                                                            name={className + " Beginner"}
-                                                            value={form.classes}
-                                                            checked={checkedState[index*3 + 23]}
-                                                            onChange={(e) => handleOnChange(index*3 + 23, e)}
-                                                        />
-                                                        <label>{"Beginner"}</label>
-                                                    </div>
-                                                </li>
                                                 <li key={index*3 + 24}>
                                                     <div>
                                                         <input
                                                             type="checkbox"
                                                             id={index*3 + 24}
-                                                            name={className + " Intermediate"}
+                                                            name={className + " Beginner"}
                                                             value={form.classes}
                                                             checked={checkedState[index*3 + 24]}
                                                             onChange={(e) => handleOnChange(index*3 + 24, e)}
                                                         />
-                                                        <label>{"Intermediate"}</label>
+                                                        <label>{"Beginner"}</label>
                                                     </div>
                                                 </li>
                                                 <li key={index*3 + 25}>
@@ -413,10 +403,23 @@ function RegistrationForm() {
                                                         <input
                                                             type="checkbox"
                                                             id={index*3 + 25}
-                                                            name={className + " Advanced"}
+                                                            name={className + " Intermediate"}
                                                             value={form.classes}
                                                             checked={checkedState[index*3 + 25]}
                                                             onChange={(e) => handleOnChange(index*3 + 25, e)}
+                                                        />
+                                                        <label>{"Intermediate"}</label>
+                                                    </div>
+                                                </li>
+                                                <li key={index*3 + 26}>
+                                                    <div>
+                                                        <input
+                                                            type="checkbox"
+                                                            id={index*3 + 26}
+                                                            name={className + " Advanced"}
+                                                            value={form.classes}
+                                                            checked={checkedState[index*3 + 26]}
+                                                            onChange={(e) => handleOnChange(index*3 + 26, e)}
                                                         />
                                                         <label>{"Advanced"}</label>
                                                     </div>
@@ -431,19 +434,6 @@ function RegistrationForm() {
                                         {classList2.slice(11, 12).map((className, index) =>
                                             <>
                                                 <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
-                                                <li key={index + 26}>
-                                                    <div>
-                                                        <input
-                                                            type="checkbox"
-                                                            id={index+26}
-                                                            name={className}
-                                                            value={form.classes}
-                                                            checked={checkedState[index+26]}
-                                                            onChange={(e) => handleOnChange(index+26, e)}
-                                                        />
-                                                        <label>{"Pre-K/Kindergarten"}</label>
-                                                    </div>
-                                                </li>
                                                 <li key={index + 27}>
                                                     <div>
                                                         <input
@@ -454,7 +444,7 @@ function RegistrationForm() {
                                                             checked={checkedState[index+27]}
                                                             onChange={(e) => handleOnChange(index+27, e)}
                                                         />
-                                                        <label>{"Reading and Writing"}</label>
+                                                        <label>{"Pre-K/Kindergarten"}</label>
                                                     </div>
                                                 </li>
                                                 <li key={index + 28}>
@@ -466,6 +456,19 @@ function RegistrationForm() {
                                                             value={form.classes}
                                                             checked={checkedState[index+28]}
                                                             onChange={(e) => handleOnChange(index+28, e)}
+                                                        />
+                                                        <label>{"Reading and Writing"}</label>
+                                                    </div>
+                                                </li>
+                                                <li key={index + 29}>
+                                                    <div>
+                                                        <input
+                                                            type="checkbox"
+                                                            id={index+29}
+                                                            name={className}
+                                                            value={form.classes}
+                                                            checked={checkedState[index+29]}
+                                                            onChange={(e) => handleOnChange(index+29, e)}
                                                         />
                                                         <label>{"Math"}</label>
                                                     </div>
@@ -480,19 +483,6 @@ function RegistrationForm() {
                                         {classList2.slice(12, 13).map((className, index) => 
                                             <>
                                                 <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
-                                                <li key={index + 29}>
-                                                    <div>
-                                                        <input
-                                                            type="checkbox"
-                                                            id={index+29}
-                                                            name={className}
-                                                            value={form.classes}
-                                                            checked={checkedState[index+29]}
-                                                            onChange={(e) => handleOnChange(index+29, e)} 
-                                                        />
-                                                        <label>{"Basketball"}</label>
-                                                    </div>
-                                                </li>
                                                 <li key={index + 30}>
                                                     <div>
                                                         <input
@@ -503,7 +493,7 @@ function RegistrationForm() {
                                                             checked={checkedState[index+30]}
                                                             onChange={(e) => handleOnChange(index+30, e)} 
                                                         />
-                                                        <label>{"Badminton"}</label>
+                                                        <label>{"Basketball"}</label>
                                                     </div>
                                                 </li>
                                                 <li key={index + 31}>
@@ -516,7 +506,7 @@ function RegistrationForm() {
                                                             checked={checkedState[index+31]}
                                                             onChange={(e) => handleOnChange(index+31, e)} 
                                                         />
-                                                        <label>{"Wrestling"}</label>
+                                                        <label>{"Badminton"}</label>
                                                     </div>
                                                 </li>
                                                 <li key={index + 32}>
@@ -527,11 +517,27 @@ function RegistrationForm() {
                                                             name={className}
                                                             value={form.classes}
                                                             checked={checkedState[index+32]}
-                                                            onChange={(e) => handleOnChange(index+32, e)}
+                                                            onChange={(e) => handleOnChange(index+32, e)} 
+                                                        />
+                                                        <label>{"Wrestling"}</label>
+                                                    </div>
+                                                </li>
+                                                <li key={index + 33}>
+                                                    <div>
+                                                        <input
+                                                            type="checkbox"
+                                                            id={index+33}
+                                                            name={className}
+                                                            value={form.classes}
+                                                            checked={checkedState[index+33]}
+                                                            onChange={(e) => handleOnChange(index+33, e)}
                                                         />
                                                         <label>{"Ping Pong"}</label>
                                                     </div>
                                                 </li>
+                                                <br></br>
+                                                <p style={{color: "red", display: "inline"}}>*</p>
+                                                <p className="instructions" style={{fontWeight: "bold", display: "inline"}}>Basketball students must be 3rd grade and above. Wrestling students must be 6th grade and above.</p>
                                             </>
                                         )}
                                     </ul>
@@ -542,15 +548,15 @@ function RegistrationForm() {
                                         {classList2.slice(13).map((className, index) =>
                                             <>
                                                 <p style={{margin: "1vh 0 0 0", fontWeight: "bold"}}>{className}</p>
-                                                <li key={index + 33}>
+                                                <li key={index + 34}>
                                                     <div>
                                                         <input
                                                             type="checkbox"
-                                                            id={index+33}
+                                                            id={index+34}
                                                             name={className}
                                                             value={form.classes}
-                                                            checked={checkedState[index+33]}
-                                                            onChange={(e) => handleOnChange(index+33, e)}
+                                                            checked={checkedState[index+34]}
+                                                            onChange={(e) => handleOnChange(index+34, e)}
                                                         />
                                                         <label>{"Chess"}</label>
                                                     </div>
@@ -570,8 +576,8 @@ function RegistrationForm() {
                                     type="checkbox"
                                     id="waiver"
                                     name="waiver"
-                                    checked={checkedState[34]}
-                                    onChange={(e) => handleOnChange(34, e)}
+                                    checked={checkedState[35]}
+                                    onChange={(e) => handleOnChange(35, e)}
                                 />
                                 <label>{"I consent to the waiver above"}</label>
                             </div>

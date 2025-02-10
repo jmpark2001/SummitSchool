@@ -17,7 +17,7 @@ function CustomLink({to, children, ...props}) {
 }
 
 export default function ClassInfo() {
-    const classList = ["Acts", "Hebrews", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
+    const classList = ["Acts", "Philippians", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
          "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
 
     const handleDownload = () => {
@@ -80,7 +80,7 @@ export default function ClassInfo() {
             <div className="classInfoClassesDiv">
                 <div className="classInfoClasses glacial">
                     <p style={{margin: "0", marginTop: "clamp(1.5rem, 1.2545rem + 1.0909vw, 3rem)"}}>Click on the class categories to find more information about the classes.</p>
-                    <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome" style={{color: "#B56727"}}>BIBLICAL</CustomLink></b></p>
+                    <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome" style={{color: "#B56727"}}>BIBLE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
                         {classList.slice(0, 5).map((className, index) =>
                             <li key={index}>

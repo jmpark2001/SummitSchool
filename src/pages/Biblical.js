@@ -30,15 +30,14 @@ export default function Biblical() {
                 <ul className="biblicalInfoClasses">
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Christian Reading</p>
-                            <p className="classesInfoDescription">In this class, we will be reading on heroes of faith in the 19-20th century who changed the spiritual flow of America. Remnants
-                            can learn to model after such individuals.</p>  
+                            <p className="classesInfoTitle">Acts</p>
+                            <p className="classesInfoDescription">In this class we will identify the purpose of the book of Acts based on its introduction, the continuing work of Christ, the continuing work of the Holy Spirit, the continuing work of the believer/church, and proclaim the gospel clearly as we examine the 10 sermons of Peter, Stephen, and Paul.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Acts</p>
-                            <p className="classesInfoDescription">In this class we will identify the purpose of the book of Acts based on its introduction, the continuing work of Christ, the continuing work of the Holy Spirit, the continuing work of the believer/church, and proclaim the gospel clearly as we examine the 10 sermons of Peter, Stephen, and Paul.</p>  
+                            <p className="classesInfoTitle">Philippians</p>
+                            <p className="classesInfoDescription">In the four short chapters of his epistle to the Philippians, the word 'joy' or 'rejoicing' appears 19 times —from a Roman prison with Paul. I believe if you take the time to study this epistle and pray through it, you will be one who rejoices in any circumstance.</p>  
                         </div>
                     </li>
                     <li>
@@ -49,15 +48,22 @@ export default function Biblical() {
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Praise and Worship</p>
-                            <p className="classesInfoDescription">In this course, remnants will learn what the meaning of praise is, how to prepare praise, and our posture regarding praise. We
-                                will also look into different kinds of Christian praises.</p>  
+                            <p className="classesInfoTitle">The Gospel Letters</p>
+                            <p className="classesInfoDescription">In this class we will go over the 10 gospel letters starting with why are people unhappy all the way to the 10th letter which is why does sickness depart when you pray. This class will only be taught in korean.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Hebrews</p>
-                            <p className="classesInfoDescription">In the four short chapters of his epistle to the Philippians, the word 'joy' or 'rejoicing' appears 19 times —from a Roman prison with Paul. I believe if you take the time to study this epistle and pray through it, you will be one who rejoices in any circumstance.</p>  
+                            <p className="classesInfoTitle">Christian Reading</p>
+                            <p className="classesInfoDescription">In this class, we will be reading on heroes of faith in the 19-20th century who changed the spiritual flow of America. Remnants
+                            can learn to model after such individuals.</p>  
+                        </div>
+                    </li>
+                    <li>
+                        <div className="biblicalInfoClassesList">
+                            <p className="classesInfoTitle">Praise and Worship</p>
+                            <p className="classesInfoDescription">In this course, remnants will learn what the meaning of praise is, how to prepare praise, and our posture regarding praise. We
+                                will also look into different kinds of Christian praises.</p>  
                         </div>
                     </li>
                 </ul>
