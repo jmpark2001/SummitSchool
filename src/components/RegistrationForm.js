@@ -590,31 +590,54 @@ function RegistrationForm() {
                                 <p className="instructions" style={{fontWeight: "bold", display: "inline"}}>If you need financial assistance, download this form and submit it to the admin team.</p>
                                 <br></br>
                                 <Button className="financialAid" onClick={handleDownload}>Download Financial Aid</Button>
-                                <li>
-                                    1 student:
-                                    <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https://square.link/u/GZLreBYs/" target="_blank" rel="noreferrer noopener">https://square.link/u/GZLreBYs/</a>
-                                </li>
-                                <li>
-                                    2 students:
-                                    <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https://square.link/u/aqelsAIN/" target="_blank" rel="noreferrer noopener">https://square.link/u/aqelsAIN/</a>
-                                </li>
-                                <li>
-                                    3 students:
-                                    <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https://square.link/u/SmF6VjzQ/" target="_blank" rel="noreferrer noopener">https://square.link/u/SmF6VjzQ/</a>
-                                </li>
-                                <li>
-                                    4 students:
-                                    <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https://square.link/u/7v8wxCQA/" target="_blank" rel="noreferrer noopener">https://square.link/u/7v8wxCQA/</a>
-                                </li>
-                                <li>
-                                    5 students:
-                                    <p style={{display: "inline"}}> </p>
-                                    <a style={{display: "inline"}} href="https://square.link/u/6oFNFhiq/" target="_blank" rel="noreferrer noopener">https://square.link/u/6oFNFhiq/</a>
-                                </li>
+                                <div style={{display: "flex", flexDirection: "column", width: "100%"}}>
+                                    <div>
+                                        <p style={{fontWeight: "bold"}}>Students</p>
+                                        <li>
+                                            1 student:
+                                            <p style={{display: "inline"}}> </p>
+                                            <a style={{display: "inline"}} href="https://square.link/u/GZLreBYs/" target="_blank" rel="noreferrer noopener">https://square.link/u/GZLreBYs/</a>
+                                        </li>
+                                        <li>
+                                            2 students:
+                                            <p style={{display: "inline"}}> </p>
+                                            <a style={{display: "inline"}} href="https://square.link/u/aqelsAIN/" target="_blank" rel="noreferrer noopener">https://square.link/u/aqelsAIN/</a>
+                                        </li>
+                                        <li>
+                                            3 students:
+                                            <p style={{display: "inline"}}> </p>
+                                            <a style={{display: "inline"}} href="https://square.link/u/SmF6VjzQ/" target="_blank" rel="noreferrer noopener">https://square.link/u/SmF6VjzQ/</a>
+                                        </li>
+                                        <li>
+                                            4 students:
+                                            <p style={{display: "inline"}}> </p>
+                                            <a style={{display: "inline"}} href="https://square.link/u/7v8wxCQA/" target="_blank" rel="noreferrer noopener">https://square.link/u/7v8wxCQA/</a>
+                                        </li>
+                                        <li>
+                                            5 students:
+                                            <p style={{display: "inline"}}> </p>
+                                            <a style={{display: "inline"}} href="https://square.link/u/6oFNFhiq/" target="_blank" rel="noreferrer noopener">https://square.link/u/6oFNFhiq/</a>
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <p style={{fontWeight: "bold"}}>Adults</p>
+                                        <li>
+                                            1 class:
+                                            <p style={{display: "inline"}}> </p>
+                                            <a style={{display: "inline"}} href="https://square.link/u/GZLreBYs/" target="_blank" rel="noreferrer noopener">https://square.link/u/1Lc22XPW</a>
+                                        </li>
+                                        <li>
+                                            2 classes:
+                                            <p style={{display: "inline"}}> </p>
+                                            <a style={{display: "inline"}} href="https://square.link/u/aqelsAIN/" target="_blank" rel="noreferrer noopener">https://square.link/u/sVNhw8Ul</a>
+                                        </li>
+                                        <li>
+                                            3 classes:
+                                            <p style={{display: "inline"}}> </p>
+                                            <a style={{display: "inline"}} href="https://square.link/u/SmF6VjzQ/" target="_blank" rel="noreferrer noopener">https://square.link/u/PwAs2dbC</a>
+                                        </li>
+                                    </div>
+                                </div>
                             </ol>
                             <Button className="submitButton playfair" type="submit"><b>Submit</b></Button>
                         </Form>

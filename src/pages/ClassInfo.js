@@ -17,7 +17,7 @@ function CustomLink({to, children, ...props}) {
 }
 
 export default function ClassInfo() {
-    const classList = ["Acts", "Philippians", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
+    const classList = ["Acts", "Philippians", "The Gospel of John", "The Gospel Letters", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
          "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
 
     const handleDownload = () => {
@@ -82,7 +82,7 @@ export default function ClassInfo() {
                     <p style={{margin: "0", marginTop: "clamp(1.5rem, 1.2545rem + 1.0909vw, 3rem)"}}>Click on the class categories to find more information about the classes.</p>
                     <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome" style={{color: "#B56727"}}>BIBLE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(0, 5).map((className, index) =>
+                        {classList.slice(0, 6).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -90,7 +90,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/language" className="backToHome" style={{color: "#B56727"}}>LANGUAGE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(5, 10).map((className, index) =>
+                        {classList.slice(6, 11).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -98,7 +98,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/instrument" className="backToHome" style={{color: "#B56727"}}>INSTRUMENT</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(10, 11).map((className, index) =>
+                        {classList.slice(11, 12).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -106,7 +106,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/academic" className="backToHome" style={{color: "#B56727"}}>ACADEMIC</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(11,14).map((className, index) =>
+                        {classList.slice(12,15).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -114,7 +114,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/pe" className="backToHome" style={{color: "#B56727"}}>SPORTS</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(14, 18).map((className, index) =>
+                        {classList.slice(15, 19).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -122,7 +122,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/chess" className="backToHome" style={{color: "#B56727"}}>EXTRACURRICULAR</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(18).map((className, index) =>
+                        {classList.slice(19).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
