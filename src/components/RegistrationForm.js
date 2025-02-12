@@ -624,17 +624,17 @@ function RegistrationForm() {
                                         <li>
                                             1 class:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/GZLreBYs/" target="_blank" rel="noreferrer noopener">https://square.link/u/1Lc22XPW</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/1Lc22XPW/" target="_blank" rel="noreferrer noopener">https://square.link/u/1Lc22XPW</a>
                                         </li>
                                         <li>
                                             2 classes:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/aqelsAIN/" target="_blank" rel="noreferrer noopener">https://square.link/u/sVNhw8Ul</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/sVNhw8Ul/" target="_blank" rel="noreferrer noopener">https://square.link/u/sVNhw8Ul</a>
                                         </li>
                                         <li>
                                             3 classes:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/SmF6VjzQ/" target="_blank" rel="noreferrer noopener">https://square.link/u/PwAs2dbC</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/PwAs2dbC/" target="_blank" rel="noreferrer noopener">https://square.link/u/PwAs2dbC</a>
                                         </li>
                                     </div>
                                 </div>
