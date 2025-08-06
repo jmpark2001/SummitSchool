@@ -9,10 +9,10 @@ import FileSaver from "file-saver";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
-    const classList2 = ["Acts", "Philippians", "The Gospel of John", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums", "Academic", "Sports", "Extracurricular"]
-    const classList = ["Acts", "Philippians", "The Gospel of John", "Christian Reading", "Praise and Worship", "Acts (Reverend Dexter Smith)", "Hebrews (Reverend Ben Fu)", "The Gospel of John (Reverend Brendyn Huh)", "The Gospel Letters (Reverend Byung C. Hwang)", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
+    const classList2 = ["The Gospels (Matthew, Mark, Luke)", "Contemporary Discussions (양준영)", "Praise and Worship (Pastoral Intern Paul Sa)", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums", "Academic", "Sports", "Extracurricular"]
+    const classList = ["The Gospels (Matthew, Mark, Luke) (Reverend Brendyn Huh)", "Contemporary Discussions (양준영)", "Praise and Worship (Pastoral Intern Paul Sa)", "새생명 새생활 (Reverend Byung C. Hwang)", "Galatians (Reverend Dexter Smith)", "1 Thessalonians (Reverend Ben Fu)", "The Gospels (Matthew, Mark, Luke) (Reverend Brendyn Huh)", "Contemporary Discussions", "Praise and Worship", "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced",
      "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "Adult English Beginner", "Adult English Intermediate", "Adult English Advanced", "Drums Beginner",
-     "Drums Some Experience", "Drums Advanced", "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
+     "Drums Some Experience", "Drums Advanced", "Pre-K/Kindergarten", "Reading and Writing", "Math Tutoring", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
      "Massachusettes", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
      "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
@@ -143,23 +143,23 @@ function RegistrationForm() {
                             {window.screen.width > 769 ? (
                                     <>
                                         <div className="dates">
-                                            <p style={{margin: "0 0 0 5%", width: "100%"}}><b>REGISTRATION & PAYMENT PERIOD:</b> February 9th - February 16th</p>
+                                            <p style={{margin: "0 0 0 5%", width: "100%"}}><b>REGISTRATION & PAYMENT PERIOD:</b> August 10th - August 24th</p>
                                         </div> 
                                         <div style={{marginTop: "0"}} className="dates">
-                                            <p style={{margin: "0 0 0 5%", width: "80%"}}><b>SPRING SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
-                                            from March 1st - June 21st</p>
+                                            <p style={{margin: "0 0 0 5%", width: "80%"}}><b>FALL SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
+                                            from September - December</p>
                                         </div>
                                     </>
                                 ) : (
                                     <>
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>REGISTRATION & PAYMENT PERIOD</p>
-                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>February 9th - February 16th</p>
+                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>August 10th - August 24th</p>
                                         </div> 
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>SPRING SEMESTER</p>
+                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>FALL SEMESTER</p>
                                             <p style={{fontSize: "1.3rem", margin: "0 auto", width: "90%"}}>Every Saturday except Remnant Day (Last Saturday of every month)
-                                            from March 1st - June 21st</p>
+                                            from September - December</p>
                                         </div> 
                                     </>
                                 )
@@ -199,51 +199,61 @@ function RegistrationForm() {
                                         <Form.Control type="text" name="studentFullName" placeholder="Enter Full Name" value={form.studentFullName} onChange={(e) => updateForm({ studentFullName: e.target.value})} required></Form.Control>
                                     </Col>
                                 </Form.Group>
+                                
+                                <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalNumber">
+                                    <Form.Label column sm={2}>
+                                        STUDENT AGE
+                                    </Form.Label>
+                                    <Col sm={2}>
+                                        <Form.Control type="number" name="studentAge" placeholder="Enter Student Age" value={form.studentAge} onChange={(e) => updateForm({ studentAge: e.target.value})} required></Form.Control>
+                                    </Col>
+                                </Form.Group>
+
+                                <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalNumber">
+                                    <Form.Label column sm={2}>
+                                        STUDENT GRADE (If applicable)
+                                    </Form.Label>
+                                    <Col sm={2}>
+                                        <Form.Control type="number" name="studentGrade" placeholder="Enter Student Grade" value={form.studentGrade} onChange={(e) => updateForm({ studentGrade: e.target.value})} ></Form.Control>
+                                    </Col>
+                                </Form.Group>
 
                                 <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalName">
                                     <Form.Label column sm={2}>
-                                        PARENT FULL NAME
+                                        PARENT/GUARDIAN FULL NAME (Put n/a if you are an adult student)
                                     </Form.Label>
                                     <Col sm={2}>
                                         <Form.Control type="text" name="parentFullName" placeholder="Enter Full Name" value={form.parentFullName} onChange={(e) => updateForm({ parentFullName: e.target.value})}required></Form.Control>
                                     </Col>
                                 </Form.Group>
 
-                                <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalNumber">
+                                {/* <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalNumber">
                                     <Form.Label column sm={2}>
                                         STUDENT PHONE NUMBER
                                     </Form.Label>
                                     <Col sm={2}>
                                         <Form.Control type="number" name="studentPhoneNumber" placeholder="Enter Phone Number" value={form.studentPhoneNumber} onChange={(e) => updateForm({ studentPhoneNumber: e.target.value})}></Form.Control>
                                     </Col>
-                                </Form.Group>
+                                </Form.Group> */}
 
                                 <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalNumber">
                                     <Form.Label column sm={2}>
-                                        PARENT PHONE NUMBER
+                                        PARENT/ADULT STUDENT PHONE NUMBER
                                     </Form.Label>
                                     <Col sm={2}>
                                         <Form.Control type="number" name="parentPhoneNumber" placeholder="Enter Phone Number" value={form.parentPhoneNumber} onChange={(e) => updateForm({ parentPhoneNumber: e.target.value})} required></Form.Control>
                                     </Col>
                                 </Form.Group>
 
-                                <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalEmail">
+                                {/* <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalEmail">
                                     <Form.Label column sm={2}>
                                         PARENT EMAIL ADDRESS
                                     </Form.Label>
                                     <Col sm={2}>
                                         <Form.Control type="email" name="email" placeholder="Enter Email Address" value={form.parentEmail} onChange={(e) => updateForm({ parentEmail: e.target.value})} required></Form.Control>
                                     </Col>
-                                </Form.Group>
+                                </Form.Group> */}
 
-                                <Form.Group as={Col} className="leftAlign marginTop" controlId="formHorizontalNumber">
-                                    <Form.Label column sm={2}>
-                                        STUDENT GRADE
-                                    </Form.Label>
-                                    <Col sm={2}>
-                                        <Form.Control type="number" name="studentGrade" placeholder="Enter Student Grade" value={form.studentGrade} onChange={(e) => updateForm({ studentGrade: e.target.value})} required></Form.Control>
-                                    </Col>
-                                </Form.Group>
                                 <p className="form-label col-form-label col-sm-2 leftAlign marginTop" style={{margin: "0 0 0.5vh 0", fontWeight: "bold"}}>HOME ADDRESS</p>
                                 <Form.Group controlId="formAddress" className="leftAlign" style={{fontSize: "1.3vh"}}>
                                     <div className="col-sm-2" style={{marginBottom: "1vh"}}>
@@ -277,10 +287,11 @@ function RegistrationForm() {
                             </div>
                             <div style={{marginTop: "1.8rem", width: "100%", padding: "0 0 0 2.5%", textAlign: "left", fontSize: "clamp(1rem, 0.8691rem + 0.5818vw, 1.8rem)"}}>
                                 <p style={{color: "red", display: "inline"}}>*</p>
-                                <p className="instructions" style={{display: "inline"}}>Students (Grades 1-12) must choose 3 classes.</p>
+                                {/* <p className="instructions" style={{display: "inline"}}>Students (Grades 1-12) must choose 3 classes.</p>
                                 <br></br>
                                 <p style={{color: "red", display: "inline"}}>**</p>
-                                <p className="instructions" style={{display: "inline"}}>Adults (College and up) can take up to 3 classes.</p>
+                                <p className="instructions" style={{display: "inline"}}>Adults (College and up) can take up to 3 classes.</p> */}
+                                <p className="instructions" style={{display: "inline"}}>All students are required to take 1 Bible class, 1 Language/Instrument/Academic class, and 1 Sports/Extracurricular class</p>
                             </div>
                             <div style={{display: "flex", padding: "0 0 0 2.5%", flexDirection: "column", width: "100%"}}>
                                 <p className="biblicalTitle">Biblical</p>
@@ -470,7 +481,7 @@ function RegistrationForm() {
                                                             checked={checkedState[index+29]}
                                                             onChange={(e) => handleOnChange(index+29, e)}
                                                         />
-                                                        <label>{"Math"}</label>
+                                                        <label>{"Math Tutoring"}</label>
                                                     </div>
                                                 </li>
                                             </>
@@ -584,8 +595,28 @@ function RegistrationForm() {
                             <br/>
                             <p style={{fontSize: "clamp(1.4rem, 1.2691rem + 0.5818vw, 2.2rem)", fontWeight: "bold"}}>Methods of Payment</p>
                             <ol className="payment" style={{listStyle: "none"}}>
-                                <p style={{fontWeight: "bold"}}>Click on the links below to pay with credit or debit. For multiple students the pricing goes as follows: The first student you enroll will cost $250, the second student is $200,
-                                and any additional students will be $150. For adults registering, the fee will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes.</p>
+                                <p style={{fontWeight: "bold"}}>Fees for students</p>
+                                <div class="feeGrid">
+                                    <div>1 Student</div>
+                                    <div>$250</div>
+                                    <div>2 Students</div>  
+                                    <div>$200</div>
+                                    <div>Additional Students</div>
+                                    <div>$150</div>
+                                </div>
+                                <br></br>
+                                <p style={{fontWeight: "bold"}}>Fees for adults are per class</p>
+                                <div class="feeGrid">
+                                    <div>1 Class</div>
+                                    <div>$100</div>
+                                    <div>2 Classes</div>  
+                                    <div>$175</div>
+                                    <div>3 Classes</div>
+                                    <div>$250</div>
+                                </div>
+                                <br></br>
+                                {/* <p style={{fontWeight: "bold"}}>Click on the links below to pay with credit or debit. For multiple students the pricing goes as follows: The first student you enroll will cost $250, the second student is $200,
+                                and any additional students will be $150. For adults registering, the fee will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes.</p> */}
                                 <p style={{color: "red", display: "inline"}}>*</p>
                                 <p className="instructions" style={{fontWeight: "bold", display: "inline"}}>If you need financial assistance, download this form and submit it to the admin team.</p>
                                 <br></br>

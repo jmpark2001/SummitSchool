@@ -30,40 +30,47 @@ export default function Biblical() {
                 <ul className="biblicalInfoClasses">
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Acts</p>
-                            <p className="classesInfoDescription">In this class we will identify the purpose of the book of Acts based on its introduction, the continuing work of Christ, the continuing work of the Holy Spirit, the continuing work of the believer/church, and proclaim the gospel clearly as we examine the 10 sermons of Peter, Stephen, and Paul.</p>  
+                            <p className="classesInfoTitle">새생명 새생활</p>
+                            <p className="classesInfoDescription">구원 받은 성도가 복음의 뿌리를 내릴 수 있도록 도우며, 영적부분, 마음부분, 육신의 질병도 영적회복을 통해 치유되도록 도우며, 나아가 
+                                전도자의 삶을 살 수 있도록 도움.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Philippians</p>
-                            <p className="classesInfoDescription">In the four short chapters of his epistle to the Philippians, the word 'joy' or 'rejoicing' appears 19 times —from a Roman prison with Paul. I believe if you take the time to study this epistle and pray through it, you will be one who rejoices in any circumstance.</p>  
+                            <p className="classesInfoTitle">Galatians</p>
+                            <p className="classesInfoDescription">Galatians was written to explain the gospel as God's gift to mankind. In addition, Galatians was written to clear up false 
+                                teachings about what some people were trying to add to Christ as our salvation's sufficiency. Christ alone saves with nothing added.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">The Gospel of John</p>
-                            <p className="classesInfoDescription">There are two objectives of this course – first, to provide an overview of the entire book of John with all of its themes and motifs, and second, to do some detailed exegetical analysis of some of the key themes that stand out in John (eg, Jesus as the light, shepherd, living water, etc.).  Based upon the age group of the class, we will have presentations by students, watching informative videos on the subject at hand, and other media applications.</p>  
+                            <p className="classesInfoTitle">1 Thessalonians</p>
+                            <p className="classesInfoDescription">Some of the topics taught will be: Living as an example in hope, providing ultimate comfort to believers in suffering, living 
+                                Christ-like in secular culture, etc. Some of the key words discussed will be: faith, love, patience, holiness, vigilance, and hope.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">The Gospel Letters</p>
-                            <p className="classesInfoDescription">In this class we will go over the 10 gospel letters starting with why are people unhappy all the way to the 10th letter which is why does sickness depart when you pray. This class will only be taught in korean.</p>  
+                            <p className="classesInfoTitle">The Gospels (Matthew, Mark, Luke)</p>
+                            <p className="classesInfoDescription"> The earliest recording of Jesus' life and ministry is found in the Gospels of Matthew, Mark, and Luke. What do these Gospels 
+                                reveal about the person and work of Jesus? What are the similarities and differences in these Gospel accounts? What are their main messages? Who were they written 
+                                for and why? These are some of the questions we will answer in this class</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Christian Reading</p>
-                            <p className="classesInfoDescription">In this class, we will be reading on heroes of faith in the 19-20th century who changed the spiritual flow of America. Remnants
-                            can learn to model after such individuals.</p>  
+                            <p className="classesInfoTitle">Contemporary Discussions</p>
+                            <p className="classesInfoDescription">This class is designed to explore theological, biblical, and everyday questions. Its purpose is to help the remnant develop a 
+                                strong biblical worldview and engage with Scripture in a way that challenges and informs practical, real-life application.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
                             <p className="classesInfoTitle">Praise and Worship</p>
-                            <p className="classesInfoDescription">In this course, remnants will learn what the meaning of praise is, how to prepare praise, and our posture regarding praise. We
-                                will also look into different kinds of Christian praises.</p>  
+                            <p className="classesInfoDescription">The purpose of the Praise and Worship class is to cultivate a deeper understanding and heart for worship through music and praise.
+                                Remnants will explore the spiritual foundations of worship, the role of music in the church, and how to offer worship that is both heartfelt and rooted in the word.
+                                This class equips remnants to engage God more fully in personal and corporate worship, and to serve with excellence and humility on the praise team or in their daily
+                                lives as worshipers.</p>  
                         </div>
                     </li>
                 </ul>

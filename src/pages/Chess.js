@@ -28,12 +28,24 @@ export default function Chess() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Introduction to Chess</p>
+                    <p className="classesInfoTitle">Chess</p>
                     <p className="glacial">
                         This class is for students wanting to learn chess. This includes how each piece moves, beginner openings and fundamental chess strategies.
                     </p>
                 </div>
-            </div>.
+            </div>
+            <div className="differentClasses">
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Photography</p>
+                    <p className="glacial">
+                        Students will learn how to take photos and is designed for anyone who wants to learn the fundamentals of photography and creating video content.
+                         You will learn how to understand camera settings like ISO, shutter speed, and aperture, composition technique, how to use natural lighting, and
+                          the science behind cameras. Students will learn skills to create gospelized content. This class is perfect for beginners with a DSLR, mirrorless,
+                           point and shoot, or even a smartphone camera. Also, if you want to improve your photography skills or aspire to be the next RCA, missions trip, or
+                            church Photographer/Videographer then this class is for you.
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }

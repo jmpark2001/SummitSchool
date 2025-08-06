@@ -24,8 +24,8 @@ export default function Home() {
                 <p className="warning"></p>
             </div>
             <div className="fallSemester">
-                <p style={{margin: "1rem 0"}}>2025 SPRING SEMESTER</p>
-                <p className="fallSemesterText glacial">Registration for the spring semester starts on Feb 9 and will end on Feb 16.</p>
+                <p style={{margin: "1rem 0"}}>2025 FALL SEMESTER</p>
+                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 10 and will end on Aug 24.</p>
                 <div style={{display: "flex", justifyContent: "center", marginBottom: "4vh"}}>
                     <Link to={"/registration"} style={{textDecoration: "none", display: "flex"}}>
                         <div className="registerNow playfair">
@@ -35,7 +35,7 @@ export default function Home() {
                 </div>
             </div>
             <hr style={{borderWidth: "0 0 clamp(0.2rem, 0.1591rem + 0.1818vw, 0.45rem) 0", borderColor: "black", borderStyle: "solid", width: "20%", margin: "clamp(4rem, 2.3333rem + 7.4074vw, 9rem) 0 0 0"}}></hr>
-            <p className="classesForFall">CLASSES FOR SPRING 2025</p>
+            <p className="classesForFall">CLASSES FOR FALL 2025</p>
             <div className="homeLinksGrid">
                 <Link to={"/biblical"} className="homeLink">
                     <div className="biblicalLink">
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <div style={{display: "relative", margin: "10vh 0"}}>
                 <div className="classScheduleBanner">
-                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from 3/1 to 6/21</p>
+                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from September to December</p>
                 </div>
             </div>
             {/* <Footer/> */}

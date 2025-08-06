@@ -17,8 +17,8 @@ function CustomLink({to, children, ...props}) {
 }
 
 export default function ClassInfo() {
-    const classList = ["Acts", "Philippians", "The Gospel of John", "The Gospel Letters", "Christian Reading", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
-         "Pre-K/Kindergarten", "Reading and Writing", "Math", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Introduction to Chess"]
+    const classList = ["새생명 새생활", "Galatians", "1 Thessalonians", "The Gospels (Matthew, Mark, Luke)", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
+         "Pre-K/Kindergarten", "Reading and Writing", "Math Tutoring", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Chess", "Media Photography"]
 
     const handleDownload = () => {
         let dataBlob = EXCEL_FILE_BASE64;
@@ -53,10 +53,10 @@ export default function ClassInfo() {
             <div className="classInfo">
                 <p style={{color: "#B56727", margin: "2rem auto"}}><b>Welcome to One Mind Church Summit School!</b></p>
                 <p><b>REGISTRATION</b></p>
-                <p>Registration for the spring semester starts on February 9th and will end on February 16th</p>
+                <p>Registration for the fall semester starts on August 10th and will end on August 24th</p>
                 <br/><br/>
-                <p><b>2025 SPRING SEMESTER</b></p>
-                <p>The spring semeseter begins on March 1st and ends on June 21st</p>
+                <p><b>2025 FALL SEMESTER</b></p>
+                <p>The fall semeseter begins on September (smth) and ends on December (smth)</p>
                 <br/><br/>
                 <p><b>SCHEDULE</b></p>
                 <p>Summit School classes will take place every Saturday from 9:30AM - 2:00PM. (No classes the last saturday of the month)</p>
@@ -67,9 +67,33 @@ export default function ClassInfo() {
                 <p>12:30PM - 12:50PM: Lunch</p>
                 <p>1:00PM - 1:50PM: Class C</p>
                 <br/>
-                <p>Students from 1st grade to 12th grade must choose three classes of their choice. Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM. Adults can select up to three classes.</p>
+                <p>All students are required to take:</p>
+                <p>1 Bible class</p> 
+                <p>1 Language/Instrument/Academic class</p>
+                <p>1 Sports/Extracurricular class</p>
+                <p>Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM.</p>
                 <br/><br/>
-                <p><b>FEE</b></p>
+                <p><b>FEES</b></p>
+                <p>Fees for students</p>
+                <div class="feeGrid">
+                    <div>1 Student</div>
+                    <div>$250</div>
+                    <div>2 Students</div>  
+                    <div>$200</div>
+                    <div>Additional Students</div>
+                    <div>$150</div>
+                </div>
+                <br></br>
+                <p>Fees for adults are per class</p>
+                <div class="feeGrid">
+                    <div>1 Class</div>
+                    <div>$100</div>
+                    <div>2 Classes</div>  
+                    <div>$175</div>
+                    <div>3 Classes</div>
+                    <div>$250</div>
+                </div>
+                <br></br>
                 <p>The fee for summit school will be $250 per semester for the first student, $200 for the second student, and $150 for any additional students. The fee for adults (college and up) will be $100 for 1 class, $175 for 2 classes, and $250 for 3 classes. Payment information can be found on the registration form.</p>
                 {/* <p style={{color: "red", display: "inline"}}>*</p> */}
                 <p className="instructions" style={{fontWeight: "bold", display: "inline"}}>If you need financial assistance, download this form and submit it to the admin team.</p>
