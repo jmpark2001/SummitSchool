@@ -30,9 +30,9 @@ export default function Biblical() {
                 <ul className="biblicalInfoClasses">
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">새생명 새생활</p>
-                            <p className="classesInfoDescription">구원 받은 성도가 복음의 뿌리를 내릴 수 있도록 도우며, 영적부분, 마음부분, 육신의 질병도 영적회복을 통해 치유되도록 도우며, 나아가 
-                                전도자의 삶을 살 수 있도록 도움.</p>  
+                            <p className="classesInfoTitle">New Life, New Living</p>
+                            <p className="classesInfoDescription">Helping saved believers to put down deep roots in the gospel, aiding them in the healing of spiritual issues, emotional struggles,
+                                and physical illnesses through spiritual restoration, and further helping them to live the life of an evangelist.</p>  
                         </div>
                     </li>
                     <li>

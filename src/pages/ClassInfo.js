@@ -17,7 +17,7 @@ function CustomLink({to, children, ...props}) {
 }
 
 export default function ClassInfo() {
-    const classList = ["새생명 새생활", "Galatians", "1 Thessalonians", "The Gospels (Matthew, Mark, Luke)", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
+    const classList = ["New Life, New Living", "Galatians", "1 Thessalonians", "The Gospels (Matthew, Mark, Luke)", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "Adult English", "Drums",
          "Pre-K/Kindergarten", "Reading and Writing", "Math Tutoring", "Basketball", "Badminton", "Wrestling", "Ping Pong", "Chess", "Media Photography"]
 
     const handleDownload = () => {
