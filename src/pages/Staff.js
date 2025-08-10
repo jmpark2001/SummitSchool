@@ -51,7 +51,7 @@ export default function Staff() {
                         <img className="staffImage" src={pastorBrendyn} alt=""></img>
                         <div className="staffText">
                             <p className="staffName">Brendyn Huh, Rev.</p>
-                            <p className="staffTitle">SPIRITUAL ADVISOR</p>
+                            <p className="staffTitle">ACTING DIRECTOR</p>
                         </div>
                     </div>
                 </div>

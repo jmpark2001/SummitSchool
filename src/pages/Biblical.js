@@ -54,7 +54,7 @@ export default function Biblical() {
                             <p className="classesInfoTitle">The Gospels (Matthew, Mark, Luke)</p>
                             <p className="classesInfoDescription"> The earliest recording of Jesus' life and ministry is found in the Gospels of Matthew, Mark, and Luke. What do these Gospels 
                                 reveal about the person and work of Jesus? What are the similarities and differences in these Gospel accounts? What are their main messages? Who were they written 
-                                for and why? These are some of the questions we will answer in this class</p>  
+                                for and why? These are some of the questions we will answer in this class.</p>  
                         </div>
                     </li>
                     <li>

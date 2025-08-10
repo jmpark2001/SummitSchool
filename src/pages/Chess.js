@@ -30,7 +30,8 @@ export default function Chess() {
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Chess</p>
                     <p className="glacial">
-                        This class is for students wanting to learn chess. This includes how each piece moves, beginner openings and fundamental chess strategies.
+                        This class is for students wanting to learn chess. This includes how each piece moves, beginner openings and fundamental chess strategies. There is an advanced class option for students who
+                        are familiar with the basics of chess.
                     </p>
                 </div>
             </div>

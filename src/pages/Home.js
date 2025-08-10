@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             <div className="fallSemester">
                 <p style={{margin: "1rem 0"}}>2025 FALL SEMESTER</p>
-                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 10 and will end on Aug 24.</p>
+                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 11 and will end on Aug 23.</p>
                 <div style={{display: "flex", justifyContent: "center", marginBottom: "4vh"}}>
                     <Link to={"/registration"} style={{textDecoration: "none", display: "flex"}}>
                         <div className="registerNow playfair">
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <div style={{display: "relative", margin: "10vh 0"}}>
                 <div className="classScheduleBanner">
-                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from September to December</p>
+                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from September 6th to December 20th</p>
                 </div>
             </div>
             {/* <Footer/> */}
