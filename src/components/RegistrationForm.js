@@ -309,7 +309,7 @@ function RegistrationForm() {
                                 <p style={{color: "red", display: "inline"}}>**</p>
                                 <p className="instructions" style={{display: "inline"}}>Adults (College and up) can take up to 3 classes.</p> */}
                                 <p style={{color: "red", display: "inline"}}>**</p>
-                                <p className="instructions" style={{display: "inline"}}>All students are required to take 1 Bible class, 1 Language/Instrument/Academic class, and 1 Sports/Extracurricular class</p>
+                                <p className="instructions" style={{display: "inline"}}>All students are required to take 1 Bible class, 1 Language/Instrument/Academic class, and 1 Sports/Extracurricular class and classes are first come first serve</p>
                             </div>
                             <div style={{display: "flex", padding: "0 0 0 2.5%", flexDirection: "column", width: "100%"}}>
                                 <p className="biblicalTitle">Biblical</p>
@@ -625,7 +625,7 @@ function RegistrationForm() {
                                 <h2>Waiver for Physical Education Students</h2>
                                 <h3>If your child is signed up for a physical education class, please read and check the box to sign the waiver.</h3>
                                 <p>
-                                By giving consent, I authorize my child to leave the church building and attend sports practices associated with the Summit School program at Riverbend Park, 13529 Fitzhugh Ln, Woodbridge, VA 22191. I agree that One Mind Church and Summit School will not be held responsible if my child sustains injury during the Sports class and if anything happens on the way to and from the said location or on church premises.  I authorize my child to receive emergency medical treatment if he or she sustains an injury. I agree that I am responsible for paying all costs incurred. I agree to take full responsibility for any damage my child may cause to Summit School property, property visited on field trips, or other personal property.
+                                By giving consent, I authorize my child to leave the church building and attend sports practices associated with the Summit School program. I agree that One Mind Church and Summit School will not be held responsible if my child sustains injury during the Sports class and if anything happens on the way to and from the said location or on church premises.  I authorize my child to receive emergency medical treatment if he or she sustains an injury. I agree that I am responsible for paying all costs incurred. I agree to take full responsibility for any damage my child may cause to Summit School property, property visited on field trips, or other personal property.
                                 </p>
                                 <input
                                     type="checkbox"
