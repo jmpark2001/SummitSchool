@@ -37,24 +37,17 @@ export default function Biblical() {
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Galatians</p>
-                            <p className="classesInfoDescription">Galatians was written to explain the gospel as God's gift to mankind. In addition, Galatians was written to clear up false 
-                                teachings about what some people were trying to add to Christ as our salvation's sufficiency. Christ alone saves with nothing added.</p>  
+                            <p className="classesInfoTitle">5 Solas</p>
+                            <p className="classesInfoDescription">1. Christ Alone 2. Faith Alone 3. God's Grace Alone 4. God's Gloary Alone 5. God's Word Alone. Teaching
+                                the 5 Solas is essential to anchor christians in the core gospel message, distinguishing it from works-based theology. These Solas summarize
+                                Reformation truths, emphasizing salvation is completely a divine gift that depends on God's Glory Alone.</p>  
                         </div>
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">1 Thessalonians</p>
-                            <p className="classesInfoDescription">Some of the topics taught will be: Living as an example in hope, providing ultimate comfort to believers in suffering, living 
-                                Christ-like in secular culture, etc. Some of the key words discussed will be: faith, love, patience, holiness, vigilance, and hope.</p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">The Gospels (Matthew, Mark, Luke)</p>
-                            <p className="classesInfoDescription"> The earliest recording of Jesus' life and ministry is found in the Gospels of Matthew, Mark, and Luke. What do these Gospels 
-                                reveal about the person and work of Jesus? What are the similarities and differences in these Gospel accounts? What are their main messages? Who were they written 
-                                for and why? These are some of the questions we will answer in this class.</p>  
+                            <p className="classesInfoTitle">Biblical Readership</p>
+                            <p className="classesInfoDescription"> In this class, we will look at various figures in the Bible to understand what leadership is according to God's standard (biblical 
+                                model). We will then compare this with wordly standards of leadership. Our goal is to understand and know the kind of leaders God is looking for in our day and age.</p>  
                         </div>
                     </li>
                     <li>

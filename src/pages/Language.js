@@ -28,7 +28,7 @@ export default function Language() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">K-12 (Korean, Chinese, Spanish)</p>
+                    <p className="classesInfoTitle">K-12 (Korean, Chinese (Mandarin), Spanish)</p>
                     <p className="glacial">
                         Language classes are provided for students from grades 1 through 12. Students will learn grammar and vocabulary, practice what they learn,
                             and engage in conversations. We will also teach aspects of society and culture of the country to deepen their understanding of the respective languages.

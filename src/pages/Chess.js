@@ -34,16 +34,21 @@ export default function Chess() {
                         are familiar with the basics of chess.
                     </p>
                 </div>
-            </div>
-            <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Photography</p>
+                    <p className="classesInfoTitle">Counseling</p>
                     <p className="glacial">
-                        Students will learn how to take photos and is designed for anyone who wants to learn the fundamentals of photography and creating video content.
-                         You will learn how to understand camera settings like ISO, shutter speed, and aperture, composition technique, how to use natural lighting, and
-                          the science behind cameras. Students will learn skills to create gospelized content. This class is perfect for beginners with a DSLR, mirrorless,
-                           point and shoot, or even a smartphone camera. Also, if you want to improve your photography skills or aspire to be the next RCA, missions trip, or
-                            church Photographer/Videographer then this class is for you.
+                        This class is designed to help and counsel the youth to be ready to tackle many of life's challenges facing them today. We will use biblical principles and 
+                        wisdom, to enable them to stand on a solid foundation when going through trials. This semester, we will be exploring the writings of the apostle Paul, mainly
+                        the epistle of Paul to the Phillippians. In addition, the class will incorporate learning techniques to allow students to play guitar quicker than conventional methods.
+                        This skill is helpful for those who wish to play an important role, contributing to worship teams, or simply playing guitar for fun.
+                    </p>
+                </div>
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Art</p>
+                    <p className="glacial">
+                        This course introduces students to the fundamentals of visual art through a structured, yet creative approach. Students will explore color perception,
+                        basic drawing and form, and guided creative projects. The class encourages careful observation, artistic confidence, and personal expression in a supportive
+                        learning environment.
                     </p>
                 </div>
             </div>

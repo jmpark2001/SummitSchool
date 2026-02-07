@@ -149,23 +149,23 @@ function RegistrationForm() {
                             {window.screen.width > 769 ? (
                                     <>
                                         <div className="dates">
-                                            <p style={{margin: "0 0 0 5%", width: "100%"}}><b>REGISTRATION & PAYMENT PERIOD:</b> August 11th - August 23th</p>
+                                            <p style={{margin: "0 0 0 5%", width: "100%"}}><b>REGISTRATION & PAYMENT PERIOD:</b> February 8th - February 22nd</p>
                                         </div> 
                                         <div style={{marginTop: "0"}} className="dates">
-                                            <p style={{margin: "0 0 0 5%", width: "80%"}}><b>FALL SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
-                                            from September 6th - December 20th</p>
+                                            <p style={{margin: "0 0 0 5%", width: "80%"}}><b>SPRING SEMESTER:</b> Every Saturday except Remnant Day (Last Saturday of every month)
+                                            from March 7th - June 13th</p>
                                         </div>
                                     </>
                                 ) : (
                                     <>
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>REGISTRATION & PAYMENT PERIOD</p>
-                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>August 11th - August 23th</p>
+                                            <p style={{fontSize: "1.3rem", marginTop: "0", margin: "0"}}>INSERT DATE - INSERT DATE</p>
                                         </div> 
                                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>FALL SEMESTER</p>
+                                            <p style={{fontSize: "1.3rem", fontWeight: "bold", marginBottom: "0"}}>SPRING SEMESTER</p>
                                             <p style={{fontSize: "1.3rem", margin: "0 auto", width: "90%"}}>Every Saturday except Remnant Day (Last Saturday of every month)
-                                            from September 6th - December 20th</p>
+                                            from March 7th - June 13th</p>
                                         </div> 
                                     </>
                                 )

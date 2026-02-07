@@ -36,8 +36,12 @@ export default function Academic() {
                     <p className="glacial">Reading and writing are taught using textbooks appropriate for the grade level, and learning is also provided to improve reading comprehension and writing skills.</p>
                 </div>
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Math Tutoring</p>
+                    <p className="classesInfoTitle">Math & Math Tutoring</p>
                     <p className="glacial">This class is intended to bolster students' grade level appropriate math skill as well as prepare them for the next grade level.</p>
+                </div>
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Science</p>
+                    <p className="glacial">This class is instended for high schoolers interested in learning basic Chemistry or Physics.</p>
                 </div>
             </div>
         </div>

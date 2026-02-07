@@ -27,18 +27,18 @@ export default function PE() {
                 <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/&nbsp;&nbsp;Sports Classes</p>
             </div>
             <div className="differentClasses">
-                {/* <div className="otherInfoDiv">
+                <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Basketball</p>
                     <p className="glacial">
-                        Basketball class will allow students to learn the basics of basketball as well as giving opportunities to play basketball. (Students grades 3 and up)
+                        Basketball class will allow students to learn the basics of basketball as well as giving opportunities to play basketball.
                     </p>
-                </div> */}
-                <div className="otherInfoDiv">
+                </div>
+                {/* <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Stretching and Mobility</p>
                     <p className="glacial">
                         Stretching and Mobility provides students a relaxing environment to stretch their bodies in a healthy way.
                     </p>
-                </div>
+                </div> */}
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Badminton</p>
                     <p className="glacial">
