@@ -35,20 +35,9 @@ export default function Chess() {
                     </p>
                 </div>
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Counseling</p>
-                    <p className="glacial">
-                        This class is designed to help and counsel the youth to be ready to tackle many of life's challenges facing them today. We will use biblical principles and 
-                        wisdom, to enable them to stand on a solid foundation when going through trials. This semester, we will be exploring the writings of the apostle Paul, mainly
-                        the epistle of Paul to the Phillippians. In addition, the class will incorporate learning techniques to allow students to play guitar quicker than conventional methods.
-                        This skill is helpful for those who wish to play an important role, contributing to worship teams, or simply playing guitar for fun.
-                    </p>
-                </div>
-                <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Art</p>
                     <p className="glacial">
-                        This course introduces students to the fundamentals of visual art through a structured, yet creative approach. Students will explore color perception,
-                        basic drawing and form, and guided creative projects. The class encourages careful observation, artistic confidence, and personal expression in a supportive
-                        learning environment.
+                        Students explore creativity through drawing, painting, and hands-on art projects. This class encourages self-expression, imagination, and confidence while learning basic art techniques.
                     </p>
                 </div>
             </div>

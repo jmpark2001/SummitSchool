@@ -30,7 +30,7 @@ export default function PE() {
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Basketball</p>
                     <p className="glacial">
-                        Basketball class will allow students to learn the basics of basketball as well as giving opportunities to play basketball.
+                        Students learn fundamental basketball skills including dribbling, passing, shooting, and teamwork. This class builds coordination, confidence, and sportsmansihp in a fun and active environment.
                     </p>
                 </div>
                 {/* <div className="otherInfoDiv">
@@ -42,7 +42,7 @@ export default function PE() {
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Badminton</p>
                     <p className="glacial">
-                        Students can participate in learning the rules of badminton and play with one another.
+                        Students learn the basics of badminton, including proper grip, footwork, serving, and gameplay. This class builds coordination, agility, and sportsmanship.
                     </p>
                 </div>
                 {/* <div className="otherInfoDiv">
@@ -51,7 +51,16 @@ export default function PE() {
                 </div> */}
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Ping Pong</p>
-                    <p className="glacial">This class is for students wanting to learn how to play ping pong. Students will learn how to hold the paddle as well as forms and techniques.</p>
+                    <p className="glacial">Students learn basic ping pong skills such as grip, serves, and rallies while improving coordination and focus. The class promotes quick reflexes, confidence, and good sportsmanship in a fun environment.</p>
+                </div>
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Conditioning</p>
+                    <p className="glacial">Conditioning is a high-energy class designed to help aspiring athletes and consistently active individuals build the capacity to withstand physical strain.
+                         The class focuses on continuous movement, athletic drills, and short bursts of extreme high-intensity interval training to improve endurance, strength, and mental toughness.
+                    </p>
+                    <p className="glacial" style={{fontWeight: "900"}}>
+                        *This class is for 8th grade students and above.
+                    </p>
                 </div>
             </div> 
         </div>

@@ -28,7 +28,7 @@ export default function Language() {
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">K-12 (Korean, Chinese (Mandarin), Spanish)</p>
+                    <p className="classesInfoTitle">K-12 (Korean, Chinese - Mandarin, Spanish)</p>
                     <p className="glacial">
                         Language classes are provided for students from grades 1 through 12. Students will learn grammar and vocabulary, practice what they learn,
                             and engage in conversations. We will also teach aspects of society and culture of the country to deepen their understanding of the respective languages.
@@ -42,6 +42,14 @@ export default function Language() {
                     <p className="glacial">Language classes for adults will focus on scenarios that are relevant to their fields. With higher lever grammar and vocabulary, students will be able to engage in conversations accordingly.</p>
                     <p className="glacial" style={{fontWeight: "900"}}>
                         *All students will be placed into beginner, intermediate, or advanced classes through a placement test.
+                    </p>
+                </div>
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Foundation of Interpretation (Eng-Kor)</p>
+                    <p className="glacial">This interpretation class will raise up interpreters that God will use for message interpretation. Students will learn the etiquette for message interpretation and what to prepare before interpreting.
+                         This class is not intended to be a language class to learn Korean or English.</p>
+                    <p className="glacial" style={{fontWeight: "900"}}>
+                        *This class is for high school students and above.
                     </p>
                 </div>
             </div>   

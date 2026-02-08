@@ -41,7 +41,7 @@ export default function Academic() {
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Science</p>
-                    <p className="glacial">This class is instended for high schoolers interested in learning basic Chemistry or Physics.</p>
+                    <p className="glacial">Personalized tutoring focused on building understanding and confidence in chemistry and physics. Students receive clear explanations, problem-solving support, and help mastering key concepts.</p>
                 </div>
             </div>
         </div>
