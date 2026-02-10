@@ -52,15 +52,14 @@ export default function PE() {
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Ping Pong</p>
                     <p className="glacial">Students learn basic ping pong skills such as grip, serves, and rallies while improving coordination and focus. The class promotes quick reflexes, confidence, and good sportsmanship in a fun environment.</p>
+                    <p className="glacial" style={{fontWeight: "900"}}>*You must meet certain height requirements for this class.</p>
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Conditioning</p>
                     <p className="glacial">Conditioning is a high-energy class designed to help aspiring athletes and consistently active individuals build the capacity to withstand physical strain.
                          The class focuses on continuous movement, athletic drills, and short bursts of extreme high-intensity interval training to improve endurance, strength, and mental toughness.
                     </p>
-                    <p className="glacial" style={{fontWeight: "900"}}>
-                        *This class is for 8th grade students and above.
-                    </p>
+                    <p className="glacial" style={{fontWeight: "900"}}>*This class is for 8th grade students and above.</p>
                 </div>
             </div> 
         </div>

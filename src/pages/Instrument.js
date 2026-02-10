@@ -41,14 +41,14 @@ export default function Instrument() {
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Flute</p>
                     <p className="glacial">Designed for beginners, this class introduces proper flute handling, breath control, and basic notes. Students will learn simple songs while building a strong musical foundation.</p>
-                    <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", marginBottom: "1vh"}}>*Only for first time beginners.</p>
+                    <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", marginBottom: "1vh"}}>*Only for first time beginners (offered only in class C session).</p>
                 </div>
             </div>
             <div className="differentClasses">
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Piano</p>
                     <p className="glacial">Perfect for beginners, this class covers basic piano skills, finger placement, and simple melodies. Students will learn to read music and play confidently at their own pace.</p>
-                    <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", marginBottom: "1vh"}}>*Only for first time beginners.</p>
+                    <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", marginBottom: "1vh"}}>*Only for first time beginners (offered only in class C session).</p>
                 </div>
             </div>
             <div className="differentClasses">

@@ -92,6 +92,7 @@ export default function Staff() {
                 <div className="staffBox">
                     <div className="staffMember">
                         {/* <img className="staffImage" src={yeobeen} alt=""></img> */}
+                        <img className="staffImage" alt=""></img>
                         <div className="staffText">
                             <p className="staffName">Charles Lim</p>
                             <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
