@@ -80,7 +80,7 @@ export default function Staff() {
                         </div>
                     </div>
                 </div>
-                <div className="staffBox">
+                {/* <div className="staffBox">
                     <div className="staffMember">
                         <img className="staffImage" src={alexandra} alt=""></img>
                         <div className="staffText">
@@ -88,7 +88,7 @@ export default function Staff() {
                             <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="staffBox">
                     <div className="staffMember">
                         {/* <img className="staffImage" src={yeobeen} alt=""></img> */}

@@ -39,7 +39,7 @@ export default function Language() {
                 </div>
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Adults (Korean, English)</p>
-                    <p className="glacial">Language classes for adults will focus on scenarios that are relevant to their fields. With higher lever grammar and vocabulary, students will be able to engage in conversations accordingly.</p>
+                    <p className="glacial">Language classes for adults will focus on scenarios that are relevant to their fields. With higher level grammar and vocabulary, students will be able to engage in conversations accordingly.</p>
                     <p className="glacial" style={{fontWeight: "900"}}>
                         *All students will be placed into beginner, intermediate, or advanced classes through a placement test.
                     </p>

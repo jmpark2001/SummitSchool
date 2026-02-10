@@ -40,7 +40,7 @@ export default function Academic() {
                     <p className="glacial">This class is intended to bolster students' grade level appropriate math skill as well as prepare them for the next grade level.</p>
                 </div>
                 <div className="otherInfoDiv">
-                    <p className="classesInfoTitle">Science</p>
+                    <p className="classesInfoTitle">Science (Chemistry and Physics)</p>
                     <p className="glacial">Personalized tutoring focused on building understanding and confidence in chemistry and physics. Students receive clear explanations, problem-solving support, and help mastering key concepts.</p>
                 </div>
             </div>

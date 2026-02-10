@@ -70,20 +70,21 @@ export default function ClassInfo() {
                 <p>12:30PM - 12:50PM: Lunch</p>
                 <p>1:00PM - 1:50PM: Class C</p>
                 <br/>
-                <p>All students are required to take:</p>
-                <p>1 Bible class</p> 
-                <p>1 Language/Instrument/Academic class</p>
-                <p>1 Sports/Extracurricular class</p>
+                <p>All students (Pre-k to high school) are required to take 3 classes:</p>
+                <p>1 Bible</p> 
+                <p>1 Language/Academic/Extracurricular</p>
+                <p>1 Sports/Instrument</p>
+                <br/>
                 <p>Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM.</p>
                 <br/><br/>
                 <p><b>FEES</b></p>
                 <p>Fees for students</p>
                 <div class="feeGrid">
-                    <div>1 Student</div>
+                    <div>1st Child</div>
                     <div>$250</div>
-                    <div>2 Students</div>  
+                    <div>2nd Child</div>  
                     <div>$200</div>
-                    <div>Additional Students</div>
+                    <div>Additional Children</div>
                     <div>$150</div>
                 </div>
                 <br></br>
