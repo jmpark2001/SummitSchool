@@ -45,7 +45,7 @@ export default function Biblical() {
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Biblical Readership</p>
+                            <p className="classesInfoTitle">Biblical Leadership</p>
                             <p className="classesInfoDescription"> In this class, we will look at various figures in the Bible to understand what leadership is according to God's standard (biblical 
                                 model). We will then compare this with wordly standards of leadership. Our goal is to understand and know the kind of leaders God is looking for in our day and age.</p>  
                         </div>
