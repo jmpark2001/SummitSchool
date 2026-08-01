@@ -24,8 +24,10 @@ export default function Home() {
                 <p className="warning"></p>
             </div>
             <div className="fallSemester">
-                <p style={{margin: "1rem 0"}}>2026 SPRING SEMESTER</p>
-                <p className="fallSemesterText glacial">Registration for the spring semester starts on Feb 8th and will end on Feb 22nd.</p>
+                {/* <p style={{margin: "1rem 0"}}>2026 SPRING SEMESTER</p> */}
+                <p style={{margin: "1rem 0"}}>2026 FALL SEMESTER</p>
+                {/* <p className="fallSemesterText glacial">Registration for the spring semester starts on Feb 8th and will end on Feb 22nd.</p> */}
+                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 2nd and will end on Aug 16th.</p>
                 <div style={{display: "flex", justifyContent: "center", marginBottom: "4vh"}}>
                     <Link to={"/registration"} style={{textDecoration: "none", display: "flex"}}>
                         <div className="registerNow playfair">
@@ -52,7 +54,7 @@ export default function Home() {
                 <Link to={"/instrument"} className="homeLink">
                     <div className="biblicalLink">
                         <img src={instrument} alt=""></img>
-                        <p className="homeLinkTitles">INSTRUMENTS</p>
+                        <p className="homeLinkTitles">MUSIC</p>
                     </div>
                 </Link>  
                 <Link to={"/academic"} className="homeLink">
@@ -82,7 +84,7 @@ export default function Home() {
             </div>
             <div style={{display: "relative", margin: "10vh 0"}}>
                 <div className="classScheduleBanner">
-                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from March 7th to June 13th</p>
+                    <p>Classes are held every Saturday except Remnant Day (Last Saturday of every month) from Sep 5th to Dec 12th</p>
                 </div>
             </div>
             {/* <Footer/> */}

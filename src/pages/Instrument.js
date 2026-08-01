@@ -18,13 +18,13 @@ export default function Instrument() {
         <div className="playfair" style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <div className="classesBanner">
                 <img src={instrument} className="classesBanners" alt=""></img>
-                <p style={{position:"absolute", margin: "0", color: "white", fontWeight: "900", fontSize: "clamp(1.8rem, 1.2109rem + 2.6182vw, 5.4rem)"}}>INSTRUMENT CLASSES</p>
+                <p style={{position:"absolute", margin: "0", color: "white", fontWeight: "900", fontSize: "clamp(1.8rem, 1.2109rem + 2.6182vw, 5.4rem)"}}>MUSIC CLASSES</p>
             </div>
             <div className="backToHomeDivOther">
                 <CustomLink to="/" className="backToHome">Home</CustomLink>
                 <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/ </p>
                 <CustomLink to="/classInfo" className="backToHome" style={{marginLeft: "0"}}>Class Information</CustomLink>
-                <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/&nbsp;&nbsp;Instrument Classes</p>
+                <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/&nbsp;&nbsp;Music Classes</p>
             </div>
             <div style={{display: "flex", flexDirection: "column"}}>
                 <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", color: "red", marginBottom: "0vh"}}>*Students must prepare their own drumsticks or flute before classes begin*</p>
@@ -56,6 +56,12 @@ export default function Instrument() {
                     <p className="classesInfoTitle">Guitar</p>
                     <p className="glacial">Anyone interested in learning the guitar with little to no experience is welcome to enroll. This class will teach the basics and fundamentals of guitar.</p>
                     <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", marginBottom: "1vh"}}>*Only for first time beginners.</p>
+                </div>
+            </div>
+            <div className="differentClasses">
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Singing 101</p>
+                    <p className="glacial">Students will learn basic vocal techniques, breathing exercises, and the joy of singing together.</p>
                 </div>
             </div>
         </div>

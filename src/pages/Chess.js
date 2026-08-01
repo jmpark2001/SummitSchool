@@ -40,6 +40,18 @@ export default function Chess() {
                         Students explore creativity through drawing, painting, and hands-on art projects. This class encourages self-expression, imagination, and confidence while learning basic art techniques.
                     </p>
                 </div>
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Basics of Graphic Design</p>
+                    <p className="glacial">
+                        Discover the fundamentals of graphic design through creativity and technology. Students will learn basic design pinciples, visual communication, and how to create meaningful designs.
+                    </p>
+                </div>
+                <div className="otherInfoDiv">
+                    <p className="classesInfoTitle">Creative Writing</p>
+                    <p className="glacial">
+                        Students will explore storytelling, character development, and creative expression while building confidence in their writing skills.
+                    </p>
+                </div>
             </div>
         </div>
     )

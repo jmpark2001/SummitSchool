@@ -17,11 +17,13 @@ function CustomLink({to, children, ...props}) {
 }
 
 export default function ClassInfo() {
-    const classList = ["New Life, New Living - Pastor Byung Chul Hwang", "5 Solas - Pastor Dexter Smith", "Biblical Leadership - Pastor Brendyn Huh", 
-        "Contemporary Discussions - Pastoral Intern Junyeong Yang", "Praise and Worship - Pastoral Intern Paul Sa", "Youth Light (Counseling with Guitar) - Andrew Muange", "Korean - Christine Lee, Charles Lim, Sun Ornelas", "Spanish - Isaias Cabrales",
-         "Chinese (Mandarin) - Ellie Kim", "Adult Korean - Christine Lee, Sun Ornelas", "Adult English - Robin Smith", "Foundations of KOR-ENG interpretation - Pastoral Intern Paul Sa", "Drums - Melvin Loza", "Flute - Sojung Huh", "Piano - Sojung Huh", "Guitar - Andrew Muange",
-         "Pre-K/Kindergarten - Alexandra Kim", "Reading and Writing - Yeobeen Yun", "Math & Math Tutoring - Kaushal Singh, Yeobeen Yun", "Science (Chemistry and Physics) - Kaushal Singh", 
-         "Basketball - Jacob Winfield, Isaac Kim",  "Badminton - Pastoral Intern Junyeong Yang", "Ping Pong - Pastor Byung Chul Hwang", "Conditioning - Melvin Loza", "Chess - Dexter Smith", "Art - Emma Fu"]
+    // const classList = ["New Life, New Living - Pastor Byung Chul Hwang", "Revelation - Pastor Dexter Smith", "Contemporary Discussions - Pastoral Intern Junyeong Yang", "Praise and Worship - Pastoral Intern Paul Sa", "Korean - Charles Lim, Sun Ornelas, Chloe Kim, ", "Spanish - Isaias Cabrales",
+    //      "Chinese (Mandarin) - Ellie Kim", "Adult Korean - Christine Lee, Sun Ornelas", "Adult English - Robin Smith", "Foundations of KOR-ENG interpretation - Pastoral Intern Paul Sa", "Guitar - AJ Koo",
+    //      "Pre-K/Kindergarten - Alexandra Kim", "Reading and Writing - Yeobeen Yun", "Math & Math Tutoring - Kaushal Singh, Yeobeen Yun", "Science (Chemistry and Physics) - Kaushal Singh", 
+    //      "Basketball - Jacob Winfield, Isaac Kim",  "Badminton - Pastoral Intern Junyeong Yang", "Ping Pong - Pastor Byung Chul Hwang", "Conditioning - Melvin Loza", "Chess - Dexter Smith", "Art - Emma Fu"]
+    const classList = ["New Life, New Living", "Revelation", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish",
+         "Chinese (Mandarin)", "Adult Korean", "ESL", "Foundations of KOR-ENG interpretation", "Guitar", "Reading and Writing", "Math & Math Tutoring", "Science (Chemistry and Physics)", 
+         "Basketball",  "Badminton", "Ping Pong", "Conditioning", "Chess", "Art"]
 
     const handleDownload = () => {
         let dataBlob = EXCEL_FILE_BASE64;
@@ -70,13 +72,13 @@ export default function ClassInfo() {
                 <p>12:30PM - 12:50PM: Lunch</p>
                 <p>1:00PM - 1:50PM: Class C</p>
                 <br/>
-                <p>All students (Pre-k to high school) are required to take 3 classes:</p>
+                <p>All students (Elementary to high school) are required to take 3 classes:</p>
                 <p>1 Bible</p> 
                 <p>1 Language/Academic/Extracurricular</p>
                 <p>1 Sports/Instrument</p>
                 <br/>
-                <p>Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM.</p>
-                <br/><br/>
+                {/* <p>Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM.</p> */}
+                {/* <br/><br/> */}
                 <p><b>FEES</b></p>
                 <p>Fees for students</p>
                 <div class="feeGrid">
@@ -112,7 +114,7 @@ export default function ClassInfo() {
                     </p>
                     <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome" style={{color: "#B56727"}}>BIBLE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(0, 6).map((className, index) =>
+                        {classList.slice(0, 5).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -120,7 +122,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/language" className="backToHome" style={{color: "#B56727"}}>LANGUAGE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(6, 12).map((className, index) =>
+                        {classList.slice(5, 11).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -128,7 +130,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/instrument" className="backToHome" style={{color: "#B56727"}}>INSTRUMENT</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(12, 16).map((className, index) =>
+                        {classList.slice(11, 15).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -136,7 +138,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/academic" className="backToHome" style={{color: "#B56727"}}>ACADEMIC</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(16,20).map((className, index) =>
+                        {classList.slice(15,19).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -144,7 +146,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/pe" className="backToHome" style={{color: "#B56727"}}>SPORTS</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(20, 24).map((className, index) =>
+                        {classList.slice(19, 23).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -152,7 +154,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/chess" className="backToHome" style={{color: "#B56727"}}>EXTRACURRICULAR</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(24).map((className, index) =>
+                        {classList.slice(23).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>

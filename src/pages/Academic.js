@@ -27,10 +27,10 @@ export default function Academic() {
                 <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/&nbsp;&nbsp;Academic Classes</p>
             </div>
             <div className="differentClasses">
-                <div className="otherInfoDiv">
+                {/* <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Pre-K/Kindergarten</p>
                     <p className="glacial">This program is for children between the ages 3 to 5. They will be nurturing their developmental skills as well as learning the alphabet, learning how to count, and participating in arts and crafts. This class runs from 10:30AM to 12:20PM (2 class periods).</p>
-                </div>
+                </div> */}
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Reading and Writing</p>
                     <p className="glacial">Reading and writing are taught using textbooks appropriate for the grade level, and learning is also provided to improve reading comprehension and writing skills.</p>
