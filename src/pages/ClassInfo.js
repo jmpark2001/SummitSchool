@@ -22,8 +22,8 @@ export default function ClassInfo() {
     //      "Pre-K/Kindergarten - Alexandra Kim", "Reading and Writing - Yeobeen Yun", "Math & Math Tutoring - Kaushal Singh, Yeobeen Yun", "Science (Chemistry and Physics) - Kaushal Singh", 
     //      "Basketball - Jacob Winfield, Isaac Kim",  "Badminton - Pastoral Intern Junyeong Yang", "Ping Pong - Pastor Byung Chul Hwang", "Conditioning - Melvin Loza", "Chess - Dexter Smith", "Art - Emma Fu"]
     const classList = ["New Life, New Living", "Revelation", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish",
-         "Chinese (Mandarin)", "Adult Korean", "ESL", "Foundations of KOR-ENG interpretation", "Guitar", "Reading and Writing", "Math & Math Tutoring", "Science (Chemistry and Physics)", 
-         "Basketball",  "Badminton", "Ping Pong", "Conditioning", "Chess", "Art"]
+         "Chinese (Mandarin)", "Adult Korean", "ESL", "Foundations of KOR-ENG interpretation", "Singing 101", "Reading and Writing", "Math & Math Tutoring", "Science (Chemistry and Physics)", 
+         "Basketball",  "Badminton", "Ping Pong", "Chess", "Art", "Basics of Graphic Design", "Creative Writing"]
 
     const handleDownload = () => {
         let dataBlob = EXCEL_FILE_BASE64;
@@ -58,10 +58,14 @@ export default function ClassInfo() {
             <div className="classInfo">
                 <p style={{color: "#B56727", margin: "2rem auto"}}><b>Welcome to One Mind Church Summit School!</b></p>
                 <p><b>REGISTRATION</b></p>
-                <p>Registration for the spring semester starts on February 8th and will end on February 22th</p>
+                {/* <p>Registration for the spring semester starts on February 8th and will end on February 22th</p>
                 <br/><br/>
                 <p><b>2026 SPRING SEMESTER</b></p>
-                <p>The spring semester begins on March 7th and ends on June 13th</p>
+                <p>The spring semester begins on March 7th and ends on June 13th</p> */}
+                <p>Registration for the fall semester starts on Aug 2nd and will end on Aug 16th</p>
+                <br/><br/>
+                <p><b>2026 FALL SEMESTER</b></p>
+                <p>The fall semester begins on September 5th and ends on December 12th</p>
                 <br/><br/>
                 <p><b>SCHEDULE</b></p>
                 <p>Summit School classes will take place every Saturday from 9:30AM - 2:00PM. (No classes the last Saturday of the month)</p>
@@ -75,7 +79,7 @@ export default function ClassInfo() {
                 <p>All students (Elementary to high school) are required to take 3 classes:</p>
                 <p>1 Bible</p> 
                 <p>1 Language/Academic/Extracurricular</p>
-                <p>1 Sports/Instrument</p>
+                <p>1 Sports/Music</p>
                 <br/>
                 {/* <p>Pre-K/Kindergarten students will only have their Pre-K/Kindergarten class from 10:30AM - 12:20PM.</p> */}
                 {/* <br/><br/> */}
@@ -114,7 +118,7 @@ export default function ClassInfo() {
                     </p>
                     <p className="classInfoDivTitle"><b><CustomLink to="/biblical" className="backToHome" style={{color: "#B56727"}}>BIBLE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(0, 5).map((className, index) =>
+                        {classList.slice(0, 4).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -122,15 +126,15 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/language" className="backToHome" style={{color: "#B56727"}}>LANGUAGE</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(5, 11).map((className, index) =>
+                        {classList.slice(4, 10).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
                         )}
                     </ul>  
-                    <p className="classInfoDivTitle"><b><CustomLink to="/instrument" className="backToHome" style={{color: "#B56727"}}>INSTRUMENT</CustomLink></b></p>
+                    <p className="classInfoDivTitle"><b><CustomLink to="/instrument" className="backToHome" style={{color: "#B56727"}}>MUSIC</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(11, 15).map((className, index) =>
+                        {classList.slice(10, 11).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -138,7 +142,7 @@ export default function ClassInfo() {
                     </ul>  
                     <p className="classInfoDivTitle"><b><CustomLink to="/academic" className="backToHome" style={{color: "#B56727"}}>ACADEMIC</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(15,19).map((className, index) =>
+                        {classList.slice(11,14).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -146,7 +150,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/pe" className="backToHome" style={{color: "#B56727"}}>SPORTS</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(19, 23).map((className, index) =>
+                        {classList.slice(14, 17).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>
@@ -154,7 +158,7 @@ export default function ClassInfo() {
                     </ul>
                     <p className="classInfoDivTitle"><b><CustomLink to="/chess" className="backToHome" style={{color: "#B56727"}}>EXTRACURRICULAR</CustomLink></b></p>
                     <ul className="classInfoClassesUl">
-                        {classList.slice(23).map((className, index) =>
+                        {classList.slice(17).map((className, index) =>
                             <li key={index}>
                                 <p>{className}</p>
                             </li>

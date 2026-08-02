@@ -37,17 +37,11 @@ export default function Biblical() {
                     </li>
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">5 Solas</p>
-                            <p className="classesInfoDescription">1. Christ Alone 2. Faith Alone 3. God's Grace Alone 4. God's Gloary Alone 5. God's Word Alone. Teaching
-                                the 5 Solas is essential to anchor christians in the core gospel message, distinguishing it from works-based theology. These Solas summarize
-                                Reformation truths, emphasizing salvation is completely a divine gift that depends on God's Glory Alone.</p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Biblical Leadership</p>
-                            <p className="classesInfoDescription"> In this class, we will look at various figures in the Bible to understand what leadership is according to God's standard (biblical 
-                                model). We will then compare this with wordly standards of leadership. Our goal is to understand and know the kind of leaders God is looking for in our day and age.</p>  
+                            <p className="classesInfoTitle">Revelation</p>
+                            <p className="classesInfoDescription"> The book of Revelation is about God's purpose focusing on the Lamb, the Lord Jesus Christ and the triumph over the world and its ungodliness
+                                and evil. God's purpose is to show the great redemption that He is preparing for all those who truly believe and follow His Son. God's purpose is to show man that he can be
+                                saved from the terrible things that are coming upon the earth. God wants man to know that he can be saved while there is still time for him to repent. It is God's purpose to lead
+                                people to repentance and salvation; to lead them to the glorious inheritance of the great redemption that is to be given to all true followers of the Lord Jesus Christ.</p>  
                         </div>
                     </li>
                     <li>
@@ -68,17 +62,6 @@ export default function Biblical() {
                                 Remnants will explore the spiritual foundations of worship, the role of music in the church, and how to offer worship that is both heartfelt and rooted in the word.
                                 This class equips remnants to engage God more fully in personal and corporate worship, and to serve with excellence and humility on the praise team or in their daily
                                 lives as worshipers.</p>  
-                        </div>
-                    </li>
-                    <li>
-                        <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">Youth Light Counseling with Guitar</p>
-                            <p className="classesInfoDescription">
-                                This class is designed to help and counsel the youth to be ready to tackle many of life's challenges facing them today. We will use biblical principles and 
-                                wisdom, to enable them to stand on a solid foundation when going through trials. This semester, we will be exploring the writings of the apostle Paul, mainly
-                                the epistle of Paul to the Phillippians. In addition, the class will incorporate learning techniques to allow students to play guitar quicker than conventional methods.
-                                This skill is helpful for those who wish to play an important role, contributing to worship teams, or simply playing guitar for fun.
-                            </p>
                         </div>
                     </li>
                 </ul>

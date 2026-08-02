@@ -64,19 +64,10 @@ export default function Staff() {
                 </div> */}
                 <div className="staffBox">
                     <div className="staffMember">
-                        <img className="staffImage" src={christine} alt=""></img>
-                        <div className="staffText">
-                            <p className="staffName">Christine Baek-Lee</p>
-                            <p className="staffTitle">ADMINISTRATIVE DIRECTOR</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="staffBox">
-                    <div className="staffMember">
                         <img className="staffImage" src={louann} alt=""></img>
                         <div className="staffText">
                             <p className="staffName">Lou Ann Yang</p>
-                            <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
+                            <p className="staffTitle">ADMINISTRATIVE DIRECTOR</p>
                         </div>
                     </div>
                 </div>
@@ -95,6 +86,24 @@ export default function Staff() {
                         <img className="staffImage" alt=""></img>
                         <div className="staffText">
                             <p className="staffName">Charles Lim</p>
+                            <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Chloe Koo</p>
+                            <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="staffBox">
+                    <div className="staffMember">
+                        <img className="staffImage" alt=""></img>
+                        <div className="staffText">
+                            <p className="staffName">Abigail Viggiano</p>
                             <p className="staffTitle">ADMINISTRATIVE ASSISTANT</p>
                         </div>
                     </div>

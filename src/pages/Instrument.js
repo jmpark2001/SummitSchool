@@ -26,11 +26,11 @@ export default function Instrument() {
                 <CustomLink to="/classInfo" className="backToHome" style={{marginLeft: "0"}}>Class Information</CustomLink>
                 <p style={{fontSize: "clamp(1.5rem, 0.9280rem + 0.6700vw, 2rem)", margin: "2rem 0 0"}}>&nbsp;&nbsp;/&nbsp;&nbsp;Music Classes</p>
             </div>
-            <div style={{display: "flex", flexDirection: "column"}}>
+            {/* <div style={{display: "flex", flexDirection: "column"}}>
                 <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", color: "red", marginBottom: "0vh"}}>*Students must prepare their own drumsticks or flute before classes begin*</p>
                 <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", color: "red", marginBottom: "clamp(2rem, 1.5091rem + 2.1818vw, 5rem)"}}>*For guitar class, teacher will instruct the students when the class begins regarding instrument purchase.*</p>
-            </div>
-            <div className="differentClasses">
+            </div> */}
+            {/* <div className="differentClasses">
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Drums</p>
                     <p className="glacial">Learn rhythm, timing, and basic drumming techniques in a fun and energetic environment. Students will develop coordination, musical listening skills, and a strong sense of beat.</p>
@@ -57,7 +57,7 @@ export default function Instrument() {
                     <p className="glacial">Anyone interested in learning the guitar with little to no experience is welcome to enroll. This class will teach the basics and fundamentals of guitar.</p>
                     <p className="glacial" style={{fontWeight: "900", fontSize: "1.5vh", marginBottom: "1vh"}}>*Only for first time beginners.</p>
                 </div>
-            </div>
+            </div> */}
             <div className="differentClasses">
                 <div className="otherInfoDiv">
                     <p className="classesInfoTitle">Singing 101</p>
