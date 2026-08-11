@@ -748,27 +748,27 @@ function RegistrationForm() {
                                         <li>
                                             1 child:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/znEQ7HUM/" target="_blank" rel="noreferrer noopener">https://square.link/u/znEQ7HUM/</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/znEQ7HUM" target="_blank" rel="noreferrer noopener">https://square.link/u/znEQ7HUM</a>
                                         </li>
                                         <li>
                                             2 children:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/JtFGHMhTN/" target="_blank" rel="noreferrer noopener">https://square.link/u/JtFGHMhTN/</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/JtFGHMhTN" target="_blank" rel="noreferrer noopener">https://square.link/u/JtFGHMhTN</a>
                                         </li>
                                         <li>
                                             3 children:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/Wsla3vmH/" target="_blank" rel="noreferrer noopener">https://square.link/u/Wsla3vmH/</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/Wsla3vmH" target="_blank" rel="noreferrer noopener">https://square.link/u/Wsla3vmH</a>
                                         </li>
                                         <li>
                                             4 children:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/zztNxwy7/" target="_blank" rel="noreferrer noopener">https://square.link/u/zztNxwy7/</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/zztNxwy7" target="_blank" rel="noreferrer noopener">https://square.link/u/zztNxwy7</a>
                                         </li>
                                         <li>
                                             5 children:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/vGWHmOiD/" target="_blank" rel="noreferrer noopener">https://square.link/u/vGWHmOiD/</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/vGWHmOiD" target="_blank" rel="noreferrer noopener">https://square.link/u/vGWHmOiD</a>
                                         </li>
                                     </div>
                                     <div>
@@ -776,17 +776,17 @@ function RegistrationForm() {
                                         <li>
                                             1 class:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/wRoBD5AF/" target="_blank" rel="noreferrer noopener">https://square.link/u/wRoBD5AF/</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/wRoBD5AF" target="_blank" rel="noreferrer noopener">https://square.link/u/wRoBD5AF</a>
                                         </li>
                                         <li>
                                             2 classes:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/NZRwp24J/" target="_blank" rel="noreferrer noopener">https://square.link/u/NZRwp24J/</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/NZRwp24J" target="_blank" rel="noreferrer noopener">https://square.link/u/NZRwp24J</a>
                                         </li>
                                         <li>
                                             3 classes:
                                             <p style={{display: "inline"}}> </p>
-                                            <a style={{display: "inline"}} href="https://square.link/u/ISczNY6k/" target="_blank" rel="noreferrer noopener">https://square.link/u/ISczNY6k/</a>
+                                            <a style={{display: "inline"}} href="https://square.link/u/ISczNY6k" target="_blank" rel="noreferrer noopener">https://square.link/u/ISczNY6k</a>
                                         </li>
                                     </div>
                                 </div>
