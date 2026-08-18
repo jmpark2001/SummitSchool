@@ -27,7 +27,7 @@ export default function Home() {
                 {/* <p style={{margin: "1rem 0"}}>2026 SPRING SEMESTER</p> */}
                 <p style={{margin: "1rem 0"}}>2026 FALL SEMESTER</p>
                 {/* <p className="fallSemesterText glacial">Registration for the spring semester starts on Feb 8th and will end on Feb 22nd.</p> */}
-                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 2nd and will end on Aug 16th.</p>
+                <p className="fallSemesterText glacial">Registration for the fall semester starts on Aug 2nd and will end on Aug 21st.</p>
                 <div style={{display: "flex", justifyContent: "center", marginBottom: "4vh"}}>
                     <Link to={"/registration"} style={{textDecoration: "none", display: "flex"}}>
                         <div className="registerNow playfair">

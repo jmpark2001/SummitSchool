@@ -23,7 +23,7 @@ export default function ClassInfo() {
     //      "Basketball - Jacob Winfield, Isaac Kim",  "Badminton - Pastoral Intern Junyeong Yang", "Ping Pong - Pastor Byung Chul Hwang", "Conditioning - Melvin Loza", "Chess - Dexter Smith", "Art - Emma Fu"]
     const classList = ["Field Gospel Message", "Revelation", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish",
          "Chinese (Mandarin)", "Adult Korean", "ESL", "Foundations of KOR-ENG interpretation", "Singing 101", "Reading and Writing", "Math & Math Tutoring", "Science (Chemistry and Physics)", 
-         "Basketball",  "Badminton", "Ping Pong", "Chess", "Art", "Basics of Graphic Design", "Creative Writing"]
+         "Basketball",  "Badminton", "Ping Pong", "Chess", "Art", "Basics of Graphic Design"]
 
     const handleDownload = () => {
         let dataBlob = EXCEL_FILE_BASE64;
@@ -62,7 +62,7 @@ export default function ClassInfo() {
                 <br/><br/>
                 <p><b>2026 SPRING SEMESTER</b></p>
                 <p>The spring semester begins on March 7th and ends on June 13th</p> */}
-                <p>Registration for the fall semester starts on Aug 2nd and will end on Aug 16th</p>
+                <p>Registration for the fall semester starts on Aug 2nd and will end on Aug 21st</p>
                 <br/><br/>
                 <p><b>2026 FALL SEMESTER</b></p>
                 <p>The fall semester begins on September 5th and ends on December 12th</p>
