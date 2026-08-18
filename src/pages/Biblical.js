@@ -30,7 +30,7 @@ export default function Biblical() {
                 <ul className="biblicalInfoClasses">
                     <li>
                         <div className="biblicalInfoClassesList">
-                            <p className="classesInfoTitle">New Life, New Living</p>
+                            <p className="classesInfoTitle">Field Gospel Message</p>
                             <p className="classesInfoDescription">Helping saved believers to put down deep roots in the gospel, aiding them in the healing of spiritual issues, emotional struggles,
                                 and physical illnesses through spiritual restoration, and further helping them to live the life of an evangelist.</p>  
                         </div>

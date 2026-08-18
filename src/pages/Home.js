@@ -37,7 +37,7 @@ export default function Home() {
                 </div>
             </div>
             <hr style={{borderWidth: "0 0 clamp(0.2rem, 0.1591rem + 0.1818vw, 0.45rem) 0", borderColor: "black", borderStyle: "solid", width: "20%", margin: "clamp(4rem, 2.3333rem + 7.4074vw, 9rem) 0 0 0"}}></hr>
-            <p className="classesForFall">CLASSES FOR SPRING 2026</p>
+            <p className="classesForFall">CLASSES FOR FALL 2026</p>
             <div className="homeLinksGrid">
                 <Link to={"/biblical"} className="homeLink">
                     <div className="biblicalLink">

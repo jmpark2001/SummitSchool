@@ -9,13 +9,13 @@ import FileSaver from "file-saver";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function RegistrationForm() {
-    const classList2 = ["New Life, New Living", "Revelation", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "ESL (English Second Langauge)", "Foundations of KOR-ENG Interpretation", "Singing 101", "Academic", "Sports", "Extracurricular"]
-    const classList = ["New Life, New Living", "Revelation", "Contemporary Discussions", "Praise and Worship",
+    const classList2 = ["Field Gospel Message", "Revelation", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish", "Chinese", "Adult Korean", "ESL (English Second Langauge)", "Foundations of KOR-ENG Interpretation", "Singing 101", "Academic", "Sports", "Extracurricular"]
+    const classList = ["Field Gospel Message", "Revelation", "Contemporary Discussions", "Praise and Worship",
         "Korean Beginner", "Korean Intermediate", "Korean Advanced", "Spanish Beginner", "Spanish Intermediate", "Spanish Advanced", "Chinese Beginner", "Chinese Intermediate", "Chinese Advanced", "Adult Korean Beginner", "Adult Korean Intermediate", "Adult Korean Advanced", "ESL Beginner", "ESL Intermediate", "ESL Advanced", "Foundations of KOR-ENG Interpretation",
         "Singing 101",
         "Reading and Writing", "Math & Math Tutoring", "Chemistry", "Physics", 
         "Basketball", "Badminton", "Ping Pong",
-        "Introduction to Chess", "Advanced Chess", "Art", "Basics of Graphic Design", "Creative Writing"]
+        "Introduction to Chess", "Advanced Chess", "Art", "Basics of Graphic Design"]
     const stateList = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Lousiana", "Maine", "Maryland",
      "Massachusettes", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
      "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
@@ -85,7 +85,7 @@ function RegistrationForm() {
     }
 
     function waiverChecked() {
-        return checkedState[33]
+        return checkedState[32]
     }
     
     function updateForm(value) {
@@ -677,19 +677,6 @@ function RegistrationForm() {
                                                         <label>{"Basics of Graphics Design"}</label>
                                                     </div>
                                                 </li>
-                                                <li key={index + 32}>
-                                                    <div>
-                                                        <input
-                                                            type="checkbox"
-                                                            id={index+32}
-                                                            name={className}
-                                                            value={form.classes}
-                                                            checked={checkedState[index+32]}
-                                                            onChange={(e) => handleOnChange(index+32, e)}
-                                                        />
-                                                        <label>{"Creative Writing"}</label>
-                                                    </div>
-                                                </li>
                                             </>
                                         )}
                                     </ul>
@@ -705,8 +692,8 @@ function RegistrationForm() {
                                     type="checkbox"
                                     id="waiver"
                                     name="waiver"
-                                    checked={checkedState[33]}
-                                    onChange={(e) => handleOnChange(33, e)}
+                                    checked={checkedState[32]}
+                                    onChange={(e) => handleOnChange(32, e)}
                                 />
                                 <label>{"I consent to the waiver above"}</label>
                             </div>

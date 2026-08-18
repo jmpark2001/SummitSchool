@@ -21,7 +21,7 @@ export default function ClassInfo() {
     //      "Chinese (Mandarin) - Ellie Kim", "Adult Korean - Christine Lee, Sun Ornelas", "Adult English - Robin Smith", "Foundations of KOR-ENG interpretation - Pastoral Intern Paul Sa", "Guitar - AJ Koo",
     //      "Pre-K/Kindergarten - Alexandra Kim", "Reading and Writing - Yeobeen Yun", "Math & Math Tutoring - Kaushal Singh, Yeobeen Yun", "Science (Chemistry and Physics) - Kaushal Singh", 
     //      "Basketball - Jacob Winfield, Isaac Kim",  "Badminton - Pastoral Intern Junyeong Yang", "Ping Pong - Pastor Byung Chul Hwang", "Conditioning - Melvin Loza", "Chess - Dexter Smith", "Art - Emma Fu"]
-    const classList = ["New Life, New Living", "Revelation", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish",
+    const classList = ["Field Gospel Message", "Revelation", "Contemporary Discussions", "Praise and Worship", "Korean", "Spanish",
          "Chinese (Mandarin)", "Adult Korean", "ESL", "Foundations of KOR-ENG interpretation", "Singing 101", "Reading and Writing", "Math & Math Tutoring", "Science (Chemistry and Physics)", 
          "Basketball",  "Badminton", "Ping Pong", "Chess", "Art", "Basics of Graphic Design", "Creative Writing"]
 
